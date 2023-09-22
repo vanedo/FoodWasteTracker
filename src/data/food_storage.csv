@@ -1,0 +1,663 @@
+;food_id;category_name;name;name_subtitle;keywords;pantry_max_days;pantry_tips;fridge_needed;refrigerate_max_days;refrigerate_ao_max_days;refrigerate_tips;freeze_recommended;compost;food_waste_index
+1;363_1;Baby Food;Jars or pouches;NA;Jars,pouches,jar,pouch;NA;Should be discarded after use-by date.;Yes;NA;3;NA;No;Yes;Medium
+2;364_1;Baby Food;Fruit;NA;Fruit;NA;Should be discarded after use-by date.;Yes;NA;3;NA;No;Yes;Medium
+3;365_1;Baby Food;Vegetables;NA;Vegetables,vegetable;NA;Should be discarded after use-by date.;Yes;NA;2;NA;No;Yes;Medium
+4;366_1;Baby Food;Dinners;NA;Dinners,dinner;NA;Should be discarded after use-by date.;Yes;NA;2;NA;No;Yes;Medium
+5;367_1;Baby Food;Cereal, dry mixes;NA;Cereal,dry mixes,mixes,mix,dry;30;Should be discarded after use-by date.;No;NA;NA;NA;No;Yes;Low
+6;368_1;Baby Food;Formula;prepared;Formula,prepared,prepare;0;Should be discarded after use-by date.;Yes;NA;1;NA;No;Yes;Medium
+7;369_1;Baby Food;Liquid concentrate or ready-to-feed formula;NA;Liquid concentrate,ready to feed formula,concentrate,liquid,formula,feed,ready to feed,feed formula;NA;Should be discarded after use-by date.;Yes;NA;2;NA;No;Yes;Medium
+8;195_2;Baked Goods;Commercial bread products;including pan breads, flat breads, rolls, and buns;Commercial bread products,pan breads,flat breads,rolls,buns,bread products,bread,products,product,pan,breads,bread,flat,roll,bun;18;NA;Yes;NA;21;NA;Yes;Yes;Medium
+9;197_2;Baked Goods;Commercial cakes and muffins;NA;Commercial cakes,cake,muffin,muffins;7;NA;Yes;NA;10;NA;Yes;Yes;Medium
+10;198_2;Baked Goods;Cheesecake;NA;Cheesecake,cake,cheese;NA;NA;Yes;NA;7;NA;Yes;Yes;Medium
+11;199_2;Baked Goods;Cookies;soft;Cookies,soft,cookie;90;NA;No;NA;NA;NA;Yes;Yes;Low
+12;200_2;Baked Goods;Cookies;crispy;Cookies,crispy,cookie;180;NA;No;NA;NA;NA;Yes;Yes;Low
+13;201_2;Baked Goods;Dairy filled eclairs;NA;Dairy filled eclairs,dairy filled,eclairs,éclair,dairy;NA;NA;Yes;NA;3;NA;Yes;Yes;Medium
+14;202_2;Baked Goods;Doughnuts;NA;Doughnuts,doughnut,dough,nut;2;NA;Yes;NA;2;NA;No;Yes;Medium
+15;203_2;Baked Goods;Fruit cake;NA;Fruit cake,fruit,cake;180;NA;Yes;NA;360;NA;Yes;Yes;Low
+16;204_2;Baked Goods;Pastries, danish;NA;Pastries,danish,pastry;10;NA;Yes;NA;420;NA;No;Yes;Low
+17;205_2;Baked Goods;Cream pies;banana cream, coconut cream, butterscotch;Pies,cream,pie, banana, banana cream,coconut,coconut cream,butterscotch;NA;NA;Yes;NA;4;NA;No;Yes;Medium
+18;206_2;Baked Goods;Chiffon pies;chocolate, lemon;Pies,chiffon,pie,chocolate,lemon,chocolate pie,lemon pie;NA;NA;Yes;NA;2;NA;No;Yes;Medium
+19;207_2;Baked Goods;Fruit pies;apple, peach, blueberry, apricot, cherry, blackberry;Pies,fruit,pie,apple,apple pie,peach,peach pie,blueberry,blueberry pie,cherry,cherry pie,apricot,apricot pie,blackberry,blackberry pie;2;NA;Yes;NA;7;NA;No;Yes;Medium
+20;208_2;Baked Goods;Pies;mincemeat;Pies,mincemeat,pie,meat,mince;0;NA;Yes;NA;7;NA;No;Yes;Medium
+21;209_2;Baked Goods;Pies;pecan;Pies,Pie,pecan;0;NA;Yes;NA;4;NA;No;Yes;Medium
+22;210_2;Baked Goods;Pies;pumpkin;Pies,Pie,pumpkin;0;NA;Yes;NA;4;NA;No;Yes;Medium
+23;211_2;Baked Goods;Quiche;NA;Quiche;0;NA;Yes;NA;5;NA;No;Yes;Medium
+24;449_2;Baked Goods;Bagel;fresh baked;Bagel,fresh baked,baked;2;NA;No;NA;NA;Refrigeration not recommended - bagel will quickly dry out and become stale.;No;Yes;Low
+25;450_2;Baked Goods;Bagel ;commercially frozen;Bagel,commercially frozen,frozen;NA;NA;No;NA;NA;NA;No;Yes;Low
+26;451_2;Baked Goods;Muffin;homemade - including bran, blueberry, banana, corn, chocolate chip;Muffin,homemade including bran,homemade,bran,blueberry,banana,corn,chocolate chip,including bran,chocolate,chip;7;NA;No;NA;NA;Refrigeration not recommended - muffin will quickly dry out and become stale.;No;Yes;Low
+27;452_2;Baked Goods;Muffin;commercially packaged;Muffin,commercially packaged,packaged;7;NA;No;NA;NA;Refrigeration not recommended - muffin will quickly dry out and become stale.;No;Yes;Low
+28;453_2;Baked Goods;Muffin;mix, dry, commercially packaged;Muffin,mix,dry,commercially packaged,packaged,commercially,commercial;270;NA;No;NA;NA;NA;No;Yes;Low
+29;542_2;Baked Goods;Macaroons;french;Macaroons,Macaroon,french;2;Store in refrigerator if not eaten right away.;No;NA;NA;NA;No;Yes;Low
+30;574_2;Baked Goods;Bread;homemade;Bread,Breads,homemade;5;May have shorter shelf life due to lack of preservatives.;Yes;90;NA;NA;No;Yes;Low
+31;212_3;Baked Goods;Baking powder;NA;Baking powder,baking,powder;540;NA;No;NA;NA;NA;No;Yes;Low
+32;213_3;Baked Goods;Baking soda;NA;Baking soda,soda,baking;1095;NA;No;NA;NA;NA;No;Yes;Low
+33;214_3;Baked Goods;Biscuit or pancake mix;NA;Biscuit,pancake mix,pancake,mix,cake;270;NA;No;NA;NA;NA;No;Yes;Low
+34;215_3;Baked Goods;Cake, brownie, bread mixes;NA;Cake,brownie,bread mixes,bread,mixes,mix;540;NA;No;NA;NA;NA;No;Yes;Low
+35;216_3;Baked Goods;Chocolate;unsweetened and semi-sweet, solid;Chocolate,unsweetened,semi sweet,solid,sweet;730;NA;No;NA;NA;NA;No;Yes;Low
+36;217_3;Baked Goods;Cocoa and cocoa mixes;NA;Cocoa,cocoa mixes,mixes,mix;1;NA;No;NA;NA;NA;No;Yes;Low
+37;218_3;Baked Goods;Cornmeal;regular, degerminated;Cornmeal,regular,degerminated,germinated,germinate,corn,meal;360;NA;Yes;NA;0;NA;No;Yes;Medium
+38;219_3;Baked Goods;Cornmeal;stone ground or blue;Cornmeal,stone ground,blue,ground,stone,corn,meal;30;NA;Yes;NA;120;NA;No;Yes;Low
+39;220_3;Baked Goods;Cornstarch;NA;Cornstarch,corn,starch;720;NA;No;NA;NA;NA;No;Yes;Low
+40;222_3;Baked Goods;Flour;white;Flour,white;360;NA;Yes;NA;0;NA;No;Yes;Medium
+41;223_3;Baked Goods;Flour;whole wheat;Flour,whole wheat,wheat;180;NA;Yes;NA;240;NA;No;Yes;Low
+42;224_3;Baked Goods;Frosting or icing;NA;Frosting,icing,frost,ice;360;NA;Yes;NA;21;NA;No;Yes;Medium
+43;225_3;Baked Goods;Gelatin;flavored;Gelatin,flavor,flavored;360;NA;No;NA;NA;NA;No;Yes;Low
+44;226_3;Baked Goods;Gelatin;unflavored;Gelatin,unflavor,unflavored;1095;NA;No;NA;NA;NA;No;Yes;Low
+45;227_3;Baked Goods;Oils;olive or vegetable;Oils,olive,vegetable,oil;360;NA;Yes;NA;120;NA;No;Yes;Low
+46;228_3;Baked Goods;Nut oils;NA;Nut oils,nut,oils,oil;360;NA;Yes;NA;240;NA;No;Yes;Low
+47;229_3;Baked Goods;Vegetable oil sprays;NA;Vegetable oil sprays,sprays,oil,vegetable,vegetable oil;730;NA;No;NA;NA;NA;No;Yes;Low
+48;230_3;Baked Goods;Shortening;solid;Shortening,solid;730;NA;No;NA;NA;NA;No;Yes;Low
+49;231_3;Baked Goods;Tamarind paste;NA;Tamarind paste,paste,tamarind;360;NA;Yes;NA;90;NA;No;Yes;Low
+50;232_3;Baked Goods;Chili powder;NA;Chili powder,powder,chili;730;NA;No;NA;NA;NA;No;Yes;Low
+51;233_3;Baked Goods;Seasoning blends;NA;Seasoning blends,blends,seasoning,blend;730;NA;No;NA;NA;NA;No;Yes;Low
+52;234_3;Baked Goods;Flavored or herb mixes;NA;Flavored,herb mixes,herb,flavor,mixes,mix;180;NA;No;NA;NA;NA;No;Yes;Low
+53;235_3;Baked Goods;Garlic;chopped, commercial jars;Garlic,chopped,jars,commercial jars,jar;360;NA;No;NA;NA;NA;No;Yes;Low
+54;236_3;Baked Goods;Herbs;dried;Herbs,dried,herb;730;NA;No;NA;NA;NA;No;Yes;Low
+55;237_3;Baked Goods;Spice/spices;whole;Spice,spices,whole;1460;NA;No;NA;NA;NA;No;Yes;Low
+56;238_3;Baked Goods;Spice/spices;ground;Spice,spices,ground;1095;NA;No;NA;NA;NA;No;Yes;Low
+57;239_3;Baked Goods;Sugar;brown;Sugar,brown;1;Sugar never spoils, but for best quality use within 2 years of opening.;No;NA;NA;NA;No;Yes;Low
+58;240_3;Baked Goods;Sugar;granulated;Sugar,granulated;1;Sugar never spoils, but for best quality use within 2 years of opening.;No;NA;NA;NA;No;Yes;Low
+59;241_3;Baked Goods;Sugar;confectioners;Sugar,confectioners,confectioner;1;Sugar never spoils, but for best quality use within 2 years of opening.;No;NA;NA;NA;No;Yes;Low
+60;242_3;Baked Goods;Sugar substitutes;NA;Sugar substitutes,sugar,substitutes,substitute;730;NA;No;NA;NA;NA;No;Yes;Low
+61;243_3;Baked Goods;Tapiocas;NA;Tapiocas,Tapioca;360;NA;No;NA;NA;NA;No;Yes;Low
+62;459_3;Baked Goods;Whole wheat flour;NA;Whole wheat flour,Whole,wheat,flour,wheat flour,whole wheat;360;NA;Yes;730;NA;NA;No;Yes;Low
+63;527_3;Baked Goods;Almond extract;NA;Almond extract;730;NA;No;NA;NA;NA;No;Yes;Low
+64;528_3;Baked Goods;Cinnamon extract;NA;Cinnamon extract;730;NA;No;NA;NA;NA;No;Yes;Low
+65;529_3;Baked Goods;Lemon extract;NA;Lemon extract,lemon;730;NA;No;NA;NA;NA;No;Yes;Low
+66;530_3;Baked Goods;Pure vanilla extract;NA;vanilla,vanila extract;730;NA;No;NA;NA;NA;No;Yes;Low
+67;531_3;Baked Goods;Butter flavor;NA;Butter flavor,butter;730;NA;No;NA;NA;NA;No;Yes;Low
+68;532_3;Baked Goods;Coconut flavor;NA;Coconut flavor,coconut;730;NA;No;NA;NA;NA;No;Yes;Low
+69;561_3;Baked Goods;Yeast;packaged;Yeast,packaged;730;Store in cool, dry place. Must be refrigerated or frozen once opened.;Yes;NA;120;NA;No;Yes;Low
+70;576_3;Baked Goods;Amaranth;flour, meal;Amaranth,flour,meal;60;NA;No;NA;NA;NA;No;Yes;Low
+71;578_3;Baked Goods;Barley;flour, meal;Barley,flour, meal;90;NA;No;NA;NA;NA;No;Yes;Low
+72;580_3;Baked Goods;Buckwheat;flour, meal;Buckwheat,flour, meal,meal;30;NA;No;NA;NA;NA;No;Yes;Low
+73;582_3;Baked Goods;Farro;flour, meal;Farro,flour, meal;90;NA;No;NA;NA;NA;No;Yes;Low
+74;584_3;Baked Goods;Millet;flour, meal;Millet,flour, meal;30;NA;No;NA;NA;NA;No;Yes;Low
+75;586_3;Baked Goods;Oats;flour, meal;Oats,Oat,flour, meal;60;NA;No;NA;NA;NA;No;Yes;Low
+76;588_3;Baked Goods;Rye;flour, meal;Rye,flour, meal;90;NA;No;NA;NA;NA;No;Yes;Low
+77;590_3;Baked Goods;Sorghum;flour, meal;Sorghum,flour, meal;60;NA;No;NA;NA;NA;No;Yes;Low
+78;592_3;Baked Goods;Spelt;flour, meal;Spelt,flour, meal;90;NA;No;NA;NA;NA;No;Yes;Low
+79;594_3;Baked Goods;Teff;flour, meal;Teff,flour, meal;60;NA;No;NA;NA;NA;No;Yes;Low
+80;598_3;Baked Goods;Garam masala;NA;Garam masala;365;NA;No;NA;NA;NA;No;Yes;Low
+81;635_3;Baked Goods;Cinnamon rolls;baked;cinnamon rolls,cinnamon roll,cinnamon,roll,rolls;3;NA;No;NA;NA;NA;No;Yes;Low
+82;654_3;Baked Goods;Coconut flour;NA;coconut flour,coconut,flour;NA;NA;Yes;360;NA;Store in an airtight container.;No;Yes;Low
+83;245_4;Baked Goods;Tube cans;of biscuits, rolls, pizza dough, etc.;Tube cans,biscuits,biscuit,rolls,roll,pizza,pizza dough,dough,tube can,can,tube;NA;NA;Yes;0;NA;NA;No;Yes;Medium
+84;246_4;Baked Goods;Ready-to-bake pie crust;NA;Ready to bake pie crust,pie,crust,bake,ready;NA;NA;Yes;0;NA;NA;Yes;Yes;Medium
+85;247_4;Baked Goods;Cookie dough;NA;Cookie dough,cookie,dough;NA;NA;Yes;0;NA;NA;Yes;Yes;Medium
+86;551_4;Baked Goods;Puff pastry;NA;Puff pastry,pastry,pastries,puff;NA;NA;No;NA;NA;NA;No;Yes;Low
+87;552_4;Baked Goods;Biscuits;refrigerated;Biscuits,Biscuits,refrigerated;NA;NA;Yes;0;NA;NA;No;Yes;Medium
+88;554_4;Baked Goods;Pie crust;refrigerated;Pie crust,crust,refrigerated,pie;NA;NA;Yes;0;NA;NA;No;Yes;Medium
+89;634_4;Baked Goods;Cinnamon rolls;unbaked, tube;cinnamon rolls,cinnamon roll,cinnamon,roll,rolls;NA;NA;Yes;0;NA;NA;No;Yes;Medium
+90;400_5;Beverages;Coffee;whole beans;Coffee,whole beans,beans,whole,bean;150;NA;Yes;NA;120;NA;No;Yes;Low
+91;401_5;Beverages;Coffee;home ground, non-vacuum;Coffee,home ground,non vacuum,ground,home,vacuum;150;NA;No;NA;NA;NA;No;Yes;Low
+92;402_5;Beverages;Coffee;instant;Coffee,instant;365;NA;No;NA;NA;NA;No;Yes;Low
+93;403_5;Beverages;Diet powder mixes and drink mixes;NA;Diet powder mixes,drink mixes,mixes,drink,powder mixes,diet powder,mix;720;NA;No;NA;NA;NA;No;Yes;Low
+94;404_5;Beverages;Fruit Juice in cartons, fruit drinks, punch;NA;Fruit Juice in cartons,fruit drinks,punch,fruit,fruit juice,juice in cartons,cartons,carton,drinks,drink;21;NA;Yes;NA;12;NA;No;Yes;Medium
+95;405_5;Beverages;Juice, boxes;NA;Juice, boxes,box;1;NA;Yes;NA;12;NA;No;Yes;Medium
+96;406_5;Beverages;Nectar;papaya, mango, guava, or guavabana;Nectar,papaya,mango,guava,guavabana,mangoes;540;NA;No;NA;NA;NA;No;Yes;Low
+97;407_5;Beverages;Soda;carbonated cola drinks, mixers, diet sodas;;;;;;;;;;
+98;408_5;Beverages;Soy or rice beverage;NA;Soy,rice beverage,rice,beverage;NA;NA;Yes;NA;10;NA;No;Yes;Medium
+99;410_5;Beverages;Tea;bags;Tea,bags,bag;1080;NA;No;NA;NA;NA;No;Yes;Low
+100;411_5;Beverages;Tea;instant;Tea,instant;1095;NA;No;NA;NA;NA;No;Yes;Low
+101;412_5;Beverages;Tea;loose;Tea,loose;730;NA;No;NA;NA;NA;No;Yes;Low
+102;413_5;Beverages;Water;commercially bottled;Water,commercially bottled,bottled,commercially,bottle,commercial;1;Water will store indefinitely, though the taste may be impacted by storage conditions, including sunlight, items stored around it and the containers being used to store it.;No;NA;NA;NA;No;Yes;Low
+103;447_5;Beverages;Lime juice;NA;Lime juice,lime,juice;540;NA;Yes;NA;60;NA;No;Yes;Low
+104;448_5;Beverages;Lemon juice;NA;Lemon juice,lemon,juice;540;NA;Yes;NA;60;NA;No;Yes;Low
+105;455_5;Beverages;Orange juice;commercially packaged carton;Orange juice,commercially packaged carton,orange,juice,commercially,packaged,carton,packaged carton,commercially packaged,commercial;NA;NA;Yes;NA;10;Good for 1 week after date on package.;Yes;Yes;Medium
+106;456_5;Beverages;Orange juice;commercially frozen concentrate;Orange juice,commercially frozen concentrate,orange,juice,commercially,frozen,concentrate,commercially frozen,frozen concentrate;NA;NA;No;NA;NA;After prepared for drinking, good for up to 1 week.;Yes;Yes;Low
+107;457_5;Beverages;Orange juice;freshly squeezed;Orange juice,orange,juice,freshly squeezed,squeezed,freshly,fresh,sqeeze;NA;NA;Yes;3;NA;NA;No;Yes;Medium
+108;462_5;Beverages;Red wine;NA;Red wine,red,wine;1825;Dark, away from direct heat or sunlight.;Yes;NA;3;NA;No;Yes;Medium
+109;463_5;Beverages;White wine;NA;White wine,white,wine;730;Dark, away from direct heat or sunlight.;Yes;NA;3;NA;No;Yes;Medium
+110;536_5;Beverages;Lemon juice;fresh squeezed;Lemon juice,juice,fresh squeezed,squeezed,juices;NA;NA;Yes;6;NA;NA;No;Yes;Medium
+111;537_5;Beverages;Apple juice;fresh squeezed;Apple juice,juice,fresh squeezed,squeezed,juices,apple;NA;NA;Yes;6;NA;NA;No;Yes;Medium
+112;538_5;Beverages;Carrot juice;fresh squeezed;Carrot juice,juice,fresh squeezed,squeezed,juices;NA;NA;Yes;6;NA;NA;No;Yes;Medium
+113;539_5;Beverages;Hard liquors;NA;Hard liquors,liquor;1;NA;No;NA;NA;NA;No;Yes;Low
+114;540_5;Beverages;Cream liquors;unopened;Cream liquors,liquors,unopened,liquor;240;NA;No;NA;NA;NA;No;Yes;Low
+115;541_5;Beverages;Coffee;commercial ground, non-vacuum;Coffee,commercial ground, non-vacuum;730;NA;Yes;NA;30;Critical to be stored in an airtight container.;No;Yes;Medium
+116;558_5;Beverages;Nutrition supplement drinks;canned;Nutrition supplement drinks,drinks,canned,supplement,Boost,Ensure;1825;NA;Yes;NA;2;NA;No;Yes;Medium
+117;567_5;Beverages;Vegetable juice;shelf-stable;Vegetable juice,stable,shelf,shelf-stable;540;NA;No;NA;NA;NA;No;Yes;Low
+118;568_5;Beverages;Vegetable juice;commercial, sold refrigerated;Vegetable juice,commercial,refrigerated,vegetable;NA;NA;Yes;30;NA;NA;No;Yes;Medium
+119;569_5;Beverages;Vegetable juice;homemade;Vegetable juice,juices,homemade,vegetable;NA;NA;Yes;NA;5;NA;No;Yes;Medium
+120;660_5;Beverages;Coconut water;NA;coconut water,coconut,water;360;NA;Yes;NA;2;NA;No;Yes;Medium
+121;662_5;Beverages;Apple cider;fresh;apple cider,apple,cider;3;NA;Yes;21;NA;NA;No;Yes;Medium
+122;663_5;Beverages;Yuzu juice;NA;yuzu juice,yuzu,juice;180;NA;Yes;360;120;NA;No;Yes;Low
+123;664_5;Beverages;Yuzu;fruit, fresh;yuzu,yuzu fruit;NA;NA;Yes;7;NA;Store fresh yuzu wrapped in plastic in your refrigerator.  ;No;Yes;Medium
+124;340_6;Condiments, Sauces & Canned Goods;Barbecue sauce;bottled;Barbecue sauce,sauce,bottled,Barbecue;365;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial barbecue sauce is safe when stored at room temperature after opening. Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;Yes;NA;120;NA;No;No;Low
+125;341_6;Condiments, Sauces & Canned Goods;Chutney;NA;Chutney;365;NA;Yes;NA;60;NA;No;No;Low
+126;342_6;Condiments, Sauces & Canned Goods;Cream sauces, milk solids;NA;Cream sauces,milk solids,sauce,solids,cream,sauces,milk,solid;360;NA;No;NA;NA;NA;No;No;Low
+127;343_6;Condiments, Sauces & Canned Goods;Dry gravy mixes;NA;Dry gravy mixes,gravy,mixes,mix,dry;730;NA;Yes;2;NA;Refrigeration time applies to prepared product.;No;No;High
+128;344_6;Condiments, Sauces & Canned Goods;Gravy;jars and cans;Gravy,jars,cans,jar,can;1825;NA;Yes;NA;2;NA;No;No;High
+129;345_6;Condiments, Sauces & Canned Goods;Honey;NA;Honey;730;NA;No;NA;NA;NA;No;No;Low
+130;346_6;Condiments, Sauces & Canned Goods;Horseradish;in jar;Horseradish,jar;NA;NA;Yes;360;120;NA;No;No;Low
+131;347_6;Condiments, Sauces & Canned Goods;Jams, jellies, and preserves;NA;Jams,jellies,preserves,jam,jelly,preserve;540;NA;Yes;NA;360;NA;No;No;Low
+132;348_6;Condiments, Sauces & Canned Goods;Ketchup, cocktail, or chili sauce;NA;Ketchup,cocktail,chili sauce,sauce,chili;365;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial ketchup, cocktail sauce, and chili sauce are safe when stored at room temperature after opening. Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;Yes;NA;180;NA;No;No;Low
+133;349_6;Condiments, Sauces & Canned Goods;Marinades;NA;Marinades,marinade;365;NA;Yes;NA;180;NA;No;No;Low
+134;350_6;Condiments, Sauces & Canned Goods;Mayonnaise;commercial;Mayonnaise,commercial;180;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial mayonnaise is safe when stored at room temperature after opening.  Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;Yes;NA;60;NA;No;No;Low
+135;351_6;Condiments, Sauces & Canned Goods;Mustard;NA;Mustard;730;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial mustard is safe when stored at room temperature after opening. Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;Yes;NA;365;NA;No;No;Low
+136;352_6;Condiments, Sauces & Canned Goods;Olives;black and green;Olives,black,green,olive;540;NA;Yes;NA;14;NA;No;No;High
+137;353_6;Condiments, Sauces & Canned Goods;Pickles;NA;Pickles,pickle;365;NA;Yes;NA;90;NA;No;No;Low
+138;354_6;Condiments, Sauces & Canned Goods;Pesto;jarred;Pesto,jarred,jar;NA;NA;Yes;180;3;NA;No;No;High
+139;356_6;Condiments, Sauces & Canned Goods;Salad dressings;commercial, bottled;Salad dressings,dressings,dressing,commercial,bottled,bottle,salad;360;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial salad dressing is safe when stored at room temperature after opening. Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;Yes;NA;90;NA;No;No;Low
+140;357_6;Condiments, Sauces & Canned Goods;Salsa;picante and taco sauces;Salsa,picante,taco sauces,taco,sauces,sauce;365;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial salsa is safe when stored at room temperature after opening. Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;Yes;NA;30;NA;No;No;Medium
+141;358_6;Condiments, Sauces & Canned Goods;Sauce mixes;nondairy (spaghetti, taco, etc.);Sauce mixes,sauce,mixes,mix,nondairy,dairy,spaghetti,taco;730;NA;No;NA;NA;NA;No;No;Low
+142;359_6;Condiments, Sauces & Canned Goods;Spaghetti sauce;in jars;Spaghetti sauce,sauce,in jars,jars,jar,spaghetti;540;NA;Yes;NA;4;NA;No;No;High
+143;360_6;Condiments, Sauces & Canned Goods;Soy sauce or teriyaki sauce;NA;Soy sauce,teriyaki sauce,sauce,soy,teriyaki;1095;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial soy sauce and teriyaki sauce are safe when stored at room temperature after opening. Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;Yes;NA;30;NA;No;No;Medium
+144;361_6;Condiments, Sauces & Canned Goods;Vinegar;NA;Vinegar;730;NA;No;NA;NA;NA;No;No;Low
+145;362_6;Condiments, Sauces & Canned Goods;Worcestershire sauce;NA;Worcestershire sauce,Worcestershire,sauce;365;Refrigeration ensures that commercial sauces and condiments stay fresh for a longer period of time. Shelf-stable commercial worcestershire sauce is safe when stored at room temperature after opening. Quality, not safety, is the reason the labels on these products suggest that they be refrigerated after opening.;No;NA;NA;NA;No;No;Low
+146;416_6;Condiments, Sauces & Canned Goods;Tahini;NA;Tahini;365;NA;Yes;NA;21;NA;No;No;Medium
+147;433_6;Condiments, Sauces & Canned Goods;Black bean sauce;NA;Black bean sauce,sauce,bean,black,black bean,bean sauce;720;NA;Yes;NA;180;NA;No;No;Low
+148;434_6;Condiments, Sauces & Canned Goods;Oyster sauce;NA;Oyster sauce,oyster,sauce;720;NA;Yes;NA;180;NA;No;No;Low
+149;435_6;Condiments, Sauces & Canned Goods;Hoisin sauce;NA;Hoisin sauce,sauce,Hoisin;720;NA;Yes;NA;180;NA;No;No;Low
+150;484_6;Condiments, Sauces & Canned Goods;Broth;homemade;Broth,homemade;NA;NA;Yes;4;NA;NA;No;No;High
+151;485_6;Condiments, Sauces & Canned Goods;Beef broth/stock/consommé ;commercially produced;Beef broth, beef stock,beef consommé,consommé,commercially produced;1;Bouillon cubes will keep their best quality 1 year. The reconstituted broth lasts 3-4 days in the refrigerator.;Yes;7;4;NA;No;No;High
+152;486_6;Condiments, Sauces & Canned Goods;Chicken broth/stock/consommé ;commercially produced;Chicken broth,chicken stock,consommé,commercially produced;1;Bouillon cubes will keep their best quality 1 year. The reconstituted broth lasts 3-4 days in the refrigerator.;Yes;7;4;NA;No;No;High
+153;487_6;Condiments, Sauces & Canned Goods;Vegetable stock/broth ;commercially produced;Vegetable stock,Vegetable broth,broth,commercial vegetable stock,commercial vegetable broth,vegetable;1;Bouillon cubes will keep their best quality 1 year. The reconstituted broth lasts 3-4 days in the refrigerator.;Yes;7;4;NA;No;No;High
+154;500_6;Condiments, Sauces & Canned Goods;Relish;NA;Relish;900;NA;Yes;270;NA;NA;No;No;Low
+155;524_6;Condiments, Sauces & Canned Goods;Duck fat;NA;Duck fat,duck;NA;NA;Yes;30;NA;NA;No;No;Medium
+156;525_6;Condiments, Sauces & Canned Goods;Bacon grease;NA;Bacon grease,bacon,grease;NA;NA;Yes;180;NA;NA;No;No;Low
+157;526_6;Condiments, Sauces & Canned Goods;Frying oil;re-used;Frying oil,re-used oil,oil;NA;NA;Yes;30;NA;NA;No;No;Medium
+158;557_6;Condiments, Sauces & Canned Goods;Apple cider vinegar;NA;Apple cider vinegar,Apple cider, vinegar,cider,apple;1;NA;No;NA;NA;NA;No;No;Low
+159;559_6;Condiments, Sauces & Canned Goods;Hot sauce;NA;Hot sauce,sauce;180;Will stay fresher longer if refrigerated.;No;NA;NA;NA;No;No;Low
+160;560_6;Condiments, Sauces & Canned Goods;Thai red curry paste;NA;Thai red curry paste,red curry paste,curry paste,paste,curry;730;NA;Yes;NA;5;NA;No;No;High
+161;565_6;Condiments, Sauces & Canned Goods;Cranberry sauce;canned;Cranberry sauce,sauce,canned;730;NA;Yes;NA;14;NA;No;No;High
+162;566_6;Condiments, Sauces & Canned Goods;Cranberry sauce;homemade;Cranberry sauce,sauce,homemade;NA;NA;Yes;10;NA;NA;No;No;High
+163;599_6;Condiments, Sauces & Canned Goods;Tomato sauce;spaghetti, pizza;Tomato sauce,sauce,spaghetti, pizza;1;Refrigerating unopened jars will NOT lengthen shelf life.;Yes;NA;5;NA;No;No;High
+164;623_6;Condiments, Sauces & Canned Goods;Salad dressing;creamy;creamy salad dressing,salad,dressing,salad dressing,creamy;180;NA;Yes;NA;28;NA;No;No;Medium
+165;624_6;Condiments, Sauces & Canned Goods;Salad dressing;vinaigrette,homemade;salad dressing,vinaigrette,salad,dressing,homemade;NA;NA;Yes;21;NA;NA;No;No;Medium
+166;625_6;Condiments, Sauces & Canned Goods;Salad dressing;vinaigrette;salad dressing,vinaigrette,salad,dressing;180;NA;Yes;NA;28;NA;No;No;Medium
+167;626_6;Condiments, Sauces & Canned Goods;Salad dressing;dry,packaged;salad dressing,salad,dressing,dry,packaged,package,powdered,powder;1;NA;Yes;NA;28;NA;No;No;Medium
+168;636_6;Condiments, Sauces & Canned Goods;Cooking wine;NA;cooking wine,wine,cooking;1;NA;Yes;0;NA;NA;No;No;High
+169;646_6;Condiments, Sauces & Canned Goods;Salsa;homemade, canned;homemade salsa,homemade,salsa;360;NA;No;NA;NA;NA;No;No;Low
+170;647_6;Condiments, Sauces & Canned Goods;Tomato Sauce;homemade, canned;homemade tomato sauce,homemade sauce,homemade spaghetti sauce,spaghetti sauce,tomato sauce,homemade;360;NA;No;NA;NA;NA;No;No;Low
+171;648_6;Condiments, Sauces & Canned Goods;Barbecue Sauce;homemade, canned;homemade barbecue sauce,homemade sauce,homemade BBQ sauce,BBQ sauce,barbecue sauce;360;NA;No;NA;NA;NA;No;No;Low
+172;669_6;Condiments, Sauces & Canned Goods;Balsamic vinegar;NA;balsamic vinegar,balsamic,vinegar;1825;NA;Yes;NA;540;NA;No;No;Low
+173;670_6;Condiments, Sauces & Canned Goods;Aioli;homemade;garlic aioli,aioli,garlic,mayonnaise,mayo,garlic mayo,garlic mayonnaise,mayo;NA;NA;Yes;4;NA;NA;No;No;High
+174;671_6;Condiments, Sauces & Canned Goods;Salad dressing;homemade;homemade salad dressing,homemade,salad dressing,salad,dressing;NA;NA;Yes;NA;14;NA;No;No;High
+175;673_6;Condiments, Sauces & Canned Goods;Anchovies;canned;anchovies,anchovy,canned anchovies;1825;NA;Yes;NA;4;NA;No;No;High
+176;1_7;Dairy Products & Eggs;Butter;NA;Butter;NA;May be left at room temperature for 1 - 2 days.;Yes;60;NA;NA;Yes;No;Low
+177;2_7;Dairy Products & Eggs;Buttermilk;NA;Buttermilk;NA;NA;Yes;14;NA;NA;Yes;No;Medium
+178;3_7;Dairy Products & Eggs;Cheese;hard such as cheddar, swiss, block parmesan;Cheese,cheddar, swiss,parmesan;NA;NA;Yes;180;28;NA;Yes;No;Medium
+179;4_7;Dairy Products & Eggs;Cheese;parmesan;;;;;;;;;;
+180;5_7;Dairy Products & Eggs;Cheese;shredded;;;;;;;;;;
+181;6_7;Dairy Products & Eggs;Cheese;processed slices;Cheese,processed slices,slices,slice;NA;NA;Yes;28;NA;NA;No;No;Medium
+182;7_7;Dairy Products & Eggs;Cheese;soft such as brie, bel paese, goat;Cheese,brie, bel paese, goat;NA;NA;Yes;14;NA;NA;Yes;No;Medium
+183;8_7;Dairy Products & Eggs;Coffee creamer;liquid refrigerated;Coffee creamer,Coffee, creamer,liquid refrigerated;NA;NA;Yes;21;NA;NA;No;No;Medium
+184;9_7;Dairy Products & Eggs;Cottage cheese;NA;Cottage cheese,cheese;NA;NA;Yes;14;7;NA;No;No;High
+185;10_7;Dairy Products & Eggs;Cream cheese;NA;NA;NA;NA;Yes;14;NA;NA;No;No;High
+186;11_7;Dairy Products & Eggs;Cream;whipping, ultrapasteurized;Cream,whipping,ultrapasteurized;NA;NA;Yes;30;7;NA;No;No;High
+187;12_7;Dairy Products & Eggs;Cream;whipped, sweetened;Cream,whipped, sweetened;NA;NA;Yes;1;NA;NA;No;No;High
+188;13_7;Dairy Products & Eggs;Cream;half and half;Cream,half;NA;NA;Yes;4;NA;NA;Yes;No;Medium
+189;14_7;Dairy Products & Eggs;Cream;heavy;Cream,heavy;NA;NA;Yes;10;NA;NA;Yes;No;Medium
+190;15_7;Dairy Products & Eggs;Cream;light;Cream,light;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+191;16_7;Dairy Products & Eggs;Dips;sour cream based;Dips,sour cream based,sour,cream based,cream,dip;NA;NA;Yes;14;NA;NA;No;No;High
+192;17_7;Dairy Products & Eggs;Egg substitutes;liquid;Egg substitutes,liquid,egg,substitutes,substitute;NA;NA;Yes;7;3;NA;No;No;High
+193;20_7;Dairy Products & Eggs;Eggnog;commercial;Eggnog,commercial,egg,nog;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+194;21_7;Dairy Products & Eggs;Eggs;in shell;Eggs,in shell,egg,shell;NA;NA;Yes;35;NA;NA;No;No;Low
+195;22_7;Dairy Products & Eggs;Eggs;raw whites, yolks;Eggs,raw whites, yolks,egg,whites;NA;NA;Yes;4;NA;NA;No;No;High
+196;23_7;Dairy Products & Eggs;Eggs;hard boiled cooked;Eggs,egg,hard boiled cooked,boiled,hard boiled;NA;NA;Yes;7;NA;NA;No;No;High
+197;24_7;Dairy Products & Eggs;Egg dishes;NA;Egg dishes,egg,dishes;NA;NA;Yes;4;NA;NA;No;No;High
+198;25_7;Dairy Products & Eggs;Kefir;fermented milk;Kefir,fermented milk,milk,fermented;NA;NA;Yes;7;2;NA;No;No;High
+199;26_7;Dairy Products & Eggs;Margarine;NA;Margarine;NA;NA;Yes;180;NA;NA;Yes;No;Low
+200;27_7;Dairy Products & Eggs;Milk;plain or flavored;Milk,plain,flavored,flavor;NA;NA;Yes;0;NA;NA;Yes;No;Medium
+201;28_7;Dairy Products & Eggs;Pudding;NA;Pudding;NA;NA;Yes;0;2;NA;No;No;High
+202;29_7;Dairy Products & Eggs;Sour cream;NA;Sour cream,cream,sour;NA;NA;Yes;0;NA;NA;No;No;High
+203;30_7;Dairy Products & Eggs;Whipped cream;aerosol can;Whipped cream,cream,aerosol can,can;NA;NA;Yes;28;NA;NA;No;No;Medium
+204;31_7;Dairy Products & Eggs;Whipped topping;aerosol can;Whipped topping,topping,aerosol can,can,whipped;NA;NA;Yes;90;NA;NA;No;No;Low
+205;32_7;Dairy Products & Eggs;Whipped topping;tub;Whipped topping,topping,tub,whipped;NA;NA;Yes;14;NA;NA;No;No;High
+206;33_7;Dairy Products & Eggs;Yogurt;NA;Yogurt;NA;NA;Yes;14;NA;NA;No;No;High
+207;421_7;Dairy Products & Eggs;Soy milk;NA;Soy milk,soy,milk;NA;NA;Yes;0;10;Keep refrigerated.;No;No;High
+208;427_7;Dairy Products & Eggs;Almond milk;NA;Almond milk,milk,almond;NA;NA;Yes;0;10;Keep refrigerated.;No;No;High
+209;428_7;Dairy Products & Eggs;Rice milk;NA;Rice milk,rice,milk;NA;NA;Yes;0;10;Keep refrigerated.;No;No;High
+210;429_7;Dairy Products & Eggs;Coconut milk;NA;Coconut milk,coconut,milk;NA;NA;Yes;0;10;Keep refrigerated.;No;No;High
+211;430_7;Dairy Products & Eggs;Coffee creamer;powdered;Coffee creamer,creamer,cream,coffee,powdered,powder;730;Store in a dry, cool environment;No;NA;NA;NA;No;No;Low
+212;465_7;Dairy Products & Eggs;Powdered milk;NA;Powdered milk,Powdered,milk,powder;1825;3 - 5 year timetable based on cool temperatures, dark storage. May spoil as quickly as 3 months in hot temperatures.;No;NA;NA;NA;No;No;Low
+213;477_7;Dairy Products & Eggs;Nacho cheese ;store bought;Nacho cheese,nacho,cheese,store bought,store;730;NA;Yes;NA;14;NA;Yes;No;Medium
+214;490_7;Dairy Products & Eggs;Ricotta;NA;Ricotta;NA;NA;Yes;14;7;NA;No;No;High
+215;543_7;Dairy Products & Eggs;Milk;lactose-free;Milk,lactose,lactose-free;NA;NA;Yes;NA;7;NA;No;No;High
+216;544_7;Dairy Products & Eggs;String Cheese;NA;String Cheese,cheese;NA;NA;Yes;150;NA;NA;No;No;Low
+217;545_7;Dairy Products & Eggs;Vegan Cheddar Cheese;NA;Vegan Cheddar Cheese,cheese,cheddar;NA;NA;Yes;120;7;NA;No;No;High
+218;546_7;Dairy Products & Eggs;Quark;fresh cheese;Quark,fresh cheese,cheese;NA;NA;Yes;10;NA;NA;No;No;High
+219;620_7;Dairy Products & Eggs;Pimento cheese;packaged;pimento cheese,pimento,cheese;NA;NA;Yes;0;28;NA;No;No;High
+220;628_7;Dairy Products & Eggs;Cheese Curds;fresh, unaged;cheese curd,cheese,curd,curds,cheese curds;NA;NA;Yes;14;NA;NA;No;No;High
+221;649_7;Dairy Products & Eggs;Ghee;NA;ghee,clarified butter,clarified,butter;240;NA;Yes;730;NA;NA;No;No;Low
+222;309_8;Food Purchased Frozen;Dough;commercial (bread or cookie);Dough,commercial,bread,cookie;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+223;310_8;Food Purchased Frozen;Egg substitutes;NA;Egg substitutes,egg,substitute,Egg substitute;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+224;311_8;Food Purchased Frozen;Fish;breaded;Fish,breaded,bread;NA;NA;Yes;0;NA;Not recommended to refrigerate after cooking due to decreased quality.;Yes;Yes;Medium
+225;312_8;Food Purchased Frozen;Fish;raw but headed and gutted;Fish,raw,headed,gutted;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+226;313_8;Food Purchased Frozen;Frozen potato products;fries, hashbrowns, tater tots;Frozen potato products,fries,hashbrowns,tater tots,potato products,products,product,frozen potato,hashbrown,tater tot;NA;NA;Yes;0;NA;Not recommended to refrigerate after cooking due to decreased quality.;Yes;Yes;Medium
+227;314_8;Food Purchased Frozen;Frozen pretzels;NA;Frozen pretzels,frozen,pretzels,pretzel;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+228;315_8;Food Purchased Frozen;Fruits;such as berries, melons;Fruits,berries,melons,berry,melon;NA;NA;No;NA;NA;Thawing in the refrigerator is not recommended.;Yes;Yes;Low
+229;317_8;Food Purchased Frozen;Ice cream;NA;Ice cream,ice,cream;NA;NA;No;NA;NA;NA;Yes;Yes;Low
+230;318_8;Food Purchased Frozen;Ice pops;NA;Ice pops,ice,pops,pop;NA;NA;No;NA;NA;NA;Yes;Yes;Low
+231;319_8;Food Purchased Frozen;Juice concentrates;NA;Juice concentrates,juice,concentrate;NA;NA;No;NA;NA;NA;Yes;Yes;Low
+232;320_8;Food Purchased Frozen;Lobster tails;NA;Lobster tails,tail,lobster,Lobster tail;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+233;321_8;Food Purchased Frozen;Pancakes, waffles;NA;Pancakes,waffles,pancake;NA;NA;Yes;0;NA;Not recommended to refrigerate after cooking due to decreased quality.;Yes;Yes;Medium
+234;322_8;Food Purchased Frozen;Sausages;uncooked;Sausages,Sausage,uncooked,cooked;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+235;323_8;Food Purchased Frozen;Sausages;precooked;Sausages,Sausage,precooked,cooked;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+236;324_8;Food Purchased Frozen;Sherbet, sorbet;NA;Sherbet,sorbet;NA;NA;Yes;0;NA;Not recommended to refrigerate after cooking due to decreased quality.;Yes;Yes;Medium
+237;325_8;Food Purchased Frozen;Shrimp, shellfish;NA;Shrimp,shellfish,fish;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+238;326_8;Food Purchased Frozen;Soy crumbles and hot dogs;NA;Soy crumbles,hot dogs,hot dog,soy,soy crumble;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+239;327_8;Food Purchased Frozen;Soy meat substitutes;NA;Soy meat substitutes,soy,meat,soy meat,meat substitutes,substitutes,substitute;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+240;328_8;Food Purchased Frozen;Tempeh;NA;Tempeh;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+241;330_8;Food Purchased Frozen;Frozen entrees;prepared meals;TV dinners,entrees,breakfast,dinners,dinner,entry,TV;NA;NA;Yes;0;NA;Not recommended to refrigerate after cooking due to decreased quality.;Yes;Yes;Medium
+242;331_8;Food Purchased Frozen;Vegetables;NA;Vegetables,vegetable;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;Yes;Yes;Medium
+243;571_8;Food Purchased Frozen;Pizza;frozen;Pizza,frozen;NA;NA;Yes;4;NA;Recommendation is for storage after cooking.;No;Yes;Medium
+244;641_8;Food Purchased Frozen;Edamame;frozen;edamame,frozen,frozen edamame,soybean,soybeans;NA;NA;No;NA;NA;NA;Yes;Yes;Low
+245;657_8;Food Purchased Frozen;Polenta;frozen;polenta,frozen,frozen polenta;NA;NA;No;NA;NA;NA;No;Yes;Low
+246;666_8;Food Purchased Frozen;Kugel;commercial;kugel,commercial,commercial kugel;NA;NA;No;NA;NA;NA;No;Yes;Low
+247;196_9;Grains, Beans & Pasta;Tortillas;flour;Tortillas,Tortilla;90;NA;Yes;NA;90;NA;Yes;Yes;Low
+248;332_9;Grains, Beans & Pasta;Fresh pasta;NA;Fresh pasta,pasta;NA;NA;Yes;2;NA;NA;No;Yes;Medium
+249;333_9;Grains, Beans & Pasta;Beans;dried;Beans,dried;730;NA;No;NA;NA;NA;No;Yes;Low
+250;334_9;Grains, Beans & Pasta;Lentils;dried;Lentils,dried;365;NA;No;NA;NA;NA;No;Yes;Low
+251;335_9;Grains, Beans & Pasta;Pasta;dry, without eggs;Pasta,dry,eggs,egg,without egg,without eggs;730;NA;No;NA;NA;NA;No;Yes;Low
+252;336_9;Grains, Beans & Pasta;Dry egg noodles;NA;Dry egg noodles,egg noodles,egg,noodles,noodle,dry;730;NA;No;NA;NA;NA;No;Yes;Low
+253;337_9;Grains, Beans & Pasta;Peas;dried split;Peas,Pea,dried split,split;365;NA;No;NA;NA;NA;No;Yes;Low
+254;338_9;Grains, Beans & Pasta;Rice;white or wild;Rice,white,wild;730;NA;Yes;NA;180;NA;No;Yes;Low
+255;339_9;Grains, Beans & Pasta;Rice;brown;Rice,brown;365;NA;Yes;NA;180;NA;No;Yes;Low
+256;425_9;Grains, Beans & Pasta;Quinoa;uncooked;Quinoa,cooked,uncooked,cook;1095;NA;No;NA;NA;NA;No;Yes;Low
+257;426_9;Grains, Beans & Pasta;Quinoa;cooked;Quinoa,cook,cooked;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+258;460_9;Grains, Beans & Pasta;Whole wheat bread;homemade;Whole wheat bread,Whole,wheat,bread,homemade,whole wheat,wheat bread;5;May have shorter shelf life due to lack of preservatives.;No;NA;NA;Refrigeration not recommended - bread will quickly dry out and become stale.;No;Yes;Low
+259;461_9;Grains, Beans & Pasta;Whole wheat bread;commercially baked & pre-sliced;Whole wheat flour,Whole,wheat,flour,wheat flour,whole wheat,commercially baked,pre sliced,sliced,slice,baked,commercially,commercial;5;NA;No;NA;NA;Refrigeration not recommended - bread will quickly dry out and become stale.;No;Yes;Low
+260;498_9;Grains, Beans & Pasta;Peanuts ;boiled, shelled;Peanuts,boiled, shelled,peanut;1095;NA;Yes;NA;7;NA;No;Yes;Medium
+261;499_9;Grains, Beans & Pasta;Refried beans;NA;Refried beans,refried bean;1095;NA;Yes;NA;3;NA;No;Yes;Medium
+262;553_9;Grains, Beans & Pasta;Tortillas;corn;Tortillas,corn;45;NA;Yes;90;NA;NA;No;Yes;Low
+263;575_9;Grains, Beans & Pasta;Amaranth;whole grain;Amaranth,whole grain,grain;120;NA;No;NA;NA;NA;No;Yes;Low
+264;577_9;Grains, Beans & Pasta;Barley;whole grain;Barley,whole grain,grain;180;NA;No;NA;NA;NA;No;Yes;Low
+265;579_9;Grains, Beans & Pasta;Buckwheat;whole grain;Buckwheat,whole grain,grain;60;NA;No;NA;NA;NA;No;Yes;Low
+266;581_9;Grains, Beans & Pasta;Farro;whole grain;Farro,whole grain,grain;180;Benefits from being stored in airtight containers and out of direct light.;No;NA;NA;NA;No;Yes;Low
+267;583_9;Grains, Beans & Pasta;Millet;whole grain;Millet,whole grain,grain;60;NA;No;NA;NA;NA;No;Yes;Low
+268;585_9;Grains, Beans & Pasta;Oats;whole grain;Oat,Oats,whole grain,grain;120;NA;No;NA;NA;NA;No;Yes;Low
+269;587_9;Grains, Beans & Pasta;Rye;whole grain;Rye,whole grain,grain;180;NA;No;NA;NA;NA;No;Yes;Low
+270;589_9;Grains, Beans & Pasta;Sorghum;whole grain;Sorghum,whole grain,grain;120;NA;No;NA;NA;NA;No;Yes;Low
+271;591_9;Grains, Beans & Pasta;Spelt;whole grain;Spelt,whole grain,grain;180;NA;No;NA;NA;NA;No;Yes;Low
+272;593_9;Grains, Beans & Pasta;Teff;whole grain;Teff,whole grain,grain;120;NA;No;NA;NA;NA;No;Yes;Low
+273;637_9;Grains, Beans & Pasta;Bulgur;NA;bulgur;360;NA;No;NA;NA;NA;No;Yes;Low
+274;679_9;Grains, Beans & Pasta;Mung bean;sprouts;sprouted mung beans,sprouted mung bean,sprout,mung beans,mung bean,mung,bean,mungbean,sprouts;NA;NA;Yes;42;NA;Never refrigerate wet sprouts. Transfer to a plastic bag or use a glass or plastic container. ;No;Yes;Low
+275;680_9;Grains, Beans & Pasta;Mung bean;dry, food-grade bags;mung beans,mung bean,mung,bean,dry mung beans,dry,bag,bagged mung beans;365;Keep the beans in an airtight container as it’s imperative that they remain dry.;Yes;365;NA;NA;No;Yes;Low
+276;681_9;Grains, Beans & Pasta;Mung bean;dry, vacuum-sealed;mung beans,mung bean,mung,bean,dry mung beans,dry,vacuum sealed,vacuum sealed mung beans;3650;NA;No;NA;NA;NA;No;Yes;Low
+277;34_10;Meat;Beef;rib roast, bone-in;Beef,rib roast,bone-in,roast,bone,rib;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+278;35_10;Meat;Beef;rib roast;;;;;;;;;;
+279;36_10;Meat;Beef;round or rump roast;Beef,round,rump roast,roast;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+280;37_10;Meat;Beef;tenderloin, whole;Beef,tenderloin,whole;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+281;38_10;Meat;Beef;tenderloin, half;Beef,tenderloin,half;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+282;39_10;Meat;Beef;chuck roast, brisket;Beef,chuck roast,roast,brisket;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+283;40_10;Meat;Beef;steaks;Beef,steaks,steak;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+284;41_10;Meat;Beef;stew, cubes;Beef,stew, cubes,cube;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+285;42_10;Meat;Beef;short ribs;Beef,short ribs,ribs,rib;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+286;43_10;Meat;Beef;ground;Beef,ground;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+287;44_10;Meat;Lamb;leg, bone-in - small;Lamb,leg,bone-in - small,bone-in,bone;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+288;45_10;Meat;Lamb;leg, bone-in - large;Lamb,leg,bone-in - large,bone-in,bone;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+289;46_10;Meat;Lamb;leg;;;;;;;;;;
+290;47_10;Meat;Lamb;crown roast;Lamb,crown roast,roast;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+291;48_10;Meat;Lamb;shoulder roast or shank leg half;Lamb,shoulder roast,roast,shoulder,shank leg half,half,shank,shank leg,leg;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+292;49_10;Meat;Lamb;cubes for kabobs;Lamb,cubes,kabobs,cube,kabob;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+293;50_10;Meat;Lamb;ground;Lamb,ground;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+294;51_10;Meat;Lamb;chops, ribs, or loin;Lamb,chops,ribs,loin,rib;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+295;52_10;Meat;Lamb;leg steaks;Lamb,leg steaks,steaks,steak,leg;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+296;53_10;Meat;Lamb;stew meat, pieces;Lamb,stew,pieces,stew meat,meat,piece;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+297;54_10;Meat;Lamb;shanks;Lamb,shanks,shank;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+298;55_10;Meat;Lamb;breast, rolled;Lamb,breast,rolled;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+299;56_10;Meat;Veal;shoulder roast, boneless;Veal,shoulder,boneless,shoulder roast,roast;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+300;57_10;Meat;Veal;leg rump or round roast, boneless;Veal,leg rump,rump,leg,round,round roast,roast,boneless;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+301;58_10;Meat;Veal;loin roast, bone-in;Veal,loin roast,bone-in,roast,bone,loin;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+302;59_10;Meat;Veal;ground;Veal,ground;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+303;60_10;Meat;Pork;loin roast, bone-in;Pork,loin roast,bone-in,roast,bone,loin;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+304;61_10;Meat;Pork;loin roast, boneless;Pork,loin,boneless,loin roast,roast;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+305;63_10;Meat;Pork;loin chops, bone-in;Pork,loin chops,bone-in,chops,bone,loin;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+306;64_10;Meat;Pork;loin chops, boneless;Pork,loin,boneless,loin chops,chops;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+307;65_10;Meat;Pork;crown roast - small;Pork,roast,crown,crown roast - small,small,crown roast;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+308;66_10;Meat;Pork;crown roast - large;Pork,roast,crown,crown roast - large,large,crown roast;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+309;67_10;Meat;Pork;tenderloin;Pork,tenderloin;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+310;69_10;Meat;Pork;tenderloin medallions or loin cubes;Pork,tenderloin,tenderloin medallions,loin cubes,medallion,loin cube,loin,medallions,cube,cubes;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+311;70_10;Meat;Goat;tender whole cuts (legs, ribs, shoulder, loin);Goat,tender whole cuts,legs,ribs,shoulder,loin,tender,whole cuts,leg,rib;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+312;71_10;Meat;Goat;less tender whole cuts (stew meat, riblets, shanks);Goat,less tender whole cuts,stew meat,stew,meat,riblets,shanks,whole cuts,tender,less tender;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+313;72_10;Meat;Pork;ribs;Pork,ribs,rib;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+314;73_10;Meat;Pork;ground;Pork,ground;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+315;74_10;Meat;Pork;shoulder;Pork,shoulder;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+316;75_10;Meat;Pork;loin, cubes;Pork,loin,cubes,cube;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+317;76_10;Meat;Venison;round, rump, loin, or rib roast;Venison,rump,round,loin,rib,rib roast,roast;NA;NA;Yes;5;NA;NA;Yes;No;Medium
+318;77_10;Meat;Variety meats;liver, tongue, chitterlings, etc.;Variety meats,liver,tongue,chitterlings,meats,meat,chitterling;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+319;78_10;Meat;Goat;ground;Goat,ground;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+320;595_10;Meat;Rabbit;whole, fresh;Rabbit,whole, fresh;NA;NA;Yes;2;NA;NA;No;No;High
+321;621_10;Meat;Bison;whole;bison whole,bison,whole;NA;NA;Yes;5;NA;NA;No;No;High
+322;622_10;Meat;Bison;ground;ground bison,bison,ground;NA;NA;Yes;2;NA;NA;No;No;High
+323;630_10;Meat;Chorizo;fresh;fresh chorizo,chorizo;NA;NA;Yes;2;NA;NA;No;No;High
+324;638_10;Meat;Bratwurst;fresh;fresh brautwurst,brautwurst,fresh;NA;NA;Yes;3;NA;NA;No;No;High
+325;677_10;Meat;Ham ;uncured, fresh, uncooked;ham,uncured,fresh,uncooked,uncured ham,uncured ham uncooked;NA;NA;Yes;5;NA;NA;No;No;High
+326;107_11;Meat;Bacon;fully cooked;Bacon,fully cooked,cooked;180;NA;Yes;NA;14;NA;No;No;High
+327;108_11;Meat;Ham;shelf-stable cans;Ham,shelf stable cans,cans,shelf stable,shelf,stable,can;270;NA;Yes;NA;14;NA;No;No;High
+328;109_11;Meat;Jerky;commercially dried;Jerky,commercially dried,dried;360;NA;Yes;NA;90;NA;No;No;Low
+329;110_11;Meat;Jerky;homemade;Jerky,homemade;60;NA;Yes;60;NA;NA;No;No;Low
+330;111_11;Meat;Meat products;canned;Meat products,products,canned,meat,product;1825;NA;Yes;NA;4;NA;No;No;High
+331;112_11;Meat;Retort pouches or boxes;NA;Retort pouches,boxes,box,retort,pouch;NA;NA;Yes;NA;4;NA;No;No;High
+332;79_12;Meat;Bacon;NA;Bacon;NA;NA;Yes;7;7;NA;Yes;No;Medium
+333;81_12;Meat;Corned beef;in pouch with pickling juices;Corned beef,pouch,pickling juices,juices,juice;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+334;82_12;Meat;Ham;canned (“keep refrigerated” label);Ham,canned,keep refrigerated,label,refrigerated;NA;NA;Yes;270;NA;NA;No;No;Low
+335;83_12;Meat;Ham;fully cooked, bone-in, whole;Ham,fully cooked,bone-in,whole,cooked,bone;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+336;84_12;Meat;Ham;fully cooked, bone-in, half;Ham,fully cooked,bone-in,half,cooked,bone;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+337;85_12;Meat;Ham;fully cooked, slices, half, or spiral cut;Ham,fully cooked,slices,half,spiral cut,cooked,slice;NA;NA;Yes;4;NA;NA;Yes;No;Medium
+338;86_12;Meat;Ham;fully cooked, arm picnic shoulder, boneless;Ham,fully cooked,cooked,arm picnic shoulder,boneless,shoulder,arm picnic;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+339;87_12;Meat;Ham;fully cooked, canned, boneless (refrigerated);Ham,fully cooked,cooked,canned,boneless,refrigerated;NA;NA;Yes;270;5;NA;Yes;No;Medium
+340;88_12;Meat;Ham;fully cooked, vacuum packed, boneless;Ham,fully cooked,cooked,vacuum packed,boneless;NA;NA;Yes;14;NA;NA;Yes;No;Medium
+341;89_12;Meat;Ham;fresh, cook-before-eating, bone-in, whole;Ham,fresh,cook-before-eating,bone-in,whole,bone;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+342;90_12;Meat;Ham;fresh, cook-before-eating, bone-in, half;Ham,fresh,cook-before-eating,bone-in,half,bone;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+343;91_12;Meat;Ham;fresh, cook-before-eating, shank or butt portion, bone-in;Ham,fresh,cook-before-eating,shank,butt portion,bone-in,bone;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+344;92_12;Meat;Ham;fresh, cook-before-eating, arm picnic shoulder, boneless;Ham,fresh,cook-before-eating,before-eating,arm picnic shoulder,boneless,arm picnic,shoulder;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+345;93_12;Meat;Ham;fresh, cook-before-eating, shoulder roll (butt), boneless;Ham,fresh,cook-before-eating,before-eating,shoulder roll,butt,boneless,roll;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+346;94_12;Meat;Ham;fresh, uncooked, whole leg, bone-in;Ham,fresh,uncooked,whole leg,bone-in,cooked,leg,bone;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+347;95_12;Meat;Ham;fresh, uncooked, whole leg, boneless;Ham,fresh,uncooked,whole leg,boneless,cooked,leg,bone;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+348;96_12;Meat;Ham;fresh, uncooked, half leg, bone-in;Ham,fresh,uncooked,half leg,bone-in,bone,leg,cooked;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+349;97_12;Meat;Ham;country ham (whole or half);Ham,country ham,whole,half;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+350;98_12;Meat;Hot dogs;NA;Hot dogs,hot;NA;NA;Yes;14;7;NA;Yes;No;Medium
+351;102_12;Meat;Sausage;raw bulk type or patties;Sausage,raw bulk type,patties,raw,patty;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+352;103_12;Meat;Sausage;fully cooked smoked links, kielbasa;Sausage,fully cooked smoked links,kielbasa,smoked links,links,fully cooked,link;NA;NA;Yes;7;NA;NA;Yes;No;Medium
+353;104_12;Meat;Sausage;hard, dry (pepperoni), sliced;Sausage,hard,dry,pepperoni,sliced,slice,dry pepperoni;NA;NA;Yes;21;NA;NA;Yes;No;Medium
+354;436_12;Meat;Pork roll;NA;Pork roll,Pork,roll;NA;NA;Yes;0;7;Keep refrigerated.;No;No;High
+355;563_12;Meat;Pate;meat ;Pate,meat;NA;NA;Yes;7;NA;Left over pâtés should be wrapped in plastic film.;No;No;High
+356;631_12;Meat;Chorizo;smoked and processed, uncooked;smoked chorizo,chorizo,processed chorizo,smoked,processed,uncooked,uncooked processed chorizo,uncooked smoked chorizo;NA;NA;Yes;7;NA;NA;No;No;High
+357;632_12;Meat;Chorizo;smoked and processed, cooked;smoked chorizo,chorizo,processed chorizo,smoked,processed,cooked,cooked processed chorizo,cooked smoked chorizo;365;NA;Yes;NA;30;NA;No;No;Medium
+358;639_12;Meat;Bratwurst;smoked and processed;smoked brautwurst,processed brautwurst,bratwurst,smoked,processed;NA;NA;Yes;7;NA;NA;No;No;High
+359;665_12;Meat;Pastrami;NA;pastrami;NA;NA;Yes;40;NA;NA;No;No;Low
+360;675_12;Meat;Prosciutto;NA;prosciutto;NA;NA;Yes;90;NA;NA;No;No;Low
+361;676_12;Meat;Ham ;uncured, fresh, cooked;ham,uncured,fresh,cooked,uncured ham,fully cooked,fully cooked uncured ham;NA;NA;Yes;4;NA;NA;No;No;High
+362;683_12;Meat;Bacon;uncured;uncured bacon,nitrite-free bacon,natural bacon,uncured,nitrite-free,nitrite,natural,bacon;NA;NA;Yes;7;NA;NA;No;No;High
+363;105_13;Meat;Stuffed, raw pork chops;NA;Stuffed,raw pork chops,chops,raw pork,pork;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+364;106_13;Meat;Raw kabobs with vegetables;NA;Raw kabobs,vegetables,kabobs,kabob;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+365;134_14;Poultry;Chicken nuggets, patties;NA;Chicken nuggets, patties,chicken,nuggets,nugget,patty;NA;NA;No;NA;NA;NA;Yes;No;Low
+366;135_14;Poultry;Cooked poultry dishes;NA;Cooked poultry dishes,poultry dishes,poultry;NA;NA;Yes;4;NA;NA;No;No;High
+367;136_14;Poultry;Fried chicken;NA;Fried chicken,chicken;NA;NA;Yes;4;NA;NA;No;No;High
+368;141_14;Poultry;Rotisserie chicken;NA;Rotisserie chicken,chicken,Rotisserie;NA;NA;Yes;4;NA;NA;Yes;No;Medium
+369;431_14;Poultry;Turkey bacon;NA;Turkey bacon,turkey,bacon;NA;NA;Yes;14;7;Unopened.;Yes;No;Medium
+370;564_14;Poultry;Pate;poultry;Pate,poultry;NA;NA;Yes;7;NA;Left over pâtés should be wrapped in plastic film.;No;No;High
+371;113_15;Poultry;Chicken;whole;Chicken,whole;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+372;114_15;Poultry;Turkey;whole;Turkey,whole;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+373;115_15;Poultry;Ground turkey or chicken;NA;Ground turkey,chicken,turkey;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+374;116_15;Poultry;Chicken parts;breast halves, bone-in;Chicken parts,breast halves,bone-in,halves,bone,breast,chicken,half;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+375;117_15;Poultry;Chicken parts;breast halves, boneless;Chicken parts,breast halves,boneless,chicken,breast,halves,half,bone;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+376;118_15;Poultry;Chicken parts;legs or thighs;Chicken parts,legs,thighs,chicken,leg,thigh;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+377;119_15;Poultry;Turkey parts;breast halves, bone-in;Turkey parts,breast halves,bone-in,halves,bone,breast,half,turkey;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+378;120_15;Poultry;Turkey parts;breast halves, boneless;Turkey parts,breast,boneless,bone,turkey;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+379;121_15;Poultry;Turkey parts;legs or thighs;Turkey parts,legs,thighs,turkey,leg,thigh;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+380;123_15;Poultry;Duckling;domestic or wild, whole;Duckling,domestic,wild,whole;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+381;125_15;Poultry;Goose;domestic or wild, whole;Goose,domestic,wild,whole;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+382;126_15;Poultry;Pheasant;young, whole;Pheasant,young,whole;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+383;127_15;Poultry;Quail;whole;Quail,whole;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+384;128_15;Poultry;Capon;whole;Capon,whole;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+385;129_15;Poultry;Cornish Hens;whole;Cornish Hens,Hens,whole,Hen;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+386;130_15;Poultry;Giblets;NA;Giblets,giblet;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+387;142_16;Poultry;Canned chicken;NA;Canned chicken,chicken,canned,can;1825;NA;Yes;NA;4;NA;No;No;High
+388;143_16;Poultry;Retort pouches or boxes;NA;Retort pouches,boxes,box,retort,pouch;NA;NA;Yes;NA;4;NA;No;No;High
+389;131_17;Poultry;Stuffed, raw chicken breasts;NA;Stuffed,raw chicken breasts,breast,chicken,chicken breasts;NA;NA;Yes;2;NA;NA;No;No;High
+390;132_17;Poultry;Raw kabobs with vegetables;NA;Raw kabobs,vegetables,kabobs,kabob,vegetable;NA;NA;Yes;2;NA;NA;No;No;High
+391;133_17;Poultry;Turducken;NA;Turducken;NA;NA;Yes;0;NA;NA;Yes;No;Medium
+392;248_18;Produce;Apples;NA;Apples,apple;21;NA;Yes;42;NA;NA;No;Yes;Low
+393;249_18;Produce;Apricots;NA;Apricots,Apricot;1;Ripe is when this item is tender, fully developed and ready to eat.;Yes;5;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+394;250_18;Produce;Avocados;NA;Avocados,Avocado;1;Ripe is when this item is tender, fully developed and ready to eat.;Yes;4;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+395;251_18;Produce;Bananas;NA;Bananas,banana;1;Ripe is when this item is tender, fully developed and ready to eat.;Yes;3;NA;Timeline for refrigerator applies to ripe fruit;;;
+396;252_18;Produce;Berries;cherries, goose berries, lychee;Berries,berry,cherries,cherry,goose berries,goose berry,lychee,gooseberries;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+397;253_18;Produce;Berries;blackberries, boysenberries, currant;Berries,berry,blackberries,blackberry,boysenberries,boysenberry,currant;NA;NA;Yes;6;NA;NA;No;Yes;Medium
+398;254_18;Produce;Blueberries;NA;Blueberries,blueberry,berries,berry;NA;NA;Yes;14;NA;NA;No;Yes;Medium
+399;255_18;Produce;Cherimoya;NA;Cherimoya;1;Ripe is when this item is tender, fully developed and ready to eat.;Yes;4;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+400;256_18;Produce;Citrus fruit;lemon, lime, orange, grapefruit, tangerines, clementines;Citrus fruit,fruit,citrus,lemon,lime,orange,grape,grapefruit,tangerines,tangerine,clementines,clementine;10;NA;Yes;21;NA;NA;No;Yes;Medium
+401;257_18;Produce;Coconut;shredded;Coconut,shredded;365;Applies to unopened coconut.;Yes;NA;240;NA;No;Yes;Low
+402;258_18;Produce;Coconuts;fresh;Coconuts,Coconut,fresh;7;NA;Yes;21;NA;NA;No;Yes;Medium
+403;259_18;Produce;Cranberries;NA;Cranberries,cranberry;NA;NA;Yes;60;NA;NA;No;Yes;Low
+404;260_18;Produce;Dates;NA;Dates;60;NA;Yes;360;NA;NA;No;Yes;Low
+405;261_18;Produce;Grapes;NA;Grapes,grape;1;NA;Yes;7;NA;NA;No;Yes;Medium
+406;262_18;Produce;Guava;NA;Guava;1;Ripe is when this item is tender, fully developed and ready to eat. Note, these spoil quickly.;Yes;4;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+407;263_18;Produce;Kiwi fruit;NA;Kiwi fruit,kiwi,fruit;1;Ripe is when this item is tender, fully developed and ready to eat.;Yes;6;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+408;264_18;Produce;Melons;NA;Melons,melon;1;Until Ripe, then 7 days. Ripe is when this item is tender, fully developed and ready to eat.;Yes;14;4;NA;No;Yes;Medium
+409;265_18;Produce;Papaya, mango, feijoa, passionfruit, casaha melon;NA;Papaya,mango,feijoa,passionfruit,casaha melon,melon,fruit,passion;5;NA;Yes;7;NA;NA;No;Yes;Medium
+410;266_18;Produce;Peaches, nectarines, plums, pears, sapote;NA;Peaches,nectarines,plums,pears,sapote,peach,nectarine,plum,pear;1;Until Ripe, then 1-2 days. Ripe is when this item is tender, fully developed and ready to eat.;Yes;5;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+411;267_18;Produce;Pineapple;NA;Pineapple;1;Until Ripe, then 1-2 days. Ripe is when this item is tender, fully developed and ready to eat.;Yes;7;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+412;268_18;Produce;Plantains;NA;Plantains,plantain;1;Until Ripe, then 1-2 days. Ripe is when this item is tender, fully developed and ready to eat.;Yes;5;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+413;269_18;Produce;Pomegranate;NA;Pomegranate;5;NA;Yes;90;NA;NA;No;Yes;Low
+414;414_18;Produce;Kumquats;NA;Kumquats;1;Ripe is when this item is tender, fully developed and ready to eat.;Yes;21;NA;Timeline for refrigerator applies to ripe fruit.;No;Yes;Medium
+415;478_18;Produce;Star fruit;NA;Star fruit,fruit,fruits;7;Or until ripe. Ripe is when this item is tender, fully developed and ready to eat.;Yes;14;NA;NA;No;Yes;Medium
+416;479_18;Produce;Prickly pear ;NA;Prickly pear,pear,pickle;5;Or until ripe. Ripe is when this item is tender, fully developed and ready to eat.;Yes;14;NA;NA;No;Yes;Medium
+417;480_18;Produce;Pitaya/dragon fruit;NA;Pitaya,dragon fruit,fruit,fruits;5;Or until ripe. Ripe is when this item is tender, fully developed and ready to eat.;Yes;21;NA;NA;No;Yes;Medium
+418;481_18;Produce;Strawberries;NA;Strawberries,strawberry;NA;NA;Yes;3;NA;NA;No;Yes;Medium
+419;482_18;Produce;Raspberries;NA;Raspberries,raspberry;NA;NA;Yes;3;NA;NA;No;Yes;Medium
+420;483_18;Produce;Cherries;NA;Cherries,cherry;NA;NA;Yes;3;NA;NA;No;Yes;Medium
+421;495_18;Produce;Watermelon;NA;Watermelon;2;Or until ripe.;Yes;4;NA;NA;No;Yes;Medium
+422;496_18;Produce;Cantaloupe;NA;Cantaloupe;4;Or until ripe.;Yes;15;NA;NA;No;Yes;Medium
+423;497_18;Produce;Honeydew;NA;Honeydew;7;NA;Yes;4;NA;NA;No;Yes;Medium
+424;562_18;Produce;Applesauce;homemade;Applesauce,homemade;NA;NA;Yes;21;NA;NA;No;Yes;Medium
+425;270_19;Produce;Artichokes, whole;NA;Artichokes,artichoke,whole;2;NA;Yes;14;NA;NA;No;Yes;Medium
+426;271_19;Produce;Asparagus;NA;Asparagus;NA;NA;Yes;4;NA;NA;Yes;Yes;Medium
+427;272_19;Produce;Bamboo shoots;NA;Bamboo shoots,bamboo,shoots,shoot;NA;NA;Yes;14;5;NA;No;Yes;Medium
+428;273_19;Produce;Beans and peas;green, fava, lima, soybean, wax, snow, sugar snap;Beans,peas,green,fava,lima,soybean,wax,snow,sugar snap,sugar,pea,soya;NA;NA;Yes;5;NA;NA;Yes;Yes;Medium
+429;274_19;Produce;Beets;NA;Beets;1;NA;Yes;14;NA;NA;Yes;Yes;Medium
+430;275_19;Produce;Bok choy;NA;Bok choy;NA;NA;Yes;3;NA;NA;Yes;Yes;Medium
+431;276_19;Produce;Broccoli and broccoli raab (rapini);NA;Broccoli,broccoli raab,rapini,raab;NA;NA;Yes;5;NA;NA;Yes;Yes;Medium
+432;277_19;Produce;Brussels sprouts;NA;Brussels sprouts,brussels,sprouts,sprout,brussel;NA;NA;Yes;5;NA;NA;Yes;Yes;Medium
+433;278_19;Produce;Cabbage;NA;Cabbage;NA;NA;Yes;14;NA;NA;Yes;Yes;Medium
+434;279_19;Produce;Carrots, parsnips;NA;Carrots,parsnips,carrot,parsnip;NA;NA;Yes;21;NA;NA;Yes;Yes;Medium
+435;280_19;Produce;Cauliflower;NA;Cauliflower;NA;NA;Yes;5;NA;NA;Yes;Yes;Medium
+436;281_19;Produce;Celery;NA;Celery;NA;NA;Yes;14;NA;NA;Yes;Yes;Medium
+437;282_19;Produce;Corn on the cob;NA;Corn,cob;NA;NA;Yes;2;NA;NA;Yes;Yes;Medium
+438;283_19;Produce;Cucumbers;NA;Cucumbers,cucumber;NA;NA;Yes;6;NA;NA;No;Yes;Medium
+439;284_19;Produce;Eggplant;NA;Eggplant,egg;1;NA;Yes;7;NA;NA;Yes;Yes;Medium
+440;285_19;Produce;Garlic;NA;Garlic;30;Store unbroken bulbs in pantry.;Yes;14;NA;Store individual cloves in refrigerator.;Yes;Yes;Medium
+441;286_19;Produce;Ginger root;NA;Ginger root,ginger,root;5;NA;Yes;21;NA;NA;Yes;Yes;Medium
+442;287_19;Produce;Greens;NA;Greens,green;NA;NA;Yes;4;NA;NA;Yes;Yes;Medium
+443;288_19;Produce;Herbs;NA;Herbs,herb;NA;NA;Yes;10;NA;NA;Yes;Yes;Medium
+444;289_19;Produce;Leeks;NA;Leeks,leek;NA;NA;Yes;14;NA;NA;Yes;Yes;Medium
+445;290_19;Produce;Lettuce;iceberg, romaine;Lettuce,iceberg,romaine;NA;NA;Yes;14;NA;NA;No;Yes;Medium
+446;291_19;Produce;Lettuce;leaf, spinach;Lettuce,leaf,spinach;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+447;292_19;Produce;Mushrooms;NA;Mushroom,mushrooms;NA;NA;Yes;7;NA;NA;Yes;Yes;Medium
+448;293_19;Produce;Okra;NA;Okra;1;Highly perishable when stored in the pantry.;Yes;3;NA;NA;Yes;Yes;Medium
+449;294_19;Produce;Onions;yellow, white, red, etc.;Onions,yellow,white,red,onion;30;NA;Yes;60;NA;NA;Yes;Yes;Low
+450;295_19;Produce;Onions;spring or green;Onions,spring,green,onion;30;NA;Yes;7;NA;NA;Yes;Yes;Medium
+451;296_19;Produce;Peppers;NA;Peppers,pepper;NA;NA;Yes;14;NA;NA;Yes;Yes;Medium
+452;297_19;Produce;Potatoes;NA;Potatoes,potato;60;This is the recommended storage method for whole potatoes.;Yes;14;NA;The United States Potato Board notes refrigeration can cause potatoes to darken during cooking and to develop an unpleasantly sweet taste.;No;Yes;Medium
+453;298_19;Produce;Pumpkins;NA;Pumpkins,pumpkin;90;NA;Yes;150;NA;NA;No;Yes;Low
+454;299_19;Produce;Radishes;NA;Radishes,radish;NA;NA;Yes;14;NA;NA;No;Yes;Medium
+455;300_19;Produce;Rhubarb;NA;Rhubarb;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+456;301_19;Produce;Rutabagas;NA;Rutabagas;7;NA;Yes;21;NA;NA;Yes;Yes;Medium
+457;302_19;Produce;Squash;summer and zucchini;Squash,summer,zucchini;5;NA;Yes;5;NA;NA;Yes;Yes;Medium
+458;303_19;Produce;Squash;winter;Squash,winter;42;NA;Yes;90;NA;NA;Yes;Yes;Low
+459;304_19;Produce;Tamarind;NA;Tamarind;21;NA;Yes;180;NA;Refrigeration guidelines apply to just the pulp.;No;Yes;Low
+460;305_19;Produce;Taro;NA;Taro;7;NA;Yes;3;NA;Refrigeration not recommended.;No;Yes;Medium
+461;306_19;Produce;Tomatoes;NA;Tomatoes,tomato;1;Until Ripe, then 7 days. Ripe is when this item is tender, fully developed and ready to eat. Refrigeration may affect flavor;;;;;;;
+462;307_19;Produce;Turnips;NA;Turnips,turnip;NA;NA;Yes;14;NA;NA;Yes;Yes;Medium
+463;308_19;Produce;Yuca/cassava;NA;Yuca,cassava;7;NA;Yes;3;NA;NA;Yes;Yes;Medium
+464;415_19;Produce;Bagged greens;leaf, spinach, lettuce, etc.;Bagged greens,leaf,spinach,lettuce,bagged,greens,green;NA;NA;Yes;5;2;Unopened product will last 3 - 5 days after date on bag;;;
+465;422_19;Produce;Yams/sweet potatoes;NA;Yams,sweet potatoes,potatoes,potato,yam;21;NA;No;NA;NA;NA;No;Yes;Low
+466;423_19;Produce;Kale;NA;Kale;NA;NA;Yes;5;NA;NA;Yes;Yes;Medium
+467;491_19;Produce;Baby carrots;NA;Baby carrots, carrot,baby carrot;4;below 75 °F;Yes;28;NA;NA;No;Yes;Medium
+468;492_19;Produce;Jicama;fresh;Jicama,fresh;120;1-2 weeks if inappropriately handled.;Yes;21;NA;Free from moisture;;;
+469;493_19;Produce;Kimchi;NA;Kimchi;NA;NA;Yes;360;NA;NA;No;Yes;Low
+470;494_19;Produce;Kohlrabi;NA;Kohlrabi;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+471;505_19;Produce;Lemongrass;NA;Lemongrass;NA;NA;Yes;9;NA;NA;Yes;Yes;Medium
+472;506_19;Produce;Cilantro;NA;Cilantro;14;NA;Yes;21;NA;NA;No;Yes;Medium
+473;507_19;Produce;Mint;NA;Mint;14;NA;Yes;21;NA;NA;No;Yes;Medium
+474;508_19;Produce;Basil;dried;Basil,dried;360;NA;No;NA;NA;NA;No;Yes;Low
+475;509_19;Produce;Basil;fresh;Basil,fresh;5;Keep stems in water.;Yes;10;NA;Will start to discolor.;No;Yes;Medium
+476;510_19;Produce;Oregano;NA;Oregano;14;NA;Yes;21;NA;NA;No;Yes;Medium
+477;511_19;Produce;Rosemary;NA;Rosemary;14;NA;Yes;21;NA;NA;No;Yes;Medium
+478;512_19;Produce;Chives;NA;Chives;14;NA;Yes;21;NA;NA;No;Yes;Medium
+479;513_19;Produce;Thyme;NA;Thyme;14;NA;Yes;21;NA;NA;No;Yes;Medium
+480;547_19;Produce;Zucchini;fresh, whole;Zucchini,fresh, whole;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+481;548_19;Produce;Hot peppers;NA;Hot peppers,pepper;NA;NA;Yes;7;NA;Fresh whole peppers will last longer if kept dry. ;No;Yes;Medium
+482;549_19;Produce;Bean sprouts;NA;Bean sprouts,bean,sprouts;NA;NA;Yes;10;NA;NA;No;Yes;Medium
+483;550_19;Produce;Swiss chard;NA;Swiss chard,chard;NA;NA;Yes;14;NA;Keep them in a plastic bag to retain moisture.  ;No;Yes;Medium
+484;570_19;Produce;Marinated vegetables;in oil;Marinated vegetables,vegetables,oil,vegetable;NA;NA;Yes;4;NA;NA;No;Yes;Medium
+485;596_19;Produce;Spaghetti squash;whole;Spaghetti squash,squash,whole;60;NA;Yes;14;NA;Storage temperatures below 50 degrees (as in a refrigerator) will cause the squash to spoil more rapidly.;No;Yes;Medium
+486;597_19;Produce;Spaghetti squash;cut;Spaghetti squash,squash,cut;NA;NA;Yes;5;NA;NA;No;Yes;Medium
+487;600_19;Produce;Cherry tomatoes;NA;Cherry, tomatoes,tomato;10;NA;Yes;5;NA;NA;No;Yes;Medium
+488;611_19;Produce;Parsley;fresh;parsley;NA;NA;Yes;3;NA;NA;No;Yes;Medium
+489;640_19;Produce;Edamame;fresh;edamame,fresh,fresh edamame,soybeans,soybean;NA;NA;Yes;5;NA;NA;No;Yes;Medium
+490;661_19;Produce;Celery root;NA;celeriac,celery root,celery;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+491;674_19;Produce;Radicchio;NA;radicchio;NA;NA;Yes;21;NA;NA;No;Yes;Medium
+492;678_19;Produce;Arugula;NA;arugula,greens,salad greens,salad;NA;NA;Yes;7;NA;NA;No;Yes;Medium
+493;144_20;Seafood;Lean fish;cod, flounder, haddock, halibut, sole, etc.;Lean fish,cod, flounder,haddock,halibut,sole,fish;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+494;145_20;Seafood;Lean fish;pollock, ocean perch, rockfish, sea trout.;Lean fish,pollock,ocean,rockfish, sea,sea trout,fish,ocean perch,perch,trout,rock;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+495;146_20;Seafood;Fatty fish;bluefish, catfish, mackerel, mullet, salmon, tuna, etc.;Fatty fish,bluefish,catfish,mackerel,mullet,salmon,tuna,fish,fatty,blue,cat;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+496;147_20;Seafood;Caviar;fresh, in jar;Caviar,fresh,jar;NA;NA;Yes;28;2;NA;No;No;High
+497;148_20;Seafood;Cooked fish;all;Cooked fish,fish,all;NA;NA;Yes;4;NA;NA;No;No;High
+498;149_20;Seafood;Surimi seafood;NA;Surimi seafood,surimi,sea,food;NA;NA;Yes;0;NA;NA;Yes;No;Medium
+499;150_21;Seafood;Scallops;NA;Scallops,scallop;NA;NA;Yes;3;NA;NA;Yes;No;Medium
+500;151_21;Seafood;Shrimp, crayfish;NA;Shrimp,crayfish,cray,fish;NA;NA;Yes;3;NA;NA;Yes;No;Medium
+501;152_21;Seafood;Squid;NA;Squid;NA;NA;Yes;3;NA;NA;Yes;No;Medium
+502;153_21;Seafood;Shucked clams, mussels, and oysters;NA;Shucked clams,mussels,oysters,clams,clam,mussels,mussel,oyster;NA;NA;Yes;10;NA;NA;Yes;No;Medium
+503;154_21;Seafood;Crab meat;fresh;Crab meat,meat,fresh,crab;NA;NA;Yes;3;NA;NA;No;No;High
+504;155_21;Seafood;Crab meat;pasteurized;Crab meat,meat,pasteurized,crab;NA;NA;Yes;360;5;NA;Yes;No;Medium
+505;156_21;Seafood;Crab legs;king, dungeness, snow;Crab legs,king,dungeness,snow,crab,legs,leg;NA;NA;Yes;4;NA;NA;Yes;No;Medium
+506;157_21;Seafood;Live clams, mussels, crab, and oysters;NA;Live clams,mussels,crab,oysters,clams,clam,mussel,oyster;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+507;158_21;Seafood;Fresh whole lobster;live;Fresh whole lobster,lobster,live,whole lobster;NA;NA;Yes;1;NA;It is not safe to cook and eat a whole lobster if it is dead at the time of preparation.;No;No;High
+508;159_21;Seafood;Fresh lobster tails;cooked;Fresh lobster tails,tails,cooked,lobster tails,tail;NA;NA;Yes;3;NA;NA;Yes;No;Medium
+509;160_21;Seafood;Fresh clams, mussels, oysters;NA;Fresh clams,clams,oysters,clam,mussels,mussel,oyster;NA;NA;Yes;10;NA;NA;No;No;High
+510;161_21;Seafood;Fresh whole lobster;frozen;Fresh whole lobster,lobster,frozen,whole lobster;NA;NA;Yes;2;NA;NA;Yes;No;Medium
+511;162_21;Seafood;Cooked shellfish;all;Cooked shellfish,shellfish,fish,cooked;NA;NA;Yes;4;NA;NA;Yes;No;Medium
+512;163_22;Seafood;Herring;glass packed, in wine sauce;Herring,glass packed,wine sauce,packed,glass,wine,sauce;NA;NA;Yes;180;NA;NA;No;No;Low
+513;164_22;Seafood;Fish;hot smoked, air pack;Fish,hot smoked,air pack,hot,smoked,pack;;;;;;;;;
+;NA;NA;"Yes""";45;NA;NA;NA;Yes;No;Low;;;;
+514;165_22;Seafood;Fish;hot smoked, vacuum pack;Fish,hot smoked,vacuum pack,hot,smoked,vacuum,pack;NA;NA;Yes;45;NA;NA;Yes;No;Low
+515;166_22;Seafood;Fish;cold smoked, air pack;Fish,cold smoked,air pack,cold,smoked,pack;NA;NA;Yes;30;NA;NA;Yes;No;Medium
+516;167_22;Seafood;Fish;cold smoked, vacuum pack;Fish,cold smoked,vacuum pack,cold,smoked,vacuum,pack;NA;NA;Yes;30;NA;NA;Yes;No;Medium
+517;370_23;Shelf Stable Foods;Applesauce;commercial;Applesauce,Apple,sauce,commercial;540;NA;Yes;NA;10;NA;No;No;High
+518;371_23;Shelf Stable Foods;Bacon bits;imitation;Bacon bits,bits,imitation,bacon,bit;365;NA;Yes;NA;0;NA;No;No;High
+519;372_23;Shelf Stable Foods;Canned goods;low acid (such as meat, poultry, fish, gravy, stew, soups, beans, carrots, corn, pasta, peas, potatoes, spinach);Canned goods,canned,can,goods,low acid,low,meat,poultry,fish,gravy,stew,soups,soup,beans,bean,carrots,carrot,corn,pasta,peas,pea,potatoes,potato,spinach;1825;Canned items will be safe to eat well past the ‘use-by’ or ‘best by’ date as long as the can shows no dents, rust, or swelling.;Yes;NA;4;NA;No;No;High
+520;373_23;Shelf Stable Foods;Canned goods;high acid (such as juices, fruit, pickles, sauerkraut, tomato soup, and foods in vinegar-based sauce);Canned goods,canned,can,goods,high acid,high,juices,juice,fruit,fruits,pickles,pickle,sauerkraut,tomato soup,soup,tomato,foods in vinegar based sauce,sauce,foods,food,vinegar based,vinegar;540;Canned items will be safe to eat well past the ‘use-by’ or ‘best by’ date as long as the can shows no dents, rust, or swelling.;Yes;NA;7;NA;No;No;High
+521;374_23;Shelf Stable Foods;Cereal;ready-to-eat;Cereal,ready,eat;360;NA;No;NA;NA;NA;No;No;Low
+522;375_23;Shelf Stable Foods;Cereal;cook before eating (oatmeal, etc.);Cereal,cook before eating,oatmeal,oats,oat,meal;360;NA;No;NA;NA;NA;No;No;Low
+523;376_23;Shelf Stable Foods;Chocolate syrup;NA;Chocolate syrup,Chocolate,syrup;730;NA;Yes;NA;180;NA;No;No;Low
+524;377_23;Shelf Stable Foods;Crackers;NA;Crackers,cracker;240;NA;Yes;NA;120;NA;No;No;Low
+525;378_23;Shelf Stable Foods;Graham cracker/animal cracker;NA;Graham cracker,animal cracker,Graham,cracker,animal;270;NA;No;NA;NA;NA;No;No;Low
+526;379_23;Shelf Stable Foods;Fruits, dried;raisins, apricots, mangoes, cranberries, etc.;Fruits,fruit,dried,raisins,raisin,apricots,apricot,mangoes,mangoe,cranberries,cranberry;180;NA;Yes;NA;180;NA;No;No;Low
+527;380_23;Shelf Stable Foods;Gummy (fruit) snacks;NA;fruit snack,gummy,fruit,snacks,snack,gummy snacks,fruit snacks,gummy snack;270;NA;No;NA;NA;NA;No;No;Low
+528;381_23;Shelf Stable Foods;Marshmallows;NA;Marshmallows,Marshmallow;365;NA;No;NA;NA;NA;No;No;Low
+529;382_23;Shelf Stable Foods;Marshmallow crème;NA;Marshmallow crème,Marshmallow,crème;150;NA;No;NA;NA;NA;No;No;Low
+530;383_23;Shelf Stable Foods;Milk;canned evaporated or condensed;Milk,can,canned,evaporated,condensed,evaporate,condense;360;NA;Yes;NA;5;NA;No;No;High
+531;384_23;Shelf Stable Foods;Molasses;NA;Molasses;730;NA;No;NA;NA;NA;No;No;Low
+532;385_23;Shelf Stable Foods;Mushrooms;dried;Mushrooms,Mushroom,dried;730;NA;No;NA;NA;NA;No;No;Low
+533;386_23;Shelf Stable Foods;Nuts;jars or cans;Nuts,nut,jar,jars,cans,can;365;NA;Yes;NA;180;NA;No;No;Low
+534;387_23;Shelf Stable Foods;Peanut butter;commercial;Peanut butter,butter,commercial,peanut;720;NA;No;NA;NA;NA;No;No;Low
+535;388_23;Shelf Stable Foods;Pectin;NA;Pectin;1;NA;No;NA;NA;NA;No;No;Low
+536;389_23;Shelf Stable Foods;Popcorn;dry kernels in jar;Popcorn,dry kernels in jar,jar,dry kernels,kernels,in jar,kernel,chips,chip;730;NA;No;NA;NA;NA;No;No;Low
+537;390_23;Shelf Stable Foods;Popcorn;commercially popped in bags;Popcorn,commercially,popped in bags,bags,bag,in bags;90;NA;No;NA;NA;NA;No;No;Low
+538;391_23;Shelf Stable Foods;Popcorn;microwave packets;Popcorn,microwave packets,packets,microwave,packet;360;After opening time applies to prepared product.;No;NA;NA;NA;No;No;Low
+539;392_23;Shelf Stable Foods;Potato chips;NA;Potato chips,potato,chips,chip,potatoes;1;NA;No;NA;NA;NA;No;No;Low
+540;393_23;Shelf Stable Foods;Potatoes;instant;Potatoes,Potato,instant;450;NA;No;NA;NA;NA;No;No;Low
+541;394_23;Shelf Stable Foods;Pretzels;NA;Pretzels,Pretzel;270;NA;No;NA;NA;NA;No;No;Low
+542;395_23;Shelf Stable Foods;Pudding mixes;NA;Pudding mixes,Pudding,mixes,mix;365;NA;No;NA;NA;NA;No;No;Low
+543;396_23;Shelf Stable Foods;Soup mixes;dry bouillon;Soup mixes,mixes,mix,soup,dry bouillon,bouillon;365;NA;No;NA;NA;NA;No;No;Low
+544;397_23;Shelf Stable Foods;Sun dried tomatoes;jar;Sun dried tomatoes,dried tomatoes,sun,sun dried,dried,tomatoes,tomato;365;NA;Yes;NA;180;NA;No;No;Low
+545;398_23;Shelf Stable Foods;Syrup;NA;Syrup;365;NA;Yes;NA;180;NA;No;No;Low
+546;399_23;Shelf Stable Foods;Toaster pastries;NA;Toaster pastries,pastry,Toaster,pastries;360;NA;No;NA;NA;NA;No;No;Low
+547;432_23;Shelf Stable Foods;Fruit cocktail;canned ;Fruit cocktail,cocktail,fruit,canned,can;540;NA;No;NA;NA;NA;No;No;Low
+548;437_23;Shelf Stable Foods;Almonds ;shell;Almonds,Almond,shell;180;NA;Yes;480;NA;NA;Yes;No;Low
+549;438_23;Shelf Stable Foods;Almonds ;no shell;Almonds,Almond,no shell,shell;120;NA;Yes;240;NA;NA;Yes;No;Low
+550;439_23;Shelf Stable Foods;Cashews;no shell;Cashews,Cashew,no shell,shell;28;NA;Yes;180;NA;NA;Yes;No;Low
+551;440_23;Shelf Stable Foods;Macadamias;no shell;Macadamias,Macadamia,no shell,shell;28;NA;Yes;360;NA;NA;Yes;No;Low
+552;441_23;Shelf Stable Foods;Peanuts;shell;Peanuts,Peanut,shell,nut;120;NA;Yes;360;NA;NA;Yes;No;Low
+553;442_23;Shelf Stable Foods;Peanuts;no shell;Peanuts,Peanut,no shell,shell,nut;28;NA;Yes;360;NA;NA;Yes;No;Low
+554;443_23;Shelf Stable Foods;Pecans;shell;Pecans,Pecan,shell;28;NA;Yes;360;NA;NA;Yes;No;Low
+555;444_23;Shelf Stable Foods;Pecans;no shell;Pecans,Pecan,no shell,shell;28;NA;Yes;270;NA;NA;Yes;No;Low
+556;445_23;Shelf Stable Foods;Pistachios;shell or no shell;Pistachios,shell,no shell,Pistachio,pista;21;NA;Yes;360;NA;Refrigeration of this item provides no benefit.;Yes;No;Low
+557;446_23;Shelf Stable Foods;Walnuts;shell or no shell;Walnuts,shell,no shell,walnut;28;NA;Yes;360;NA;NA;Yes;No;Low
+558;454_23;Shelf Stable Foods;Coconut oil;NA;Coconut oil,coconut,oil;1095;NA;No;NA;NA;Refrigeration not recommended - makes it difficult to use.;No;No;Low
+559;458_23;Shelf Stable Foods;Roasted red peppers;jar;Roasted red peppers,roasted,red,peppers,jar,Roasted red,red peppers,pepper;NA;NA;Yes;180;NA;NA;No;No;Low
+560;464_23;Shelf Stable Foods;Dry stuffing mix;commercially packaged;Dry stuffing mix,Dry stuffing,stuffing mix,Dry,stuffing,mix,commercially packaged,packaged,commercially,commercial,pack;360;Do not refrigerate.;No;NA;NA;NA;No;No;Low
+561;466_23;Shelf Stable Foods;Almond butter;NA;Almond butter,Almond,butter;365;When stored in the pantry, almond butter may become hard and the natural oil may separate and float to the top;;;;;;;
+562;467_23;Shelf Stable Foods;Cashew butter;NA;Cashew butter,Cashew,butter;90;Does not need to be refrigerated.;No;NA;NA;NA;No;No;Low
+563;468_23;Shelf Stable Foods;Salt;table, plain, or iodized;Salt,table,plain,iodized;1;NA;No;NA;NA;NA;No;No;Low
+564;469_23;Shelf Stable Foods;Black pepper;ground, dried, commercially bottled or purchased in bulk;Black pepper,black,pepper,ground,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase;730;NA;No;NA;NA;NA;No;No;Low
+565;470_23;Shelf Stable Foods;Black pepper;cracked, dried, commercially bottled or purchased in bulk;Black pepper,black,pepper,crack,cracked,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase;1095;NA;No;NA;NA;NA;No;No;Low
+566;471_23;Shelf Stable Foods;Cajun seasoning blend ;ground, dried, commercially bottled or purchased in bulk;Cajun seasoning blend,Cajun,seasoning,blend,Cajun seasoning,seasoning blend,ground,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase;730;NA;No;NA;NA;NA;No;No;Low
+567;472_23;Shelf Stable Foods;Cinnamon;ground, dried, commercially bottled or purchased in bulk;Cinnamon,ground,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase;1460;NA;No;NA;NA;NA;No;No;Low
+568;473_23;Shelf Stable Foods;Cumin;ground, dried, commercially bottled or purchased in bulk, opened or unopened;Cumin,ground,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase,opened,unopened,open,unopen;1460;NA;No;NA;NA;NA;No;No;Low
+569;474_23;Shelf Stable Foods;Garlic powder;dried, commercially bottled or purchased in bulk;Garlic powder,garlic,powder,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase;1460;NA;No;NA;NA;NA;No;No;Low
+570;475_23;Shelf Stable Foods;Onion powder ;dried, commercially bottled or purchased in bulk;Onion powder,onion,powder,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase;1460;NA;No;NA;NA;NA;No;No;Low
+571;476_23;Shelf Stable Foods;Nutmeg;ground, dried, commercially bottled or purchased in bulk;Nutmeg,ground,dried,commercially bottled,commercially,bottled,bottle,commercial,purchased in bulk,bulk,purchased,purchase;1460;NA;No;NA;NA;NA;No;No;Low
+572;488_23;Shelf Stable Foods;Peanut butter;commercially produced, containing hydrogenated fat or other stabilizers;Peanut butter,butter,commercial peanut butter, hydrogenated fat,fat,stabilizers,stabilizer;270;NA;Yes;360;120;NA;No;No;Low
+573;489_23;Shelf Stable Foods;Peanut butter;natural;Peanut butter,butter,natural;NA;NA;Yes;360;120;Or package use-by date, whichever comes first.;No;No;Low
+574;501_23;Shelf Stable Foods;Tomato paste;NA;Tomato paste;810;NA;Yes;NA;5;NA;No;No;High
+575;502_23;Shelf Stable Foods;Tapenade;NA;Tapenade;270;NA;Yes;270;NA;Not necessary, but flavor will enhance.;No;No;Low
+576;503_23;Shelf Stable Foods;Flaxseed;whole seed;Flaxseed,whole seed,seed;730;NA;No;NA;NA;Not necessary.;No;No;Low
+577;504_23;Shelf Stable Foods;Flaxseed;ground;Flaxseed,ground;NA;NA;Yes;360;NA;NA;No;No;Low
+578;520_23;Shelf Stable Foods;Canola oil;NA;Canola oil,canola;365;NA;No;NA;NA;NA;No;No;Low
+579;521_23;Shelf Stable Foods;Almond oil;NA;Almond oil,almond;365;NA;Yes;730;NA;NA;No;No;Low
+580;522_23;Shelf Stable Foods;Sunflower oil;NA;Sunflower oil,oil,sunflower;365;NA;No;NA;NA;NA;No;No;Low
+581;523_23;Shelf Stable Foods;Grapeseed oil;NA;Grapeseed oil,grapeseed,oil;365;NA;No;NA;NA;NA;No;No;Low
+582;533_23;Shelf Stable Foods;"""Genuine"" Maple syrup";unopened, glass;Genuine Maple syrup,syrup,unopened, glass;1460;NA;Yes;0;NA;NA;No;No;High
+583;534_23;Shelf Stable Foods;"""Genuine"" Maple syrup";unopened, plastic;Genuine Maple syrup,syrup,unopened, plastic;730;NA;Yes;720;NA;NA;No;No;Low
+584;555_23;Shelf Stable Foods;Granola;NA;Granola;270;NA;No;NA;NA;NA;No;No;Low
+585;556_23;Shelf Stable Foods;Pork rinds;NA;Pork rinds,pork,rinds;120;From date of manufacturer.;No;NA;NA;NA;No;No;Low
+586;573_23;Shelf Stable Foods;Chia seeds;NA;Chia seeds,chia,seed,seeds;540;NA;No;NA;NA;NA;No;No;Low
+587;601_23;Shelf Stable Foods;Coconut cream;canned;coconut cream,coconut,cream,canned,can;1825;NA;Yes;NA;4;NA;No;No;High
+588;602_23;Shelf Stable Foods;Coconut milk;canned;coconut milk,coconut,milk,canned,can;1825;NA;Yes;NA;4;NA;No;No;High
+589;604_23;Shelf Stable Foods;Pumpkin seeds;raw, no shell;pumpkin,pumpkin seed,pumpkin seeds,seed,seeds;180;NA;Yes;180;NA;NA;No;No;Low
+590;605_23;Shelf Stable Foods;Pumpkin seeds;raw, in-shell;pumpkin,pumpkin seed,pumpkin seeds,seed,seeds;180;NA;Yes;0;NA;NA;No;No;High
+591;606_23;Shelf Stable Foods;Pumpkin seeds;roasted, no-shell;pumpkin,pumpkin seed,pumpkin seeds,seed,seeds;180;NA;No;NA;NA;Refrigeration not necessary for unsalted pumpkin seeds.;No;No;Low
+592;607_23;Shelf Stable Foods;Pumpkin seeds;roasted, in-shell;pumpkin,pumpkin seed,pumpkin seeds,seed,seeds;180;NA;No;NA;NA;NA;No;No;Low
+593;608_23;Shelf Stable Foods;Sunflower seeds;raw, unsalted, no shell;sunflower,sunflower seed,sunflower seeds,seed,seeds;360;NA;No;NA;NA;NA;No;No;Low
+594;609_23;Shelf Stable Foods;Sunflower seeds;roasted, no shell;sunflower,sunflower seed,sunflower seeds,seed,seeds,kernal,shell;360;The (roasted) seeds will become rancid if stored at room temperature for long periods of time.;Yes;NA;240;NA;No;No;Low
+595;610_23;Shelf Stable Foods;Sunflower seeds;roasted, salted, in shell;sunflower,sunflower seed,sunflower seeds,seed,seeds;1;The (roasted) seeds will become rancid if stored at room temperature for long periods of time.;No;NA;NA;NA;No;No;Low
+596;612_23;Shelf Stable Foods;Sesame oil;NA;sesame oil,sesame,oil;730;NA;No;NA;NA;NA;No;No;Low
+597;613_23;Shelf Stable Foods;Sesame seeds;NA;sesame seeds,sesame,seeds,seed;1825;NA;No;NA;NA;NA;No;No;Low
+598;614_23;Shelf Stable Foods;Capers;in jar;capers,caper,jar capers,in jar,jar;1;NA;No;NA;NA;NA;No;No;Low
+599;615_23;Shelf Stable Foods;Chocolate hazlenut spread;NA;hazelnut spread, spread, hazelnut, chocolate spread, chocolate,Nutella,cocoa,cocoa spread;1;For best quality, do not refrigerate or microwave.;No;NA;NA;NA;No;No;Low
+600;616_23;Shelf Stable Foods;Roasted nuts (peanuts, cashews, almonds);NA;roasted nuts,roasted,nuts,roasted peanuts,roasted almonds,roasted cashews,almonds,cashews,peanuts;1;NA;Yes;NA;28;NA;No;No;Medium
+601;617_23;Shelf Stable Foods;Tuna;packet;tuna packet,tuna,packet,retort,retort packaging;540;NA;Yes;NA;4;NA;No;No;High
+602;618_23;Shelf Stable Foods;Tuna;canned;canned tuna,tuna,canned;1095;NA;No;NA;NA;NA;No;No;Low
+603;619_23;Shelf Stable Foods;Seafood;canned;canned seafood,seafood,canned;365;NA;Yes;NA;2;NA;No;No;High
+604;627_23;Shelf Stable Foods;Grits;boxed;boxed grits,grits,boxed,box;360;NA;No;NA;NA;NA;No;No;Low
+605;633_23;Shelf Stable Foods;Beets;pickled;pickled beets,beets,pickled;365;NA;Yes;NA;60;Refrigerate after opening.;No;No;Low
+606;642_23;Shelf Stable Foods;Edamame;salted, dry roasted, out of pod;edamame,soybean,soybeans,salted,roasted,dry roasted;360;NA;Yes;180;NA;NA;No;No;Low
+607;643_23;Shelf Stable Foods;Breadcrumbs;commercial;breadcrumbs,breadcrumb;180;NA;No;NA;NA;NA;No;No;Low
+608;644_23;Shelf Stable Foods;Milk ;shelf-stable;shelf stable milk,milk,shelf,stable,UHT,ultrapasteurized,aseptic packaging;360;NA;Yes;NA;7;NA;No;No;High
+609;650_23;Shelf Stable Foods;Corn syrup;NA;corn syrup,corn,syrup;1095;Keep tightly covered;;;;;;;
+610;651_23;Shelf Stable Foods;Nutrition supplement drinks;bottled;Nutrition supplement drinks,drinks,bottled,supplement;1;NA;No;NA;NA;NA;No;No;Low
+611;652_23;Shelf Stable Foods;Instant breakfast drinks;bottled;instant breakfast drinks,instant,breakfast,drinks,instant breakfast,instant drink,carnation,bottled instant breakfast drink,bottled instant breakfast,bottled breakfast;180;NA;No;NA;NA;NA;No;No;Low
+612;653_23;Shelf Stable Foods;Pine nuts;NA;pine nuts,pine nut,pine,nut,nuts;21;NA;Yes;90;NA;NA;No;No;Low
+613;655_23;Shelf Stable Foods;Pecans;chopped;chopped pecans,pecan,pecans,chopped;NA;NA;Yes;360;NA;NA;No;No;Low
+614;656_23;Shelf Stable Foods;Polenta;shelf-stable;polenta,shelf stable,shelf stable polenta;1;NA;Yes;NA;7;NA;No;No;High
+615;658_23;Shelf Stable Foods;Cereal or granola bars;NA;bars,bar,granola bars,granola bar,granola,cereal bars,cereal bar,nutrition bars,nutrition bar,energy bars,energy bar,health bars,health bar,fruit bars,fruit bar,snack bars,snack barsnack,,nut bars,nut bar,seed bars,seed bar,crunchy bars,crunchy bar,breakfast,breakfast bar,breakfast bars;360;NA;No;NA;NA;NA;No;No;Low
+616;659_23;Shelf Stable Foods;Milk ;ultra-pasteurized;ultra pasteurized milk,milk,pasteurized,ultra;NA;NA;Yes;90;10;NA;No;No;High
+617;668_23;Shelf Stable Foods;Avocado Oil;NA;avodaco oil,avocado,oil;730;NA;No;NA;NA;NA;No;No;Low
+618;672_23;Shelf Stable Foods;Base;beef, vegetable;beef base,vegetable base,base,beef,vegetable;1;Refrigerate after opening.;No;NA;NA;NA;No;No;Low
+619;682_23;Shelf Stable Foods;Croutons;NA;croutons,crouton,bread;180;NA;Yes;180;NA;NA;No;No;Low
+620;684_23;Shelf Stable Foods;Mustard;dried, ground;mustard,dried mustard,ground mustard,dried ground mustard;180;NA;No;NA;NA;NA;No;No;Low
+621;168_24;Vegetarian Proteins;Tofu;NA;Tofu;NA;NA;Yes;7;NA;NA;Yes;Yes;Medium
+622;169_24;Vegetarian Proteins;Miso;NA;Miso;NA;NA;Yes;365;NA;NA;No;Yes;Low
+623;170_24;Vegetarian Proteins;Soy flour;full-fat;Soy flour,full fat,soy,flour,fat;60;NA;Yes;180;NA;NA;No;Yes;Low
+624;171_24;Vegetarian Proteins;Textured soy protein;(TSP);Textured soy protein,protein,TSP,soy protein,soy;730;NA;No;NA;NA;NA;No;Yes;Low
+625;172_24;Vegetarian Proteins;Re-hydrated textured soy protein;(TSP);Re hydrated textured soy protein,protein,TSP,soy,soy protein,textured soy protein,Re hydrated ;120;NA;Yes;4;NA;Refrigeration time applies to prepared product.;No;Yes;Medium
+626;140_25;Deli & Prepared Foods;Poultry pieces;covered with gravy or broth;Poultry pieces,gravy,broth,poultry,pieces,piece;NA;NA;Yes;4;NA;NA;No;No;High
+627;173_25;Deli & Prepared Foods;Leftovers;with meat, fish, poultry, or egg;Leftovers,meat,fish,poultry,egg,leftover;NA;NA;Yes;4;NA;NA;No;No;High
+628;174_25;Deli & Prepared Foods;Leftovers;without meat, fish, poultry, or egg (such as cooked vegitables, rice, or potatoes);leftover,leftovers,without meat,fish,poultry,egg,cooked vegetables,rice,potatoes,meat,vegetables,potato,vegetable;NA;NA;Yes;4;NA;NA;No;No;High
+629;175_25;Deli & Prepared Foods;Leftovers;pizza;Leftovers,pizza;NA;NA;Yes;4;NA;NA;No;No;High
+630;176_25;Deli & Prepared Foods;Commercial brand vacuum-packed dinners;with USDA seal;Commercial brand vacuum-packed dinners,brand vacuum packed dinners,USDA seal,USDA,seal,dinners,dinner,vacuum packed,vacuum packed dinner,packed dinner,packed;NA;NA;Yes;14;NA;NA;No;No;High
+631;177_25;Deli & Prepared Foods;Cooked pasta;NA;Cooked pasta,pasta;NA;NA;Yes;5;NA;NA;No;No;High
+632;178_25;Deli & Prepared Foods;Cooked rice;NA;Cooked rice,rice;NA;NA;Yes;6;NA;NA;No;No;High
+633;179_25;Deli & Prepared Foods;Fruit, cut;NA;Fruit,cut;NA;NA;Yes;0;4;NA;No;No;High
+634;180_25;Deli & Prepared Foods;Guacamole;NA;Guacamole;NA;NA;Yes;4;NA;NA;No;No;High
+635;181_25;Deli & Prepared Foods;Hummus;commercial (pasteurized, with preservatives);Hummus,commercial,pasteurized,preservatives,preservative;NA;NA;Yes;90;7;NA;No;No;High
+636;183_25;Deli & Prepared Foods;Hummus;traditional (no preservatives, not pasteurized);Hummus,traditional,no preservatives,not pasteurized,no preservative,preservatives,preservative,pasteurized;NA;NA;Yes;7;NA;NA;No;No;High
+637;184_25;Deli & Prepared Foods;Luncheon meat or poultry;store-sliced;Luncheon meat,poultry,store sliced,meat,luncheon,store,sliced;NA;NA;Yes;5;NA;NA;No;No;High
+638;185_25;Deli & Prepared Foods;Main dishes or meals;hot or refrigerated;Main dishes,meals,hot,refrigerated,dishes,dish,meal;NA;NA;Yes;4;NA;NA;No;No;High
+639;186_25;Deli & Prepared Foods;Meats;covered with gravy or broth;Meats,gravy,broth,meat;NA;NA;Yes;4;NA;NA;No;No;High
+640;187_25;Deli & Prepared Foods;Olives;from olive bar;Olives,bar,olive;NA;NA;Yes;14;NA;NA;No;No;High
+641;188_25;Deli & Prepared Foods;Pate;NA;Pate;NA;NA;Yes;2;NA;NA;No;No;High
+642;192_25;Deli & Prepared Foods;Luncheon meat or poultry;pre-packaged;Luncheon meat,luncheon,meat,poultry,packaged,pre packaged;NA;NA;Yes;14;5;NA;Yes;No;Medium
+643;193_25;Deli & Prepared Foods;Soup, stews;NA;Soup,stews,stew;NA;NA;Yes;4;NA;NA;No;No;High
+644;194_25;Deli & Prepared Foods;Casseroles;NA;Casseroles,Casserole;NA;NA;Yes;4;NA;NA;No;No;High
+645;190_25;Deli & Prepared Foods;Egg salad;NA;Egg salad,egg,salad;NA;NA;Yes;4;NA;NA;No;No;High
+646;191_25;Deli & Prepared Foods;Potato salad;NA;Potato salad,potato,salad;NA;NA;Yes;5;NA;NA;No;No;High
+647;417_25;Deli & Prepared Foods;Seafood salads;(tuna salad, shrimp salad, salmon salad, mixed seafood salad, etc.);Seafood salads,tuna salad, shrimp salad, salmon salad, mixed seafood salad,seafood,salads,salad,tuna,shrimp,salmon,mixed,mixed seafood,seafood salad,;NA;NA;Yes;4;NA;NA;No;No;High
+648;418_25;Deli & Prepared Foods;Chicken salad;NA;Chicken salad,chicken,salad;NA;NA;Yes;4;NA;NA;No;No;High
+649;419_25;Deli & Prepared Foods;Ham salad;NA;Ham salad,ham,salad;NA;NA;Yes;4;NA;NA;No;No;High
+650;420_25;Deli & Prepared Foods;Pasta salad;NA;Pasta salad,pasta,salad;NA;NA;Yes;5;NA;NA;No;No;High
+651;514_25;Deli & Prepared Foods;Turkey ;pre-packaged, luncheon/deli meat;Turkey,pre-packaged,luncheon/deli meat,packaged,luncheon,deli;NA;NA;Yes;14;5;NA;Yes;No;Medium
+652;515_25;Deli & Prepared Foods;Ham;pre-packaged, luncheon/deli meat;Ham,pre-packaged,luncheon/deli meat,packaged,luncheon,deli;NA;NA;Yes;14;5;NA;Yes;No;Medium
+653;516_25;Deli & Prepared Foods;Salami ;pre-packaged, luncheon/deli meat;Salami,pre-packaged,luncheon meat,deli meat,packaged,luncheon/deli,pre;NA;NA;Yes;14;5;NA;Yes;No;Medium
+654;517_25;Deli & Prepared Foods;Chicken;pre-packaged, luncheon/deli meat;Chicken,pre-packaged,luncheon meat,deli meat,packaged;NA;NA;Yes;14;5;NA;Yes;No;Medium
+655;518_25;Deli & Prepared Foods;Canadian bacon;whole;Canadian bacon,bacon,whole;NA;NA;Yes;14;NA;NA;No;No;High
+656;519_25;Deli & Prepared Foods;Canadian bacon;sliced;Canadian bacon,bacon,sliced;NA;NA;Yes;80;10;NA;No;No;High
+657;572_25;Deli & Prepared Foods;Salsa;fresh;Salsa,fresh;NA;NA;Yes;7;NA;NA;No;No;High
+658;603_25;Deli & Prepared Foods;Coleslaw;homemade, prepared;coleslaw,homemade,homemade coleslaw,prepared,prepared coleslaw;NA;NA;Yes;5;NA;NA;No;No;High
+659;629_25;Deli & Prepared Foods;Vegetable soup;homemade;vegetable soup,vegetable,soup;NA;NA;Yes;4;NA;NA;No;No;High
+660;645_25;Deli & Prepared Foods;Salsa;homemade, fresh;homemade salsa,homemade,salsa;NA;NA;Yes;7;NA;NA;No;No;High
+661;667_25;Deli & Prepared Foods;Kugel;homemade;kugel,homemade,homemade kugel;NA;NA;Yes;4;NA;NA;No;No;High
