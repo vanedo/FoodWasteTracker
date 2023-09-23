@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from apps.tracker.models import FoodAdvice, FoodHistory
+from django.http import JsonResponse
 
 # Create your views here
 def food_tracker(request):
@@ -30,4 +31,19 @@ def history(request):
         elif eaten == 'No':
             food_counts[food_name]['no'] += 1
     return render(request, 'tracker/history.html', {'food_counts': food_counts})
+
+# function to save Food actions
+def save_food_action(food_id, action_type):
+    try:
+        # Create and save a new FoodAdvice object
+        food_advice = FoodAdvice(food_id=food_id, action_type=action_type)
+        food_advice.save()
+        print(f"Saved FoodAdvice: {food_advice}")
+    except Exception as e:
+        print(f"Error saving FoodAdvice: {e}")
+
+# function to execute the save Food action
+def process_food_action(request):
+    result = save_food_action()
+    return JsonResponse({'result': result})
 
