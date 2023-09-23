@@ -1,0 +1,9 @@
+body {
+    background-image: url('/static/img/lemons.png');
+
+    background-repeat: repeat-y;
+
+}
+navbar-inner {
+    background:transparent;
+}

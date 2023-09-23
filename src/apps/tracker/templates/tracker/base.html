@@ -1,7 +1,9 @@
+{% load static %}
 <html lang="en">
     <head>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet", href="{% static 'css/main.css' %}">
+        <nav class="navbar navbar-expand-lg navbar-transparent">
             <a class="navbar-brand" href="{% url 'food_tracker' %}">FoodTracker</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,14 +21,6 @@
             </div>
         </nav>
 
-    <style>
-        body {
-            background-color: #163832;
-        }
-        table {
-            background-color: #FFFFFF;
-        }
-    </style>
 </head>
 <body>
     <div id = "header">
