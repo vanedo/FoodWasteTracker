@@ -26,13 +26,16 @@ class FoodAdvice(models.Model):
         return self.name
 
 # Model to capture action on the food.html page
-class FoodAction(models.Models):
-    ACTION = ('ThrownAway','Upcycled')
-    food_id = models.CharField(max_length=10)
-    action_type = models.CharField(choices=ACTION)
+class FoodAction(models.Model):
+    ACTION = (
+        ('ThrownAway','ThrownAway'),
+        ('Upcycled','Upcycled')
+        )
+    food_id = models.ForeignKey(FoodAdvice, null=True, on_delete=models.SET_NULL)
+    action_type = models.CharField(max_length=50, choices=ACTION)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     def __str__(self):
-        return self.food_id
+        return str(self.food_id)
     
 class FoodHistory(models.Model):
     EATEN = (
