@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-    
+
 <head>
     <title>Food waste Tracker</title>
     <!-- Bootstrap CSS -->
@@ -19,43 +19,75 @@
         }
     </style>
 </head>
+
 <body>
     {% extends "tracker/base.html" %}
+    {% load static %}
     {% block content %}
 
     <div class ="container">
         <div class ="row">
-        <div class="col-md-7">
-
-            <ul class = "list-group">
-                {% for i in food %}  
-                    <li class = 'list-group-item'><h3>Food tips</h3>  </li>
-                    <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
-                    <li class = 'list-group-item'><b>Keywords: </b>                            {{ i.keywords }} </li>
-                    <li class = 'list-group-item'><b>Maximum days in pantry:</b>               {{ i.pantry_max_days }}</li>
-                    <li class = 'list-group-item'><b>Maximum days in fridge:</b>               {{ i.refrigerate_max_days }}</li>
-                    <li class = 'list-group-item'><b>Maximum days in fridge after opening:</b> {{ i.refrigerate_ao_max_days }}</li>
-                    <li class = 'list-group-item'><b>Needs refrigeration?:</b>                 {{ i.fridge_needed }}</li>
-                    <li class = 'list-group-item'><b>Can be frozen?</b>                        {{ i.freeze_recommended }}</li>
-                    <li class = 'list-group-item'><b>Can be composted?</b>                     {{ i.compost }}</li>
-                    <!-- Change font colour depending on food waste index value -->
-                    <li class='list-group-item {% if food_item.food_waste_index == "High" %}index-high{% elif food_item.food_waste_index == "Medium" %}index-medium{% else %}index-low{% endif %}'> 
-                        <font color = "#000000"><b>Food waste index: </b></font> {{i.food_waste_index}}</li>
+            
+            <div class="col-md-7">
+                <ul class = "list-group">
+                    {% for i in food %}  
+                        <li class = 'list-group-item'><h3>Food tips</h3>  </li>
+                        <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
+                        <li class = 'list-group-item'><b>Keywords: </b>                            {{ i.keywords }} </li>
+                        <li class = 'list-group-item'><b>Maximum days in pantry:</b>               {{ i.pantry_max_days }}</li>
+                        <li class = 'list-group-item'><b>Maximum days in fridge:</b>               {{ i.refrigerate_max_days }}</li>
+                        <li class = 'list-group-item'><b>Maximum days in fridge after opening:</b> {{ i.refrigerate_ao_max_days }}</li>
+                        <li class = 'list-group-item'><b>Needs refrigeration?:</b>                 {{ i.fridge_needed }}</li>
+                        <li class = 'list-group-item'><b>Can be frozen?</b>                        {{ i.freeze_recommended }}</li>
+                        <li class = 'list-group-item'><b>Can be composted?</b>                     {{ i.compost }}</li>
+                        <!-- Change font colour depending on food waste index value -->
+                        <li class='list-group-item {% if food_item.food_waste_index == "High" %}index-high{% elif food_item.food_waste_index == "Medium" %}index-medium{% else %}index-low{% endif %}'> 
+                            <font color = "#000000"><b>Food waste index: </b></font> {{i.food_waste_index}}</li>
                     {% endfor %}
-            </ul>
-        </div>
-        <div class = "col-md-5">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">Upcyling tips</h3>
-                    <p class="card-text">Text </p>
+                </ul>
+            </div>
+
+            <div class = "col-md-5">
+                <div class="card mb-7">
+                    <div class="card-body">
+                        <h3 class="card-title">Upcyling tips</h3>
+                        <p class="card-text">Text </p>
+                    </div>
                 </div>
             </div>
+        
         </div>
+        
+        <div class="row mt-1"> <!-- mt- is padding -->
+            <div class="col-md-7 text-center">
+                <h4 class="card-title"> What did you decide to do with your food item?</h4>
+            </div>  
+        </div>
+
+        <div class="row mt-1"> <!--row padding -->
+
+            <div class="p-1"> <!--column padding-->
+                <div class="col-md-1">
+                    <div class="rounded">
+                        <a href="/w3images/lights.jpg" target="_blank"> <!-- link -->
+                        <img src="{% static '/img/ThrewAway.png' %}" alt="" style="width: 100px;; height:70px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-1"> <!--column padding-->
+                <div class="col-md-1">
+                    <div class="rounded">
+                        <a href="/w3images/lights.jpg" target="_blank"> <!-- link -->
+                        <img src="{% static '/img/Upcycled.png' %}" alt="" style="width: 100px; height:70px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
-
 
  {% endblock %}
 </body>
