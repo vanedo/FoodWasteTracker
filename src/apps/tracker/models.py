@@ -24,3 +24,15 @@ class FoodAdvice(models.Model):
 
     def __str__(self):
         return self.name
+    
+class FoodHistory(models.Model):
+    EATEN = (
+        ('Yes', 'Yes'),
+        ('No', 'No')
+    )
+    food_id = models.CharField(max_length=10)
+    name = models.CharField(max_length = 200,null=True)
+    date_created = models.DateTimeField(auto_now_add=True, null=True)
+    eaten = models.CharField(max_length=5, null=True, choices=EATEN)
+    def __str__(self):
+        return self.name

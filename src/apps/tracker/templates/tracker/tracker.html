@@ -1,0 +1,83 @@
+<!-- Food purchase list-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find food advice</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    {% extends "tracker/base.html" %}
+    {% block content %}
+
+    <div class = "container">
+        <div class = "row">
+            <div class="col-md-12">
+    
+        
+            <h1>Find food advice</h1>
+            <form method="get">
+                <div class="form-group">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search">
+                </div>
+            </form>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Keywords</th>
+                    <th>Add </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% if food_tracker %}
+                {% for food in food_tracker %}
+                    <tr>
+                        <td>{{ food.name }}</td>
+                        <td>{{ food.name_subtitle | truncatechars:30 }}</td>
+                        <td >{{ food.keywords | truncatechars:30 }}</td>
+                        <td><a href ="{% url 'food_advice' food.id %}">See more</a></td>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="2">No food purchases available.</td>
+                </tr>
+            {% endif %}
+            </tbody>
+            </table>
+            </div>
+
+         </div>
+</div>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- JavaScript for dynamic adding to list -->
+<script>
+    $(document).ready(function() {
+        $("#searchInput").on("keyup", function() {
+            var searchText = $(this).val().toLowerCase();
+            $("tbody tr").each(function() {
+                var rowText = $(this).text().toLowerCase();
+                if (rowText.includes(searchText)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+        
+    });
+</script>
+
+{% endblock %}
+</body>
+</html>
+
+
