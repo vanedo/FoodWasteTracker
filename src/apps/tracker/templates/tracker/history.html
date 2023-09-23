@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food History</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    {% extends "tracker/base.html" %}
+    {% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Food Name</th>
+                            <th>Landfill</th>
+                            <th>Upcycle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for name, counts in history.items %}
+                            <tr>
+                                <td>{{ name }}</td>
+                                <td>{{ counts.yes }}</td>
+                                <td>{{ counts.no }}</td>
+                            </tr>
+                        {% empty %}
+                            <tr>
+                                <td colspan="3">No food history available.</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

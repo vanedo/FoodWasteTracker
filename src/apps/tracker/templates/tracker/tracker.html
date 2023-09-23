@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Find food advice</title>
+    <title>Get food information</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
@@ -16,7 +16,7 @@
             <div class="col-md-12">
     
         
-            <h1>Find food advice</h1>
+            <h4><font color = "#FFFFFF">Get food storage and usage information</h4></font>
             <form method="get">
                 <div class="form-group">
                     <input type="text" id="searchInput" class="form-control" placeholder="Search">
@@ -28,7 +28,7 @@
                     <th>Name</th>
                     <th>Category</th>
                     <th>Keywords</th>
-                    <th>Add </th>
+                    <th> </th>
                     
                 </tr>
             </thead>
@@ -39,7 +39,7 @@
                         <td>{{ food.name }}</td>
                         <td>{{ food.name_subtitle | truncatechars:30 }}</td>
                         <td >{{ food.keywords | truncatechars:30 }}</td>
-                        <td><a href ="{% url 'food_advice' food.id %}">See more</a></td>
+                        <td><a href ="{% url 'food_advice' food.id %}">View</a></td>
                         </td>
                     </tr>
                 {% endfor %}
@@ -58,7 +58,7 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-<!-- JavaScript for dynamic adding to list -->
+<!-- JavaScript for dynamic searching -->
 <script>
     $(document).ready(function() {
         $("#searchInput").on("keyup", function() {
