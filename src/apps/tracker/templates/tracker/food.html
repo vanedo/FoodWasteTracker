@@ -18,6 +18,15 @@
             color: green;
         }
     </style>
+
+    <script>
+        // JavaScript function to show the pop-up and prevent form submission
+        function showPopup() {
+            alert('Response Saved!');
+            return false; // Prevent the form from actually submitting
+        }
+    </script>
+
 </head>
 
 <body>
@@ -79,7 +88,7 @@
             <div class="card mb-5">
                 <div class="card-body">
                     <h3 class="card-title">What will you do with this food item?</h3>
-                    <form action="" method="POST">
+                    <form onsubmit="return showPopup()" action="" method="POST">
                         {% csrf_token %}
                         {{form.as_p}} <!-- defined in food() in views.py -->
                         <input type="submit" value="Submit">
