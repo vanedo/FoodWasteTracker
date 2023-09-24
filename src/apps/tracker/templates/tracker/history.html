@@ -9,23 +9,28 @@
 <body>
     {% extends "tracker/base.html" %}
     {% block content %}
+    {% load static %}
+    <link rel="stylesheet", href="{% static 'css/main.css' %}">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <table class="table table-striped">
+                <h4><font color = "#0915F6">Find out what other people did with their food </h4></font>
+            
+                <table id = "foodHistory" class="table table-bordered" style = "background-color: whitesmoke">
+                    
                     <thead>
                         <tr>
                             <th>Food Name</th>
-                            <th>Landfill</th>
-                            <th>Upcycle</th>
+                            <th>Upcycle it</th>
+                            <th>Throw it away</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for name, counts in history.items %}
+                        {% for key, value in food_counts.items %}
                             <tr>
-                                <td>{{ name }}</td>
-                                <td>{{ counts.yes }}</td>
-                                <td>{{ counts.no }}</td>
+                                <td>{{ key }}</td>
+                                <td>{{ value.upcycled }}</td>
+                                <td>{{ value.thrown_away }}</td>
                             </tr>
                         {% empty %}
                             <tr>
@@ -41,4 +46,9 @@
 
     {% endblock %}
 </body>
+<script>
+    $(document).ready(function () {
+        $('#foodHistory').DataTable();
+    });
+</script>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="intro">
+<head>
+    <title>Get food information</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body class="intro">
+
+
+{% load static %}
+<link rel="stylesheet", href="{% static 'css/main.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+<div class="first">
+<h1>Have leftover food? 
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "Store it.", "Use it.", "Donate it.", "Compost it.", "Freeze it.", "Don&#39;t waste it." ]'></span>
+</h1>
+<h6>30% of food ends up in landfill. Households are the biggest contributors to food waste. <p>Learn how to store and upcycle food to minimise food waste!</p></h6>
+</div>
+<div class="btn-group">
+    <a href="{% url 'food_tracker' %}" class="btn btn-info">Search</a>
+    <div style="margin-right:30px"></div>
+    <a href="{% url 'history' %}" class="btn btn-info">See data</a>
+    
+</div>
+<script>
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 2) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+
+
+</script>
+
+</body>
+</html>
