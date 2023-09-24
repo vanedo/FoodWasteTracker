@@ -22,14 +22,13 @@
     <script>
         // JavaScript function to show the pop-up and prevent form submission
         function showPopup() {
-            alert('Response Saved!');
-            return false; // Prevent the form from actually submitting
+            alert('Response Saved!')
         }
     </script>
 
 </head>
 
-<body>
+<body>  
     {% extends "tracker/base.html" %}
     {% load static %}
     {% block content %}
@@ -89,7 +88,8 @@
                 <div class="card-body">
                     <h3 class="card-title">What will you do with this food item?</h3>
                     <form onsubmit="return showPopup()" action="" method="POST">
-                        {% csrf_token %}
+                    <!--<form action="" method="POST">-->
+                            {% csrf_token %}
                         {{form.as_p}} <!-- defined in food() in views.py -->
                         <input type="submit" value="Submit">
                     </form>
