@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from apps.tracker.models import FoodAdvice, FoodHistory
+from apps.tracker.forms import FoodHistoryForm
 
 # Create your views here
 def food_tracker(request):
@@ -12,22 +13,37 @@ def food(request, pk):
     food = FoodAdvice.objects.filter(id=pk)
     # Get data for specific food item
     food_advice = food.all()
-    context = {'food':food, 'food_advice':food_advice}
+    # Save ID to prefill field
+    initial_data = {
+        'food':pk
+    }
+    # Get responses
+    form = FoodHistoryForm(initial=initial_data)
+    # Save reponses
+    if request.method == 'POST':
+        print('Printing POST:', request.POST)
+        form=FoodHistoryForm(request.POST)
+        print('Form is valid:', form.is_valid())
+        if form.is_valid():
+            form.save()
+            return redirect('/food-tracker')
+    context = {'food':food, 'food_advice':food_advice, 'form':form}
     return render(request, 'tracker/food.html', context)
 
 def history(request):
     foodhistory = FoodHistory.objects.all()
-    # Create empty dictionary
+    # Create empty dictionary to capture data
     food_counts = {}
-    # Loop through list
+    # Loop through list and count for each time a value appears
     for item in foodhistory:
-        food_name = item.name
+        print(item)
+        food_name = item.food
         eaten = item.eaten
         if food_name not in food_counts:
-            food_counts[food_name] = {'yes': 0, 'no': 0}
-        if eaten == 'Yes':
-            food_counts[food_name]['yes'] += 1
-        elif eaten == 'No':
-            food_counts[food_name]['no'] += 1
+            food_counts[food_name] = {'thrown_away': 0, 'upcycled': 0}
+        if eaten == 'thrown_away':
+            food_counts[food_name]['thrown_away'] += 1
+        elif eaten == 'upcycled':
+            food_counts[food_name]['upcycled'] += 1
+        print(food_counts)
     return render(request, 'tracker/history.html', {'food_counts': food_counts})
-

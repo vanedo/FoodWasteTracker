@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class FoodAdvice(models.Model):
@@ -26,22 +27,23 @@ class FoodAdvice(models.Model):
         return self.name
 
 # Model to capture action on the food.html page
-class FoodAction(models.Models):
-    ACTION = ('ThrownAway','Upcycled')
+class FoodAction(models.Model):
+    ACTION = (
+        ('ThrownAway','ThrownAway'),
+        ('ThrownAway','Upcycled')
+        )
     food_id = models.CharField(max_length=10)
-    action_type = models.CharField(choices=ACTION)
+    action_type = models.CharField(max_length=10, choices=ACTION)
+    # likes = models.ManytoManyField(FoodAdvice)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     def __str__(self):
         return self.food_id
     
 class FoodHistory(models.Model):
-    EATEN = (
-        ('Yes', 'Yes'),
-        ('No', 'No')
+    ACTION = (
+        ('thrown_away', 'Throw it away'),
+        ('upcycled', 'Upcycle')
     )
-    food_id = models.CharField(max_length=10)
-    name = models.CharField(max_length = 200,null=True)
+    food = models.ForeignKey(FoodAdvice, null=True, on_delete= models.SET_NULL)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
-    eaten = models.CharField(max_length=5, null=True, choices=EATEN)
-    def __str__(self):
-        return self.name
+    eaten = models.CharField(verbose_name = 'Action',max_length=20, null=True, choices=ACTION)

@@ -54,6 +54,23 @@
                         <p class="card-text">Text </p>
                     </div>
                 </div>
+                <div class="card mb-7">
+                    <div class="card-body">
+                        <h3 class="card-title">What will you do with this food item?</h3>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            {{form}}
+                            <!-- {% for i in form %}
+                                <label>
+                                    {{ i.name }}
+                                    <input type="radio" name="{{ food_item.id }}" value="yes"> Yes
+                                    <input type="radio" name="{{ food_item.id }}" value="no"> No
+                                </label><br>
+                            {% endfor %} -->
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
             </div>
         
         </div>

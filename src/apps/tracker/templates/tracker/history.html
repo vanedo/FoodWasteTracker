@@ -21,11 +21,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for name, counts in history.items %}
+                        {% for key, value in food_counts.items %}
                             <tr>
-                                <td>{{ name }}</td>
-                                <td>{{ counts.yes }}</td>
-                                <td>{{ counts.no }}</td>
+                                <td>{{ key }}</td>
+                                <td>{{ value.thrown_away }}</td>
+                                <td>{{ value.upcycled }}</td>
                             </tr>
                         {% empty %}
                             <tr>
