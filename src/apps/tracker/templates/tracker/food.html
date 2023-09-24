@@ -75,13 +75,13 @@
     </div>
     <div class ="container">
         <div class ="row">
-            <div class="col-md-12">
-            <div class="card mb-7">
+            <div class="col-md-6">
+            <div class="card mb-5">
                 <div class="card-body">
                     <h3 class="card-title">What will you do with this food item?</h3>
                     <form action="" method="POST">
                         {% csrf_token %}
-                        {{form}}
+                        {{form.as_p}} <!-- defined in food() in views.py -->
                         <input type="submit" value="Submit">
                     </form>
                 </div>
@@ -90,39 +90,24 @@
         </div>
     </div>
 
-        
-        <div class="row mt-1"> <!-- mt- is padding -->
-            <div class="col-md-7 text-center">
-                <h4 class="card-title"> What did you decide to do with your food item?</h4>
-            </div>  
+    <!--
+    <div class ="container">
+        <div class ="row">
+            <div class="col-md-6">
+            <div class="card mb-7">
+                <div class="card-body">
+                    <h3 class="card-title">What will you do with this food item?</h3>
+                    <button type="button" onclick="alert('Thrown Away!')">Throw It Away</button>
+                    <button type="button" onclick="alert('Upcycled!')">Upcycle</button>
+                </div>
+            
+            </div>
+            </div>
         </div>
-
-        <div class="row mt-1"> <!--row padding -->
-
-            <div class="p-1"> <!--column padding-->
-                <div class="col-md-1">
-                    <div class="rounded">
-                        <a href="/w3images/lights.jpg" target="_blank"> <!-- link -->
-                        <img src="{% static '/img/ThrewAway.png' %}" alt="" style="width: 100px;; height:70px">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-1"> <!--column padding-->
-                <div class="col-md-1">
-                    <div class="rounded">
-                        <a href="/w3images/lights.jpg" target="_blank"> <!-- link -->
-                        <img src="{% static '/img/Upcycled.png' %}" alt="" style="width: 100px; height:70px;">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div> -->
     </div>
+    -->
 
- {% endblock %}
+    {% endblock %}
 </body>
 
 </html>
