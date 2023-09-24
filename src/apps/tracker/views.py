@@ -36,7 +36,6 @@ def history(request):
     food_counts = {}
     # Loop through list and count for each time a value appears
     for item in foodhistory:
-        print(item)
         food_name = item.food
         eaten = item.eaten
         if food_name not in food_counts:
@@ -45,5 +44,4 @@ def history(request):
             food_counts[food_name]['thrown_away'] += 1
         elif eaten == 'upcycled':
             food_counts[food_name]['upcycled'] += 1
-        print(food_counts)
     return render(request, 'tracker/history.html', {'food_counts': food_counts})

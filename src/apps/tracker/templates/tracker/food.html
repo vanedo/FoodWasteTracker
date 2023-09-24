@@ -28,10 +28,10 @@
     <div class ="container">
         <div class ="row">
             
-            <div class="col-md-7">
+            <div class="col-md-6">
                 <ul class = "list-group">
                     {% for i in food %}  
-                        <li class = 'list-group-item'><h3>Food tips</h3>  </li>
+                        <li class = 'list-group-item'><h3>Food storage & usage tips</h3>  </li>
                         <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
                         <li class = 'list-group-item'><b>Keywords: </b>                            {{ i.keywords }} </li>
                         <li class = 'list-group-item'><b>Maximum days in pantry:</b>               {{ i.pantry_max_days }}</li>
@@ -45,35 +45,51 @@
                             <font color = "#000000"><b>Food waste index: </b></font> {{i.food_waste_index}}</li>
                     {% endfor %}
                 </ul>
+                <div style="margin-bottom:30px">
+                </div>
             </div>
+                            <div style="margin-bottom:30px">
+                </div>
 
-            <div class = "col-md-5">
+            <div class = "col-md-6">
                 <div class="card mb-7">
                     <div class="card-body">
                         <h3 class="card-title">Upcyling tips</h3>
-                        <p class="card-text">Text </p>
+                            <ul class="list-group list-group-flush">
+                            {% for i in food %}
+                                <p class="card-text">
+                                    <li class="list-group-item"><b>Use:</b> Try out a new recipe! You can find minimal ingredient recipes <a href = "https://www.supercook.com/#/desktop"> here</a>.</li>
+                                    {% if i.freeze_recommended == "Yes"  %} <li class ="list-group-item"><b>Freeze: </b>Put it in the freezer. Foods can keep in the freezer indefinitely but you may notice a decline in quality after 3-6 months.</li> {% endif %}
+                                    {% if i.compost == "Yes"  %} <li class ="list-group-item"><b>Compost: </b>Feed it to your garden worms and create nutrient-rich soil. Find more information around how to compost <a href ="https://www.betterhealth.vic.gov.au/health/healthyliving/gardening-making-compost"> here</a>. </li> {% endif %}
+                                    {% if i.fridge_needed == "No"  %}<li class="list-group-item"><b>Donate:</b> You can donate this item if it's not open. Find out more <a href = "https://www.foodbank.org.au/support-us/make-a-donation/donate-food/?state=vic"> here</a>.</li>{% endif %}
+                                    <li class="list-group-item"><b>Throw it away (last resort): </b> If it smells off or if it's mouldy, throw it away.</li>
+                                </p>
+                            {%endfor%}
+                        </ul>
                     </div>
                 </div>
-                <div class="card mb-7">
-                    <div class="card-body">
-                        <h3 class="card-title">What will you do with this food item?</h3>
-                        <form action="" method="POST">
-                            {% csrf_token %}
-                            {{form}}
-                            <!-- {% for i in form %}
-                                <label>
-                                    {{ i.name }}
-                                    <input type="radio" name="{{ food_item.id }}" value="yes"> Yes
-                                    <input type="radio" name="{{ food_item.id }}" value="no"> No
-                                </label><br>
-                            {% endfor %} -->
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
+                <div style="margin-bottom:30px">
                 </div>
             </div>
-        
         </div>
+    </div>
+    <div class ="container">
+        <div class ="row">
+            <div class="col-md-12">
+            <div class="card mb-7">
+                <div class="card-body">
+                    <h3 class="card-title">What will you do with this food item?</h3>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {{form}}
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
         
         <div class="row mt-1"> <!-- mt- is padding -->
             <div class="col-md-7 text-center">
@@ -103,7 +119,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
     </div>
 
  {% endblock %}
