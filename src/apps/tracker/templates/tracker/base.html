@@ -1,3 +1,4 @@
+{% load tags %}
 {% load static %}
 <html lang="en">
     <head>
@@ -30,15 +31,15 @@
                 <div class = "col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3 class="card-title">[200]</h3>
-                            <p class="card-text">contributions </p>
+                            <h3 class="card-title"> {% metric_contributions request %} </h3>
+                            <p class="card-text">contributions</p>
                         </div>
                     </div>
                 </div>
                 <div class = "col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3 class="card-title">[20]</h3>
+                            <h3 class="card-title">{% metric_items_saved request %} </h3>
                             <p class="card-text">items saved </p>
                         </div>
                     </div>
@@ -46,7 +47,7 @@
                 <div class = "col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3 class="card-title">[123]</h3>
+                            <h3 class="card-title">{% metric_emissions request %}</h3>
                             <p class="card-text">greenhouse gas emissions</p>
                         </div>
                     </div>
