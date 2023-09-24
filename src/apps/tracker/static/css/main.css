@@ -1,9 +1,8 @@
 body {
     background-image: url('/static/img/lemons.png');
-
     background-repeat: repeat-y;
-
 }
+
 .dataTables_length,
 .dataTables_wrapper {
   font-size: 1.6rem;
@@ -26,8 +25,6 @@ body {
     display: inline-flex;
   }
 }
-
-
 
 .paginate_button {
   min-width: 4rem;
@@ -54,3 +51,16 @@ body {
     text-decoration: none;
   }
 }
+
+html.intro,body.intro {
+  font-family: 'Raleway', sans-serif;
+  padding: 8em 2em;
+  font-size: 25px;
+  color: #1a28a1
+}
+
+div.first {
+  /*setting alpha = 0.6*/
+  background: rgba(232, 233, 232, 0.756);
+}
+

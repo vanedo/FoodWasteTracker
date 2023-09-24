@@ -45,3 +45,7 @@ def history(request):
         elif eaten == 'upcycled':
             food_counts[food_name]['upcycled'] += 1
     return render(request, 'tracker/history.html', {'food_counts': food_counts})
+
+def intro(request):
+
+    return render(request, 'tracker/intro.html')
