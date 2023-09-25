@@ -18,14 +18,14 @@
              
     
         
-            <h4><font color = "#0915F6">Get food storage and usage information</h4></font>
+            <h1><font color = "#000000">Find food storage and usage information</h1></font>
             <form method="get">
                 <div class="form-group">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Search">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Start typing food name">
                 </div>
             </form>
             <div class = "card">
-        <table class="table table-bordered table-responsive-lg">
+        <table class="table w-auto table-responsive-lg" >
             <thead>
                 <tr>
                     <th>Name</th>
@@ -60,7 +60,13 @@
 </div>
 
 <!-- jquery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
 
 <!-- JavaScript for dynamic searching -->
 <script>
@@ -76,8 +82,12 @@
                 }
             });
         });
+        $('#foodSearch').DataTable({"dom": '<"top"i>rt<"bottom"flp><"clear">' } );
         
     });
+
+
+
 </script>
 
 {% endblock %}

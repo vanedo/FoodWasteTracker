@@ -25,36 +25,7 @@
 </head>
 <body>
     <div id = "header">
-        <div class = "pt-5">
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title"> {% metric_contributions request %} </h3>
-                            <p class="card-text">contributions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">{% metric_items_saved request %} </h3>
-                            <p class="card-text">items saved from landfill </p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">{% metric_red_emissions request %} kg's</h3>
-                            <p class="card-text">CO2 emission savings</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+
     </div>
     <div id="main-content" >
         {% block content%}{% endblock %}
