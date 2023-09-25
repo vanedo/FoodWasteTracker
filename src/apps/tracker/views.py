@@ -48,4 +48,4 @@ def history(request):
 
 def intro(request):
 
-    return render(request, 'tracker/intro.html')
+    return render(request, 'tracker/index.html')
