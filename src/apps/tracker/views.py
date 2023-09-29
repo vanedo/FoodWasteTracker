@@ -7,7 +7,6 @@ def food_tracker(request):
     food_tracker = FoodAdvice.objects.all()
     return render(request, 'tracker/tracker.html', {'food_tracker': food_tracker})
 
-
 def food(request, pk):
     # Find the food by ID
     food = FoodAdvice.objects.filter(id=pk)
@@ -46,6 +45,13 @@ def history(request):
             food_counts[food_name]['upcycled'] += 1
     return render(request, 'tracker/history.html', {'food_counts': food_counts})
 
+# Load index (home) page
 def intro(request):
 
     return render(request, 'tracker/index.html')
+
+# Redirect to index page when landing on site
+def homepage(request):
+    return redirect(('/index'))
+
+
