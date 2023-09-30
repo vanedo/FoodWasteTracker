@@ -25,5 +25,6 @@ urlpatterns = [
     path('history/', views.history, name='history'),
     path('history/', views.top_upcycled, name='top_upcycled'),
     path('index/', views.intro, name='intro'),
-    path('', views.homepage, name='homepage')
+    path('', views.homepage, name='homepage'),
+    path('add/', views.add, name='add'),
 ]

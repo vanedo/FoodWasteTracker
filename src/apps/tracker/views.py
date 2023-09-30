@@ -2,7 +2,7 @@ from django.db import models
 from django.db.models import Count
 from django.shortcuts import render, redirect
 from apps.tracker.models import FoodAdvice, FoodHistory
-from apps.tracker.forms import FoodHistoryForm
+from apps.tracker.forms import FoodHistoryForm, ContributeDataForm
 from django.http import JsonResponse
 
 # Create your views here
@@ -67,3 +67,19 @@ def intro(request):
 # Redirect to index page when landing on site
 def homepage(request):
     return redirect(('/index'))
+
+# Load form to add in data 
+def add(request):
+    # Get responses
+    form = ContributeDataForm()
+    # Save reponses
+    if request.method == 'POST':
+        print('Printing POST:', request.POST)
+        form=ContributeDataForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+    context = {'form':form}
+    return render(request, 'tracker/add.html', context)
+
+
