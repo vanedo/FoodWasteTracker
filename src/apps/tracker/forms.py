@@ -16,3 +16,18 @@ class FoodHistoryForm(forms.ModelForm):
         #    # Hide specific fields using CSS
         #    self.fields['food'].widget.attrs['readonly'] = True
         #    self.fields['food'].widget.attrs['style'] = 'display: none;'
+
+class ContributeDataForm(forms.ModelForm):
+    #eaten = forms.ChoiceField(label= 'abc', choices=CHOICES, widget=forms.RadioSelect())
+    #food = forms.(label= 'abc')
+    class Meta:
+        model = FoodHistory
+        fields = ('food', 'eaten')
+        # widgets = {
+        #     'food': forms.Select(attrs={'class':'form-control'}),
+        #     'eaten': forms.Select(attrs={'class':'form-control'})
+        # }
+        labels = {
+            'food':'Select a food item',
+            'eaten':'What will you do with this item?'
+        }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contribute your data</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+        // JavaScript function to show the pop-up and prevent form submission
+        function showPopup() {
+            alert('Response Saved!')
+        }
+    </script>
+</head>
+
+<body class = "body-homepage">  
+    {% extends "tracker/base.html" %}
+    {% load static %}
+    {% block content %}
+<div class ="container">
+    <div style="margin-top:30px"></div>
+    <div class ="row">
+        <div class="col-md-12">
+        <div class="card mb-5" style="background-color: rgba(245, 245, 245, 0.8)">
+            <div class="card-body">
+                <h3 class="card-title">Contribute your data to our food waste tracker here</h3>
+                <p></p>
+                <form onsubmit="return showPopup()" action="" method="POST">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                    <input type="submit" value="Add response" style="background-color: blue; color:white">
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+
+</html>

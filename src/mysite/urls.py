@@ -24,5 +24,6 @@ urlpatterns = [
     path('food/<str:pk>/', views.food, name='food_advice'),
     path('history/', views.history, name='history'),
     path('index/', views.intro, name='intro'),
-    path('', views.homepage, name='homepage')
+    path('', views.homepage, name='homepage'),
+    path('add/', views.add, name='add'),
 ]
