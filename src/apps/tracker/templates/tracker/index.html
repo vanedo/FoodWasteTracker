@@ -1,94 +1,81 @@
 <!DOCTYPE html>
-<html class="intro">
+<html>
 <head>
-    <title>Get food information</title>
-    <!-- Bootstrap CSS -->
+    <title>Food History</title>
+    <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
 </head>
-<body class="intro">
+<body class = "intro">
+    {% extends "tracker/base.html" %}
+    {% load tags %}
+    {% load static %}
+    {% block content %}
+    <div class = "container" style="padding-top:10%">
+      <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
+          <div class="card-body">
+              <h1 class="card-title" style="font-size:55px"> Join the food waste revolution! </h1>
+              <h4 class="card-text"> Together, we can reduce food waste and create a sustainable future. <br>Enter your data today to track our collective impact.</h4>
+              <a class="btn btn-primary" href="{% url 'add' %}" role="button">Join now</a> &emsp;<a href = "{% url 'history' %}"><u>Learn how </u> </a>
+          </div>
+      </div>
+    </div>
+
+    <div class = "pt-5">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-4">
+                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                        <div class="card-body">
+                            <h1 class="card-title"> {% metric_contributions request %} </h1>
+                            <p class="card-text">contributions to the <br>food waste dataset</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-4">
+                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                        <div class="card-body">
+                            <h1 class="card-title">{% metric_items_saved request %} </h1>
+                            <p class="card-text">items saved <br>from landfill </p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-4">
+                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                        <div class="card-body">
+                            <h1 class="card-title">{% metric_red_emissions request %} kgs</h1>
+                            <p class="card-text">of CO<sub>2</sub> emissions <br>saved (estimated)</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+      </div>
+
+      <div class= "container">
+        <div class = "row">
+          <div class = "col-md-6">
+            <div class="card mb-6 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                <div class="card-body">
+                    <h1 class="card-title"> Graph </h1>
+                    <p class="card-text">XXXXX </p>
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-6">
+            <div class="card mb-6 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                <div class="card-body">
+                    <h1 class="card-title">Graph</h1>
+                    <p class="card-text">XXX</p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
 
 
-{% load static %}
-<link rel="stylesheet", href="{% static 'css/main.css' %}">
-<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-<div class="first">
-<h1>Have leftover food? 
-  <span
-     class="txt-rotate"
-     data-period="2000"
-     data-rotate='[ "Store it.", "Use it.", "Donate it.", "Compost it.", "Freeze it.", "Don&#39;t waste it." ]'></span>
-</h1>
-<h6>30% of food ends up in landfill. Households are the biggest contributors to food waste. <p>Learn how to store and upcycle food to minimise food waste!</p></h6>
-</div>
-<div class="btn-group">
-    <a href="{% url 'food_tracker' %}" class="btn btn-info">Search storage and usage tips</a>
-    <div style="margin-right:30px"></div>
-    <a href="{% url 'history' %}" class="btn btn-info">See data</a>
-    
-</div>
-<script>
-
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 2) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-
-
-
-</script>
-
+{% endblock %}
 </body>
+
 </html>
