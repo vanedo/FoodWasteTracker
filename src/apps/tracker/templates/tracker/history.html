@@ -46,39 +46,75 @@
     <div class = "pt-5">
         <div class = "container">
             <div class="mt-4">
-                <div class="col-md-6">
-                    <div>
-                        <canvas id="myChart1"></canvas>
-                    </div>    
-                        
-                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <div class="row">
 
-                        <script>
-                            var ctx = document.getElementById('myChart1');
-                            var myChart = new Chart(ctx, {
-                                type: 'bar',
-                                data: {
-                                labels: ['a','b','c','d','e'],
-                                datasets: [{    
-                                    label: 'Top 5 Upcycled Elements',
-                                    data: [1,2,3,4,5],
-                                    borderWidth: 2
-                                }]
-                                },
-                                options: {
-                                scales: {
-                                    y: {
-                                    beginAtZero: true
+                    <div class="col-md-6">
+                        <div>
+                            <canvas id="myChart1"></canvas>
+                        </div>    
+                            
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                            <script>
+                                var ctx = document.getElementById('myChart1');
+                                var myChart = new Chart(ctx, {
+                                    type: 'bar',
+                                    data: {
+                                    labels: [{% for key, value in top5_upcycled.items %} '{{ key }}', {% endfor %}],
+                                    datasets: [{    
+                                        label: 'Top 5 Foods Upcycled',
+                                        data: [{% for key, value in top5_upcycled.items %} '{{ value.upcycled }}', {% endfor %}],
+                                        borderWidth: 2
+                                    }]
+                                    },
+                                    options: {
+                                    scales: {
+                                        y: {
+                                        beginAtZero: true
+                                        }
                                     }
-                                }
-                                }
-                            });
-                        </script>
+                                    }
+                                });
+                            </script>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div>
+                            <canvas id="myChart2"></canvas>
+                        </div>    
+                            
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                            <script>
+                                var ctx = document.getElementById('myChart2');
+                                var myChart = new Chart(ctx, {
+                                    type: 'bar',
+                                    data: {
+                                    labels: [{% for key, value in top5_thrown.items %} '{{ key }}', {% endfor %}],
+                                    datasets: [{    
+                                        label: 'Top 5 Foods Thrown Out',
+                                        data: [{% for key, value in top5_thrown.items %} '{{ value.thrown_away }}', {% endfor %}],
+                                        borderWidth: 2
+                                    }]
+                                    },
+                                    options: {
+                                    scales: {
+                                        y: {
+                                        beginAtZero: true
+                                        }
+                                    }
+                                    }
+                                });
+                            </script>
+                    </div>
+               
                 </div>
             </div>
         </div>
     </div>
-    
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
