@@ -43,10 +43,16 @@
                             {% for i in food %}  
                                 <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
                                 <li class = 'list-group-item'><b>Keywords: </b>                            {{ i.keywords }} </li>
+                                {% if i.pantry_max_days != "" %}
                                 <li class = 'list-group-item'><b>Maximum days in pantry:</b>               {{ i.pantry_max_days }}</li>
-                                <li class = 'list-group-item'><b>Maximum days in fridge:</b>               {{ i.refrigerate_max_days }}</li>
-                                <li class = 'list-group-item'><b>Maximum days in fridge after opening:</b> {{ i.refrigerate_ao_max_days }}</li>
+                                {% endif %}
                                 <li class = 'list-group-item'><b>Needs refrigeration?:</b>                 {{ i.fridge_needed }}</li>
+                                {% if i.refrigerate_max_days != null %}       
+                                <li class = 'list-group-item'><b>Maximum days in fridge:</b>               {{ i.refrigerate_max_days }}</li>
+                                {% endif %}
+                                {% if i.refrigerate_ao_max_days != null %}       
+                                <li class = 'list-group-item'><b>Maximum days in fridge after opening:</b> {{ i.refrigerate_ao_max_days }}</li>
+                                {% endif %}
                                 <li class = 'list-group-item'><b>Can be frozen?</b>                        {{ i.freeze_recommended }}</li>
                                 <li class = 'list-group-item'><b>Can be composted?</b>                     {{ i.compost }}</li>
                                 <!-- Change font colour depending on food waste index value -->
