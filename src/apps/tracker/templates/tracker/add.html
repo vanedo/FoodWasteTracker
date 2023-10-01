@@ -9,32 +9,52 @@
         function showPopup() {
             alert('Response Saved!')
         }
+
     </script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 </head>
 
 <body class = "body-homepage">  
     {% extends "tracker/base.html" %}
     {% load static %}
     {% block content %}
-<div class ="container">
-    <div style="margin-top:30px"></div>
-    <div class ="row">
-        <div class="col-md-12">
-        <div class="card mb-5" style="background-color: rgba(245, 245, 245, 0.8)">
+    <div class="container" style="padding-top: 50px; padding-bottom: 50px; width:60%">
+        <div class="card" style="background-color: rgba(245, 245, 245, 0.8)">
+            <div class="card-header text-center"><h1 style="font-family: 'Jost';">
+                Add to the food waste <br>tracker here
+                </h1>
+            </div>
             <div class="card-body">
-                <h3 class="card-title">Contribute your data to our food waste tracker here</h3>
-                <p></p>
-                <form onsubmit="return showPopup()" action="" method="POST">
-                        {% csrf_token %}
-                        {{form.as_p}}
-                    <input type="submit" value="Add response" style="background-color: blue; color:white">
-                </form>
+                <div class="container" style="padding-top: 20px;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card  h-100">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                                <form onsubmit="return showPopup()" action="" method="POST" id="contribution_form">
+                                                    {% csrf_token %}
+                                                    {{form.as_p}}
+                                                <p style="text-align:right; font-size:small"> Not sure? <a href = "{% url 'food_tracker' %}"> Click here to find food usage information</a></p>
+                                                <input type="submit" value="Add my response" style="background-color: blue; 
+                                                                                                    color:white; 
+                                                                                                    border-radius:5px; 
+                                                                                                    border-width: 0px; 
+                                                                                                    padding: 5x 15px; 
+                                                                                                    font-family:'Jost';
+                                                                                                    font-size:large">
+                                                &emsp;<a href = "{% url 'history' %}"> <u>See all responses </u> </a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
-</div>
 {% endblock %}
 </body>
 

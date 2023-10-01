@@ -24,7 +24,11 @@ class FoodAdvice(models.Model):
     food_waste_index = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.name
+        if str(self.name_subtitle) == "":
+            present_name = str(self.name)
+        else: 
+            present_name = str(self.name) + " - " + str(self.name_subtitle)
+        return present_name
 
 # # Model to capture action on the food.html page
 # class FoodAction(models.Model):
@@ -47,3 +51,5 @@ class FoodHistory(models.Model):
     food = models.ForeignKey(FoodAdvice, null=True, on_delete= models.SET_NULL)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     eaten = models.CharField(verbose_name = 'Action',max_length=20, null=True, choices=ACTION)
+    def getFoodDetails(self):
+        return str(self.food.name) + " " + str(self.food.name_subtitle)

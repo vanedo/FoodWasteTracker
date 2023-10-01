@@ -79,6 +79,7 @@ def add(request):
 
         if form.is_valid():
             form.save()
+            return redirect('/add')
     context = {'form':form}
     return render(request, 'tracker/add.html', context)
 
