@@ -46,18 +46,12 @@ def history(request):
             food_counts[food_name]['thrown_away'] += 1
         elif eaten == 'upcycled':
             food_counts[food_name]['upcycled'] += 1
-    return render(request, 'tracker/history.html', {'food_counts': food_counts})
-
-# return top 5 upcycled items as a list
-def top_upcycled(request):
-    #data = FoodHistory.objects.filter(eaten='Upcycle')[:5]
-    #data = FoodHistory.objects.filter(eaten='Upcycle').values('name').annotate(count=models.Count('eaten')).order_by('-count')[:5]
-    labels = []
-    data = []
-    for entry in data:
-        labels.append(entry['name'])
-        data.append(entry['eaten'])
-    return render(request, 'tracker/history.html', {'up_labels': labels, 'up_counts': data})
+    
+    top5_upcycled = dict(sorted(food_counts.items(), key=lambda item: item[1]['upcycled'], reverse=True)[:5])
+    top5_thrown = dict(sorted(food_counts.items(), key=lambda item: item[1]['thrown_away'], reverse=True)[:5])
+            
+    context = {'food_counts': food_counts, 'top5_upcycled':top5_upcycled, 'top5_thrown':top5_thrown}
+    return render(request, 'tracker/history.html', context)
 
 # Load index (home) page
 def intro(request):
