@@ -23,7 +23,6 @@ urlpatterns = [
     path('food-tracker/', views.food_tracker, name='food_tracker'),
     path('food/<str:pk>/', views.food, name='food_advice'),
     path('history/', views.history, name='history'),
-    path('history/', views.top_upcycled, name='top_upcycled'),
     path('index/', views.intro, name='intro'),
     path('', views.homepage, name='homepage'),
     path('add/', views.add, name='add'),
