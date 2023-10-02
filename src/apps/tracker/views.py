@@ -56,7 +56,26 @@ def history(request):
 # Load index (home) page
 def intro(request):
 
-    return render(request, 'tracker/index.html')
+    foodhistory = FoodHistory.objects.all()
+    # Create empty dictionary to capture data
+    food_counts = {}
+    # Loop through list and count for each time a value appears
+    for item in foodhistory:
+        food_name = item.food
+        eaten = item.eaten
+        if food_name not in food_counts:
+            food_counts[food_name] = {'thrown_away': 0, 'upcycled': 0}
+        if eaten == 'thrown_away':
+            food_counts[food_name]['thrown_away'] += 1
+        elif eaten == 'upcycled':
+            food_counts[food_name]['upcycled'] += 1
+    
+    top5_upcycled = dict(sorted(food_counts.items(), key=lambda item: item[1]['upcycled'], reverse=True)[:5])
+    top5_thrown = dict(sorted(food_counts.items(), key=lambda item: item[1]['thrown_away'], reverse=True)[:5])
+            
+    context = {'food_counts': food_counts, 'top5_upcycled':top5_upcycled, 'top5_thrown':top5_thrown}
+ 
+    return render(request, 'tracker/index.html', context)
 
 # Redirect to index page when landing on site
 def homepage(request):
