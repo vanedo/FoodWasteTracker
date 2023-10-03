@@ -11,6 +11,9 @@ class FoodHistoryForm(forms.ModelForm):
     class Meta:
         model = FoodHistory
         fields = '__all__'
+        widgets = {
+            'food':forms.Select(attrs={'disabled':'true'})
+        }
         #def __init__(self, *args, **kwargs):
         #    super(FoodHistoryForm, self).__init__(*args, **kwargs)
         #    # Hide specific fields using CSS

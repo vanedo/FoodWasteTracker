@@ -6,6 +6,10 @@
     <title>Food waste Tracker</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+    rel="stylesheet"
+  />
     <style>
         .index-high {
             color: red;
@@ -31,16 +35,48 @@
     {% extends "tracker/base.html" %}
     {% load static %}
     {% block content %}
+    <div style="padding-top:5%"></div>
+    <div class ="container">
+        <div style="margin-top:30px"></div>
+        <div class ="row">
+            <div class="col-md-12">
+            <div class="card mb-5" style="background-color: rgba(245, 245, 245, 0.8)">
+                <div class="card-body">
+                    <h3 class="card-title text-center">What will you do with this food item?</h3>
+                    <form onsubmit="return showPopup()" action="" method="POST">
+                    <!--<form action="" method="POST">-->
+                            {% csrf_token %}
+                        {{form.as_p}} <!-- defined in food() in views.py -->
+                        <input
+                        type="submit"
+                        value="Add my response"
+                        style="
+                          background-color: blue;
+                          color: white;
+                          border-radius: 5px;
+                          border-width: 0px;
+                          padding: 5x 15px;
+                          font-family: 'Jost';
+                          font-size: large;
+                        "
+                      />
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <div class ="container">
         <div class ="row">
             
             <div class = "col-md-6">
-                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.4)">
+                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
                     <div class="card-body">
-                        <h3 class="card-title">Food storage information</h3>
+                        {% for i in food %}  
+                        <h3 class="card-title"> {{i.name}} storage information</h3>
                             <ul class = "list-group">
-                            {% for i in food %}  
+                            
                                 <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
                                 <li class = 'list-group-item'><b>Keywords: </b>                            {{ i.keywords }} </li>
                                 {% if i.pantry_max_days != "" %}
@@ -57,7 +93,7 @@
                                 <li class = 'list-group-item'><b>Can be composted?</b>                     {{ i.compost }}</li>
                                 <!-- Change font colour depending on food waste index value -->
                                 <li class='list-group-item {% if food_item.food_waste_index == "High" %}index-high{% elif food_item.food_waste_index == "Medium" %}index-medium{% else %}index-low{% endif %}'> 
-                            <font color = "#000000"><b>Food waste index: </b></font> {{i.food_waste_index}}</li>
+                            <font color = "#000000"><b>Food waste risk: </b></font> {{i.food_waste_index}} risk of being thrown away</li>
                             {% endfor %}
                              </ul>
                 
@@ -69,7 +105,7 @@
                 <div style="margin-bottom:30px">
                 </div>
             <div class = "col-md-6">
-                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.4)">
+                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
                     <div class="card-body">
                         <h3 class="card-title">Upcyling tips</h3>
                             <ul class="list-group list-group-flush">
@@ -92,24 +128,7 @@
             </div>
         </div>
     </div>
-    <div class ="container">
-        <div style="margin-top:30px"></div>
-        <div class ="row">
-            <div class="col-md-12">
-            <div class="card mb-5 text-center" style="background-color: rgba(245, 245, 245, 0.7)">
-                <div class="card-body">
-                    <h3 class="card-title">What will you do with this food item?</h3>
-                    <form onsubmit="return showPopup()" action="" method="POST">
-                    <!--<form action="" method="POST">-->
-                            {% csrf_token %}
-                        {{form.as_p}} <!-- defined in food() in views.py -->
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
+
 
     <!--
     <div class ="container">

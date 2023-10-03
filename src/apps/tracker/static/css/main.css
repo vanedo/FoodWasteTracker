@@ -1,6 +1,6 @@
 body {
     background-image: url('/static/img/lemons.png');
-    background-repeat: repeat-y;
+    background-repeat: repeat-y
 }
 
 body.intro {
