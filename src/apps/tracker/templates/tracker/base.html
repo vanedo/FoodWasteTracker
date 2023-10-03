@@ -4,6 +4,8 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet", href="{% static 'css/main.css' %}">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet"/>
         
         <!--Chart.js CDN link-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
@@ -13,7 +15,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-transparent">
-            <a class="navbar-brand" href="{% url 'intro' %}">WasteNot</a>
+            <a class="navbar-brand" href="{% url 'intro' %}" style="font-family:'Jost'; font-weight:500">wastelogr</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,8 +74,8 @@
             <!-- Grid container -->
           
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            WasteNot app
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);font-family:'Jost'; font-weight:500">
+            wastelogr
             </div>
             <!-- Copyright -->
           </footer>

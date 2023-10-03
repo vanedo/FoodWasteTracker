@@ -17,26 +17,26 @@
         <div class = "container">
             <div class = "row">
                 <div class = "col-md-4">
-                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.9); " >
                         <div class="card-body">
                             <h1 class="card-title"> {% metric_contributions request %} </h1>
-                            <p class="card-text">contributions</p>
+                            <p class="card-text">contributions to the <br>wastelogr dataset</p>
                         </div>
                     </div>
                 </div>
                 <div class = "col-md-4">
-                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.9); " >
                         <div class="card-body">
                             <h1 class="card-title">{% metric_items_saved request %} </h1>
-                            <p class="card-text">items saved from landfill </p>
+                            <p class="card-text">food items saved <br>from landfill </p>
                         </div>
                     </div>
                 </div>
                 <div class = "col-md-4">
-                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
+                    <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.9); " >
                         <div class="card-body">
                             <h1 class="card-title">{% metric_red_emissions request %} kgs</h1>
-                            <p class="card-text">CO2 emission savings</p>
+                            <p class="card-text">of CO<sub>2</sub> emissions <br>saved (estimated)</p>
                         </div>
                     </div>
                 </div>
@@ -50,6 +50,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
+                        <div class="card" style="background-color: rgba(245, 245, 245, 0.9);">
                         <div>
                             <canvas id="myChart1"></canvas>
                         </div>    
@@ -78,8 +79,8 @@
                                             title: {
                                                 display: true,
                                                 text: 'Top 5 upcycled foods',
-                                                font: {size: 35},
-                                                padding:{top: 1, bottom: 1}}
+                                                font: {family: 'Jost', size: 30},
+                                                padding:{top: 10, bottom: 15}}
                                         },
                                         scales: {
                                             x: {
@@ -95,8 +96,10 @@
                                 });
                             </script>
                     </div>
+                </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6" >
+                        <div class="card" style="background-color: rgba(245, 245, 245, 0.9);">
                         <div>
                             <canvas id="myChart2"></canvas>
                         </div>    
@@ -125,8 +128,8 @@
                                             title: {
                                                 display: true,
                                                 text: 'Top 5 foods sent to landfill',
-                                                font: {size: 35},
-                                                padding:{top: 1, bottom: 1}}
+                                                font: {family: 'Jost', size: 30},
+                                                padding:{top: 10, bottom: 15}}
                                         },
                                     scales: {
                                         x: {
@@ -142,18 +145,20 @@
                                 });
                             </script>
                     </div>
+                </div>
                
                 </div>
             </div>
         </div>
     </div>
 
-
+<div style = "padding-top:3%"></div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1><font color = "#000000">Find out what other people are doing with their leftovers </h1></font>
+                <div class="card" style="background-color: rgba(245, 245, 245, 0.9); ">
+                <h1 class="card-title"><font color = "#000000">Find out what other people are doing with their leftovers </h1></font>
             
                 <table id = "foodHistory" class="display" style = "background-color: whitesmoke" style="width:100%">
                     
@@ -181,9 +186,12 @@
                 
                 </table>
             </div>
+        </div>
 
         </div>
     </div>
+
+    <div style = "padding-top:3%"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
