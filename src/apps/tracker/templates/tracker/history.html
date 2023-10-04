@@ -50,103 +50,107 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <div class="card" style="background-color: rgba(245, 245, 245, 0.9);">
-                        <div>
-                            <canvas id="myChart1"></canvas>
-                        </div>    
-                            
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <div class="card text-center" style="background-color: rgba(245, 245, 245, 0.9);">
+                            <div class="card-body">
+                                <h1 class="card-title"> Top 5 upcycled foods </h1>
+                                <div>
+                                    <canvas id="myChart1"></canvas>
+                                </div>    
+                                    
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                            <script>
-                                var ctx = document.getElementById('myChart1');
-                                var myChart = new Chart(ctx, {
-                                    type: 'bar',
-                                    data: {
-                                    labels: [{% for key, value in top5_upcycled.items %} '{{ key }}', {% endfor %}],
-                                    datasets: [{    
-                                        label: '',
-                                        data: [{% for key, value in top5_upcycled.items %} '{{ value.upcycled }}', {% endfor %}],
-                                        backgroundColor: ['rgba(75,192,192,1)'],
-                                        borderColor: ['rgba(0,100,0,1)'],
-                                        borderWidth: 3
-                                    }]
-                                    },
-                                    options: {
-                                        indexAxis: 'y',
-                                        plugins: {
-                                            legend: {
-                                                display: false},
-                                            title: {
-                                                display: true,
-                                                text: 'Top 5 upcycled foods',
-                                                font: {family: 'Jost', size: 30},
-                                                padding:{top: 10, bottom: 15}}
-                                        },
-                                        scales: {
-                                            x: {
-                                                ticks:{font:{size: 15}},
-                                                beginAtZero: true
+                                    <script>
+                                        var ctx = document.getElementById('myChart1');
+                                        var myChart = new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                            labels: [{% for key, value in top5_upcycled.items %} '{{ key }}', {% endfor %}],
+                                            datasets: [{    
+                                                label: '',
+                                                data: [{% for key, value in top5_upcycled.items %} '{{ value.upcycled }}', {% endfor %}],
+                                                backgroundColor: ['rgba(75,192,192,1)'],
+                                                borderColor: ['rgba(0,100,0,1)'],
+                                                borderWidth: 3
+                                            }]
                                             },
-                                            y: {
-                                                ticks:{font:{size: 15}},
-                                                beginAtZero: true
+                                            options: {
+                                                indexAxis: 'y',
+                                                plugins: {
+                                                    legend: {
+                                                        display: false},
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Top 5 upcycled foods',
+                                                        font: {family: 'Jost', size: 30},
+                                                        padding:{top: 10, bottom: 15}}
+                                                },
+                                                scales: {
+                                                    x: {
+                                                        ticks:{font:{size: 15}},
+                                                        beginAtZero: true
+                                                    },
+                                                    y: {
+                                                        ticks:{font:{size: 15}},
+                                                        beginAtZero: true
+                                                    }
                                             }
-                                    }
-                                    }
-                                });
-                            </script>
+                                            }
+                                        });
+                                    </script>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                        <div class="col-md-6" >
+                            <div class="card text-center" style="background-color: rgba(245, 245, 245, 0.9);">
+                                <div class="card-body">
+                                    <h1 class="card-title"> Top 5 upcycled foods </h1>
+                                    <div>
+                                        <canvas id="myChart2"></canvas>
+                                    </div>    
+                                        
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                    <div class="col-md-6" >
-                        <div class="card" style="background-color: rgba(245, 245, 245, 0.9);">
-                        <div>
-                            <canvas id="myChart2"></canvas>
-                        </div>    
-                            
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                            <script>
-                                var ctx = document.getElementById('myChart2');
-                                var myChart = new Chart(ctx, {
-                                    type: 'bar',
-                                    data: {
-                                    labels: [{% for key, value in top5_thrown.items %} '{{ key }}', {% endfor %}],
-                                    datasets: [{    
-                                        label: 'Top 5 foods sent to landfill',
-                                        data: [{% for key, value in top5_thrown.items %} '{{ value.thrown_away }}', {% endfor %}],
-                                        backgroundColor: ['rgba(255,99,132,1)'],
-                                        borderColor: ['rgba(100,0,0,1)'],
-                                        borderWidth: 3
-                                    }]
-                                    },
-                                    options: {
-                                    indexAxis: 'y',
-                                    plugins: {
-                                            legend: {
-                                                display: false},
-                                            title: {
-                                                display: true,
-                                                text: 'Top 5 foods sent to landfill',
-                                                font: {family: 'Jost', size: 30},
-                                                padding:{top: 10, bottom: 15}}
-                                        },
-                                    scales: {
-                                        x: {
-                                            ticks:{font:{size: 15}},
-                                            beginAtZero: true
+                                    <script>
+                                        var ctx = document.getElementById('myChart2');
+                                        var myChart = new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                            labels: [{% for key, value in top5_thrown.items %} '{{ key }}', {% endfor %}],
+                                            datasets: [{    
+                                                label: 'Top 5 foods sent to landfill',
+                                                data: [{% for key, value in top5_thrown.items %} '{{ value.thrown_away }}', {% endfor %}],
+                                                backgroundColor: ['rgba(255,99,132,1)'],
+                                                borderColor: ['rgba(100,0,0,1)'],
+                                                borderWidth: 3
+                                            }]
                                             },
-                                        y: {
-                                            ticks:{font:{size: 15}},
-                                            beginAtZero: true
-                                        }
-                                    }
-                                    }
-                                });
-                            </script>
+                                            options: {
+                                            indexAxis: 'y',
+                                            plugins: {
+                                                    legend: {
+                                                        display: false},
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Top 5 foods sent to landfill',
+                                                        font: {family: 'Jost', size: 30},
+                                                        padding:{top: 10, bottom: 15}}
+                                                },
+                                            scales: {
+                                                x: {
+                                                    ticks:{font:{size: 15}},
+                                                    beginAtZero: true
+                                                    },
+                                                y: {
+                                                    ticks:{font:{size: 15}},
+                                                    beginAtZero: true
+                                                }
+                                            }
+                                            }
+                                        });
+                                    </script>
+                            </div>
+                        </div>
                     </div>
-                </div>
-               
                 </div>
             </div>
         </div>
