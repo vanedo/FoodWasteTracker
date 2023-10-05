@@ -1,6 +1,9 @@
 body {
-    background-image: url('/static/img/lemons.png');
-    background-repeat: repeat-y
+  background-image: url('/static/img/orange_faded.png'), url('/static/img/yellow_faded.png');
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 35%, 35%;
+  background-attachment: fixed;
 }
 
 body.intro {
