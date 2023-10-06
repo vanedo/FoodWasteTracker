@@ -18,18 +18,36 @@
               <h1 class="card-title" style="font-size:55px" font-color: "blue" > Join the food waste revolution! </h1>
               <h4 class="card-text"> Together, we can reduce food waste and create a sustainable future. <br>Enter your data today to track our collective impact.<br></h4>
               <div style="padding-top:2%"></div>
-              <a class="btn btn-primary" href="{% url 'add' %}" role="button">Join now</a> &emsp;<a href = "{% url 'history' %}"><u>Learn how </u> </a>
-          </div>
+              <a class="btn btn-primary btn-lg" href="{% url 'add' %}" role="button">Join now</a> &emsp;<a href = "{% url 'history' %}"><u>Learn how </u> </a>
+            </div>
       </div>
     </div>
 
+    <div class = "container" style="padding-top:1%">
+        <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
+            <div class="card-body">
+                <p class="card-text text-center">COMMUNITY IMPACT</p>
+                <h1 class="card-title text-center" style="font-size:40px"> 
+                    Help your household and community achieve their <br>
+                    food waste goals <br>
+                </h1>
+                <p class="card-text text-center pt-1">
+                    wastelogr has helped households and communities reduce their food waste. In doing so <br>
+                    they have reduced environmental pollution, water consumption, lowered their grocery bills, <br>
+                    and helped save the planet. Here are a few of our achievements.<br>
+                </p>
+              </div>
+        </div>
+      </div>
+      
     <div class = "pt-1">
         <div class = "container">
             <div class = "row justify-content-center">
 
                 <div class = "col-md-3">
                     <div class="card mb-3 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
-                        <img src="/static/img/upload.png" style="width: 125px; height: 125px; margin: auto" class="card-img-bottom" alt="">
+                        
+                        <img src="/static/img/lblue_data_entry.png" style="width: 50px; height: 50px; margin:auto" class="card-img-top pt-1" alt="">
                         <div class="card-body">
                             <h1 class="card-title"> {% metric_contributions request %} </h1>
                             <p class="card-text">Contributions to the <br>wastelogr dataset</p>
@@ -40,7 +58,7 @@
                 <div class = "col-md-3">
                     <div class="card mb-3 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
                         <div class="mt-auto">
-                            <img src="/static/img/garbage.png" style="width: 125px; height: 125px; margin: auto" class="card-img-top" alt="">
+                            <img src="/static/img/lblue_landfill.png" style="width: 50px; height: 50px; margin: auto" class="card-img-top pt-1" alt="">
                         </div>
                         <div class="card-body">
                             <h1 class="card-title">{% metric_items_saved request %} </h1>
@@ -51,10 +69,10 @@
 
                 <div class = "col-md-3">
                     <div class="card mb-2 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
-                        <img src="/static/img/co2.png" style="width: 125px; height: 125px; margin:auto" class="card-img-top" alt="">
+                        <img src="/static/img/lblue_air-pollution.png" style="width: 50px; height: 50px; margin:auto" class="card-img-top pt-1" alt="">
                         <div class="card-body">
                             <h1 class="card-title">{% metric_red_emissions request %} kgs</h1>
-                            <p class="card-text">CO<sub>2</sub> emissions <br>saved (estimated)</p>
+                            <p class="card-text">CO<sub>2</sub> emissions <br>saved (estimated) </p>
                         </div>
                     </div>
                 </div>
@@ -63,20 +81,30 @@
       </div>
     </div>
 
+    <div class = "container" style="padding-top:0%">
+        <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
+            <div class="card-body">
+                <div style="padding-top:0%"></div>
+                <a class="btn btn-primary btn-lg" href="{% url 'history' %}" role="button">See community impact</a>
+              </div>
+        </div>
+      </div>
+  
+
     <div class = "pt-5">
         <div class = "container">
             <div class = "row">
                 <div class = "col-md-12">
                     <p class="card-text text-center">OUR WORK</p>
                     <h1 class="card-title text-center" style="font-size:40px"> 
-                        2.93 trillion pounds of food is thrown away each year.<br>
+                        1.33 trillion kg's of food is thrown away each year.<br>
                         We are on a mission to change that.
                     </h1>
-                    <p class="card-text text-center pt-3">
+                    <p class="card-text text-center pt-2">
                         We believe that helping households reduce food waste will help save our planet. <br>
                         Along with giving people the information they need to properly store and elongate <br>
                         the life of their foods, we let them share their food waste decisions with the <br> 
-                        wastelog'ing community so we can track and reduce the amount of food wasted. <br>
+                        wastelogr community so we can track and reduce the amount of food we all waste. <br>
                     </p>
                     
                 </div>
@@ -112,8 +140,9 @@
                 <h1 class="card-title">  </h1>
                     <div class="card-body">
                         <p class="card-text">
-                            2.93 trillion pounds is the weight of<br>
-                            7 million blue whales <br>
+                            1.33 trillion kg's is the weight of<br>
+                            7 million blue whales. <br>
+                            That's alot of food! <br>
                         </p>
                     </div>
                 </div>
@@ -134,7 +163,8 @@
                     <div class="card-body">
                         <p class="card-text">
                             Food waste costs the Australian economy <br>
-                            $36.6 billion each year<br>
+                            $36.6 billion each year.<br>
+                            That is $2,500 per household<br>
                         </p>
                     </div>
                 </div>
