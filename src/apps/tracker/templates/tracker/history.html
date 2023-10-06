@@ -12,8 +12,19 @@
     {% load tags %}
     {% load static %}
     <link rel="stylesheet", href="{% static 'css/main.css' %}">
-    <div style="padding-top:5%"></div>
-    <div class = "pt-5">
+
+    <div class = "container" style="padding-top:1%">
+        <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
+            <div class="card-body">
+                <h1 class="card-title" style="font-size:55px" font-color: "blue" > Community Dashboard </h1>
+                <h4 class="card-text">  Explore what the community is doing with their food and what we have achieved <br>
+                </h4>
+            </div>
+        </div>
+      </div>
+
+    <div style="padding-top:1%"></div>
+    <div class = "pt-2">
         <div class = "container">
             <div class = "row">
                 <div class = "col-md-4">
@@ -165,25 +176,25 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card" style="background-color: rgba(245, 245, 245, 0.9); ">
-                <h1 class="card-title"><font color = "#000000">Find out what other people are doing with their leftovers </h1></font>
+                <div class="card text-center" style="background-color: rgba(245, 245, 245, 0.9); ">
+                <h1 class="card-title"><font color = "#000000">What the community is doing with their food </h1></font>
             
                 <table id = "foodHistory" class="display" style = "background-color: whitesmoke" style="width:100%">
                     
                     <thead>
                         
                         <tr>
-                            <th>Food Name</th>
-                            <th>Upcycling it</th>
-                            <th>Throwing it away</th>
+                            <th class="text-center">Food Name</th>
+                            <th class="text-center">Upcycling it</th>
+                            <th class="text-center">Throwing it away</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for key, value in food_counts.items %}
                             <tr>
                                 <td>{{ key }}</td>
-                                <td>{{ value.upcycled }}</td>
-                                <td>{{ value.thrown_away }}</td>
+                                <td class="text-center">{{ value.upcycled }}</td>
+                                <td class="text-center">{{ value.thrown_away }}</td>
                             </tr>
                         {% empty %}
                             <tr>
