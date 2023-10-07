@@ -35,13 +35,86 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
     {% load static %}
     {% block content %}
 
-    <div style="padding-top:5%"></div>
  
+    <div class = "container" style="padding-top:5%">
+        <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
+            <div class="card-body">
+                <h1 class="card-title" style="font-size:55px" font-color: "blue" > Store and upcycle </h1>
+                <h4 class="card-text">  Learn how to store your foods and get upcycling tips <br>
+                </h4>
+            </div>
+        </div>
+      </div>
+
+
+    <div class ="container">
+        <div class ="row justify-content-center">
+            <div class = "col-md-7">
+                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
+                    <div class="card-body">
+                        {% for i in food %}  
+                        <h3 class="card-title text-center"> {{i.name}} storage information</h3>
+                            <ul class = "list-group">
+                            
+                                <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
+                                <li class = 'list-group-item'><b>Keywords: </b>                            {{ i.keywords }} </li>
+                                {% if i.pantry_max_days != "" %}
+                                <li class = 'list-group-item'><b>Maximum days in pantry:</b>               {{ i.pantry_max_days }}</li>
+                                {% endif %}
+                                <li class = 'list-group-item'><b>Needs refrigeration?:</b>                 {{ i.fridge_needed }}</li>
+                                {% if i.refrigerate_max_days != null %}       
+                                <li class = 'list-group-item'><b>Maximum days in fridge:</b>               {{ i.refrigerate_max_days }}</li>
+                                {% endif %}
+                                {% if i.refrigerate_ao_max_days != null %}       
+                                <li class = 'list-group-item'><b>Maximum days in fridge after opening:</b> {{ i.refrigerate_ao_max_days }}</li>
+                                {% endif %}
+                                <li class = 'list-group-item'><b>Can be frozen?</b>                        {{ i.freeze_recommended }}</li>
+                                <li class = 'list-group-item'><b>Can be composted?</b>                     {{ i.compost }}</li>
+                                <!-- Change font colour depending on food waste index value -->
+                                <li class='list-group-item {% if food_item.food_waste_index == "High" %}index-high{% elif food_item.food_waste_index == "Medium" %}index-medium{% else %}index-low{% endif %}'> 
+                            <font color = "#000000"><b>Food waste risk: </b></font> {{i.food_waste_index}} risk of being thrown away</li>
+                            {% endfor %}
+                             </ul>
+                    </div>
+                    <div style="margin-bottom:30px"></div>
+                </div>
+            </div>
+            <div style="margin-bottom:30px"></div>
+        </div>
+    </div>
+
     <div class ="container">
         <div style="margin-top:30px"></div>
-        <div class ="row">
-            <div class="col-md-12">
-            <div class="card mb-5" style="background-color: rgba(245, 245, 245, 0.8)">
+            <div class ="row justify-content-center">
+                <div class = "col-md-7">
+                    <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Upcyling tips</h3>
+                                <ul class="list-group list-group-flush">
+                                {% for i in food %}
+                                    <p class="card-text">
+                                        <li class="list-group-item"><b>Use:</b> Try out a new recipe! You can find minimal ingredient recipes <a href = "https://www.supercook.com/#/desktop"> here</a>.</li>
+                                        {% if i.freeze_recommended == "Yes"  %} <li class ="list-group-item"><b>Freeze: </b>Put it in the freezer. Foods can keep in the freezer indefinitely but you may notice a decline in quality after 3-6 months.</li> {% endif %}
+                                        {% if i.compost == "Yes"  %} <li class ="list-group-item"><b>Compost: </b>Feed it to your garden worms and create nutrient-rich soil. Find more information around how to compost <a href ="https://www.betterhealth.vic.gov.au/health/healthyliving/gardening-making-compost"> here</a>. </li> {% endif %}
+                                        {% if i.fridge_needed == "No"  %}<li class="list-group-item"><b>Donate:</b> You can donate this item if it's not open. Find out more <a href = "https://www.foodbank.org.au/support-us/make-a-donation/donate-food/?state=vic"> here</a>.</li>{% endif %}
+                                        <li class="list-group-item"><b>Throw it away (last resort): </b> If it smells off or if it's mouldy, throw it away.</li>
+                                    </p>
+                                {%endfor%}
+                            </ul>
+                            <div style="margin-bottom:30px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class ="container">
+        <div style="margin-top:30px"></div>
+        <div class ="row justify-content-center">
+            <div class="col-md-7">
+            <div class="card mb-5" style="background-color: rgba(245, 245, 245, 1)">
                 <div class="card-body">
                     <h3 class="card-title text-center">What will you do with this food item?</h3>
                     <form onsubmit="return showPopup()" action="" method="POST">
@@ -68,67 +141,6 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
         </div>
     </div>
 
-    <div class ="container">
-        <div class ="row">
-            
-            <div class = "col-md-6">
-                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
-                    <div class="card-body">
-                        {% for i in food %}  
-                        <h3 class="card-title"> {{i.name}} storage information</h3>
-                            <ul class = "list-group">
-                            
-                                <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
-                                <li class = 'list-group-item'><b>Keywords: </b>                            {{ i.keywords }} </li>
-                                {% if i.pantry_max_days != "" %}
-                                <li class = 'list-group-item'><b>Maximum days in pantry:</b>               {{ i.pantry_max_days }}</li>
-                                {% endif %}
-                                <li class = 'list-group-item'><b>Needs refrigeration?:</b>                 {{ i.fridge_needed }}</li>
-                                {% if i.refrigerate_max_days != null %}       
-                                <li class = 'list-group-item'><b>Maximum days in fridge:</b>               {{ i.refrigerate_max_days }}</li>
-                                {% endif %}
-                                {% if i.refrigerate_ao_max_days != null %}       
-                                <li class = 'list-group-item'><b>Maximum days in fridge after opening:</b> {{ i.refrigerate_ao_max_days }}</li>
-                                {% endif %}
-                                <li class = 'list-group-item'><b>Can be frozen?</b>                        {{ i.freeze_recommended }}</li>
-                                <li class = 'list-group-item'><b>Can be composted?</b>                     {{ i.compost }}</li>
-                                <!-- Change font colour depending on food waste index value -->
-                                <li class='list-group-item {% if food_item.food_waste_index == "High" %}index-high{% elif food_item.food_waste_index == "Medium" %}index-medium{% else %}index-low{% endif %}'> 
-                            <font color = "#000000"><b>Food waste risk: </b></font> {{i.food_waste_index}} risk of being thrown away</li>
-                            {% endfor %}
-                             </ul>
-                
-                    </div>
-                    <div style="margin-bottom:30px">
-                    </div>
-                </div>
-            </div>
-                <div style="margin-bottom:30px">
-                </div>
-            <div class = "col-md-6">
-                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
-                    <div class="card-body">
-                        <h3 class="card-title">Upcyling tips</h3>
-                            <ul class="list-group list-group-flush">
-                            {% for i in food %}
-                                <p class="card-text">
-                                    <li class="list-group-item"><b>Use:</b> Try out a new recipe! You can find minimal ingredient recipes <a href = "https://www.supercook.com/#/desktop"> here</a>.</li>
-                                    {% if i.freeze_recommended == "Yes"  %} <li class ="list-group-item"><b>Freeze: </b>Put it in the freezer. Foods can keep in the freezer indefinitely but you may notice a decline in quality after 3-6 months.</li> {% endif %}
-                                    {% if i.compost == "Yes"  %} <li class ="list-group-item"><b>Compost: </b>Feed it to your garden worms and create nutrient-rich soil. Find more information around how to compost <a href ="https://www.betterhealth.vic.gov.au/health/healthyliving/gardening-making-compost"> here</a>. </li> {% endif %}
-                                    {% if i.fridge_needed == "No"  %}<li class="list-group-item"><b>Donate:</b> You can donate this item if it's not open. Find out more <a href = "https://www.foodbank.org.au/support-us/make-a-donation/donate-food/?state=vic"> here</a>.</li>{% endif %}
-                                    <li class="list-group-item"><b>Throw it away (last resort): </b> If it smells off or if it's mouldy, throw it away.</li>
-                                </p>
-                            {%endfor%}
-                        </ul>
-                        <div style="margin-bottom:30px"></div>
-                    </div>
-                    
-                </div>
-                
-                </div>
-            </div>
-        </div>
-    </div>
     <div style="margin-bottom:5%"></div>
 
 
