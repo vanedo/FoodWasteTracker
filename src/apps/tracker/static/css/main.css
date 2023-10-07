@@ -41,3 +41,14 @@ table.foodHistory {
 
   zoom: 1;
 }
+
+nav.navbar-scrolled{
+  background-color: rgb(235, 235, 235, 0.5);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+

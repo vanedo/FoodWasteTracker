@@ -12,7 +12,10 @@ class FoodHistoryForm(forms.ModelForm):
         model = FoodHistory
         fields = '__all__'
         widgets = {
-            'food':forms.Select(attrs={'disabled':'true'})
+             'food':forms.Select(attrs={'style':'display: none'})
+         }
+        labels = {
+            'food':''
         }
         #def __init__(self, *args, **kwargs):
         #    super(FoodHistoryForm, self).__init__(*args, **kwargs)

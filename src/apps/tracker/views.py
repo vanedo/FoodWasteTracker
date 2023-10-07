@@ -28,7 +28,7 @@ def food(request, pk):
         print('Form is valid:', form.is_valid())
         if form.is_valid():
             form.save()
-            return redirect('/food-tracker')
+            return redirect(('/history'))
     context = {'food':food, 'food_advice':food_advice, 'form':form}
     return render(request, 'tracker/food.html', context)
 

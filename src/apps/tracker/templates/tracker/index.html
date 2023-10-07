@@ -12,34 +12,37 @@
     {% load tags %}
     {% load static %}
     {% block content %}
-    <div class = "container" style="padding-top:5%">
+
+    <div class = "container" style="padding-top:12%">
       <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
           <div class="card-body">
               <h1 class="card-title" style="font-size:55px" font-color: "blue" > Join the food waste revolution! </h1>
-              <h4 class="card-text"> Together, we can reduce food waste and create a sustainable future. <br>Enter your data today to track our collective impact.<br></h4>
               <div style="padding-top:2%"></div>
-              <a class="btn btn-primary btn-lg" href="{% url 'add' %}" role="button">Join now</a> &emsp;<a href = "{% url 'history' %}"><u>Learn how </u> </a>
+              <h4 class="card-text"> Together, we can reduce food waste and create a sustainable future. <br>Enter your data today to track our collective impact.<br></h4>
+              <div style="padding-top:3%"></div>
+              <a class="btn btn-primary btn-lg" href="{% url 'add' %}" role="button">Contribute now</a> &emsp;<a href = "#community-impact"><u>Learn more </u> </a>
             </div>
       </div>
     </div>
-
-    <div class = "container" style="padding-top:1%">
+    
+ 
+    
+    <section id = "community-impact">
+    <div class = "container" style="padding-top:5%">
         <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
             <div class="card-body">
                 <p class="card-text text-center">COMMUNITY IMPACT</p>
                 <h1 class="card-title text-center" style="font-size:40px"> 
-                    Help your household and community achieve their <br>
-                    food waste goals <br>
+                    Help us track and reduce food waste
                 </h1>
                 <p class="card-text text-center pt-1">
-                    wastelogr has helped households and communities reduce their food waste. In doing so <br>
-                    they have reduced environmental pollution, water consumption, lowered their grocery bills, <br>
-                    and helped save the planet. Here are a few of our achievements.<br>
+                    wastelogr has helped reduce food in landfill and greenhouse gas emissions<br>
+                    through logging our food waste. You can help by contributing your data too!
                 </p>
               </div>
         </div>
       </div>
-      
+    
     <div class = "pt-1">
         <div class = "container">
             <div class = "row justify-content-center">
@@ -80,19 +83,22 @@
             </div>
       </div>
     </div>
+    </section>
+    
 
-    <div class = "container" style="padding-top:0%">
+
+    <div class = "container" >
         <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
             <div class="card-body">
-                <div style="padding-top:0%"></div>
-                <a class="btn btn-primary btn-lg" href="{% url 'history' %}" role="button">See community impact</a>
+                <div style="padding-top:1%"></div>
+                <a class="btn btn-primary btn-lg" href="{% url 'history' %}" role="button">See our impact</a>
               </div>
         </div>
       </div>
   
-
+      <section id ="our-work">
     <div class = "pt-5">
-        <div class = "container">
+        <div class = "container" style="padding-top:1%">
             <div class = "row">
                 <div class = "col-md-12">
                     <p class="card-text text-center">OUR WORK</p>
@@ -124,8 +130,9 @@
             </div>
         </div>
     </div>
-  
+
     <div class = "row pt-4"></div>
+    <section id = 'why-we-care'>
 
     <div class="card">
         <div class="card-header text-center" style="font-size:40px" >
@@ -221,6 +228,8 @@
 
 
         <div class = "pt-4"></div>
+    </section>
+
 
 {% endblock %}
 </body>

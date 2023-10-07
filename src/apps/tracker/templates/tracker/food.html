@@ -21,8 +21,7 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
             color: green;
         }
     </style>
-
-    <script>
+ <script>
         // JavaScript function to show the pop-up and prevent form submission
         function showPopup() {
             alert('Response Saved!')
@@ -35,7 +34,9 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
     {% extends "tracker/base.html" %}
     {% load static %}
     {% block content %}
+
     <div style="padding-top:5%"></div>
+ 
     <div class ="container">
         <div style="margin-top:30px"></div>
         <div class ="row">
@@ -128,24 +129,8 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
             </div>
         </div>
     </div>
+    <div style="margin-bottom:5%"></div>
 
-
-    <!--
-    <div class ="container">
-        <div class ="row">
-            <div class="col-md-6">
-            <div class="card mb-7">
-                <div class="card-body">
-                    <h3 class="card-title">What will you do with this food item?</h3>
-                    <button type="button" onclick="alert('Thrown Away!')">Throw It Away</button>
-                    <button type="button" onclick="alert('Upcycled!')">Upcycle</button>
-                </div>
-            
-            </div>
-            </div>
-        </div>
-    </div>
-    -->
 
     {% endblock %}
 </body>

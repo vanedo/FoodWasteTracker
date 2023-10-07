@@ -16,23 +16,35 @@
     <div class = "container">
         <div class = "row">
             <div class="col-md-12">
-             
-    
-        
-            <h1><font color = "#000000">Find food storage and usage information</h1></font>
+
+                <h1 class="card-title text-center" style="font-size:55px" font-color: "blue" > Food finder </h1>
+                <h4 class="card-text text-center">  Search for food storage and upcycling tips<br>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top:5%"></div>
+    <div class = "container">
+        <div class = "row">
+            <div class="col-md-12">
+                <div class = "card" style="padding-top: 5%; padding-bottom: 5%; padding-left: 5%; padding-right:5%" >
             <form method="get">
                 <div class="form-group">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Start typing food name">
+                    <label for = "searchInput">Search our database:</label>
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control rounded" placeholder="Start typing food name here" aria-label="Search" aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary">Go</button>
+                      </div>
+                
                 </div>
             </form>
             <div class = "card">
-        <table class="table w-auto table-responsive-lg" >
+        <table class="table w-auto table-responsive-lg table-hover" >
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Category</th>
                     <th>Keywords</th>
-                    <th> </th>
                     
                 </tr>
             </thead>
@@ -40,10 +52,9 @@
                 {% if food_tracker %}
                 {% for food in food_tracker %}
                     <tr>
-                        <td>{{ food.name }}</td>
+                        <td><a href ="{% url 'food_advice' food.id %}">{{ food.name }}</a></td>
                         <td>{{ food.name_subtitle | truncatechars:30 }}</td>
                         <td >{{ food.keywords | truncatechars:30 }}</td>
-                        <td><a href ="{% url 'food_advice' food.id %}">View</a></td>
                         </td>
                     </tr>
                 {% endfor %}
@@ -58,6 +69,7 @@
             </div>
 
          </div>
+        </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
