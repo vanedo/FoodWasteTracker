@@ -15,6 +15,25 @@ body.intro {
   
 }
 
+/* Solid border */
+hr.solid {
+  border-top: 4px solid rgba(211,211,211,0.5);
+  width: 825px;
+  margin-top: 3%;
+  margin-bottom: 3%;  
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 4px solid rgba(211,211,211,0.5);
+  border-radius: 5px;
+  width: 825px;
+}
+
+div.data-tile1{
+  background-image: url('/static/img/lblue_data_entry.png');
+}
+
 h1.card-title{
   font-family: 'Jost';
   font-weight: 500;
