@@ -23,7 +23,9 @@
       <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
           <div class="card-body">
               <h1 class="card-title" style="font-size:55px" font-color: "blue" > Contribute </h1>
-              <h4 class="card-text">  Contribute to our tracker by logging your food waste decisions <br>
+              <h4 class="card-text"> 
+                Tell us what you are doing with your food waste items and <br>
+                contribute to our food waste dataset
               </h4>
           </div>
       </div>
@@ -40,9 +42,7 @@
     >
       <div class="card" style="background-color: rgba(245, 245, 245, 0.8)">
         <div class="card-header text-center">
-          <h1 style="font-family: 'Jost'">
-            Contribute to our food waste <br />tracker here
-          </h1>
+          <h2 style="font-family: 'Jost'">Search for a food item</h2>
         </div>
         <div class="card-body">
           <div class="container" style="padding-top: 20px">
@@ -59,7 +59,7 @@
                           id="contribution_form"
                         >
                           {% csrf_token %} {{form.as_p}}
-                          <p style="text-align: right; font-size: medium">
+                          <p style="text-align: left; font-size: medium">
                             Not sure? Check our 
                             <a href="{% url 'food_tracker' %}">
                               food finder</a
