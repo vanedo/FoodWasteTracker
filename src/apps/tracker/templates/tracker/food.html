@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Food waste Tracker</title>
+    <title>Storage and upcycling tips</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link
@@ -37,23 +37,25 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
 
  
     <div class = "container" style="padding-top:5%">
-        <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
+        <div class="card mb-8 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
             <div class="card-body">
                 <h1 class="card-title" style="font-size:55px" font-color: "blue" > Store and upcycle </h1>
-                <h4 class="card-text">  Learn how to store your foods and get upcycling tips <br>
-                </h4>
+                <h4 class="card-text">  Learn how to store your foods and get upcycling tips </h4>
+                <br>
+                <a class="btn btn-link btn-medium" href="#storage-info" role="button">Storage information </a> &#183; 
+                <a class="btn btn-link btn-medium" href="#upcycling-tips" role="button">Upcycling tips </a> &#183;
+                <a class="btn btn-link btn-medium" href="#log-data" role="button">Contribute data </a>
             </div>
         </div>
       </div>
-
-
+<section id = "storage-info">
     <div class ="container">
         <div class ="row justify-content-center">
-            <div class = "col-md-7">
-                <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
+            <div class = "col-md-8">
+                <div class="card mb-8" style="background-color: rgba(245, 245, 245, 0.8)">
                     <div class="card-body">
                         {% for i in food %}  
-                        <h3 class="card-title text-center"> {{i.name}} storage information</h3>
+                        <h2 class="card-title text-center"> {{i.name}} storage information</h2>
                             <ul class = "list-group">
                             
                                 <li class = 'list-group-item'><b>Name: </b>                                {{ i.name }} </li>
@@ -82,16 +84,18 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
             <div style="margin-bottom:30px"></div>
         </div>
     </div>
-
+</section>  
+<section id = "upcycling-tips">
     <div class ="container">
         <div style="margin-top:30px"></div>
             <div class ="row justify-content-center">
-                <div class = "col-md-7">
-                    <div class="card mb-7" style="background-color: rgba(245, 245, 245, 0.8)">
+                <div class = "col-md-8">
+                    <div class="card mb-8" style="background-color: rgba(245, 245, 245, 0.8)">
                         <div class="card-body">
-                            <h3 class="card-title text-center">Upcyling tips</h3>
+                            {% for i in food %}
+                            <h2 class="card-title text-center">{{i.name}} upcycling tips</h2>
                                 <ul class="list-group list-group-flush">
-                                {% for i in food %}
+                                
                                     <p class="card-text">
                                         <li class="list-group-item"><b>Use:</b> Try out a new recipe! You can find minimal ingredient recipes <a href = "https://www.supercook.com/#/desktop"> here</a>.</li>
                                         {% if i.freeze_recommended == "Yes"  %} <li class ="list-group-item"><b>Freeze: </b>Put it in the freezer. Foods can keep in the freezer indefinitely but you may notice a decline in quality after 3-6 months.</li> {% endif %}
@@ -108,15 +112,17 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
             </div>
         </div>
     </div>
-
-
+</section>
+<section id = "log-data">
     <div class ="container">
         <div style="margin-top:30px"></div>
         <div class ="row justify-content-center">
-            <div class="col-md-7">
+            <div class="col-md-8">
             <div class="card mb-5 text-center" style="background-color: rgba(245, 245, 245, 1)">
                 <div class="card-body">
-                    <h3 class="card-title text-center">What will you do with this food item?</h3>
+                    {% for i in food %}
+                    <h2 class="card-title text-center">What will you do with your <span style="text-transform:lowercase">{{i.name}}?</span></h2>
+                    {%endfor%}
                     <form onsubmit="return showPopup()" action="" method="POST">
                     <!--<form action="" method="POST">-->
                             {% csrf_token %}
@@ -130,7 +136,6 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
                           border-radius: 5px;
                           border-width: 0px;
                           padding: 5x 15px;
-                          font-family: 'Jost';
                           font-size: large;
                         "
                       />
@@ -140,9 +145,19 @@ href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
             </div>
         </div>
     </div>
-
-    <div style="margin-bottom:5%"></div>
-
+</section>
+    <div style="margin-bottom:0%"></div>
+    <div class = "pt-3 pb-5">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12">
+                    <div class="card-body text-center">
+                            <a href = "#top"> Back to top </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     {% endblock %}
 </body>

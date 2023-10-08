@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Food History</title>
+    <a id = "top"></a>
+    <title>wastelogr - track your food waste today!</title>
+    <link rel="icon" href="/static/img/logo.ico" type="image/x-icon" />
+    
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
@@ -13,31 +16,34 @@
     {% load static %}
     {% block content %}
 
-    <div class = "container" style="padding-top:5%">
+    <div class = "container" style="padding-top:10%">
       <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
           <div class="card-body">
               <h1 class="card-title" style="font-size:55px" font-color: "blue" > Join the food waste revolution! </h1>
               <div style="padding-top:2%"></div>
               <h4 class="card-text"> Together, we can reduce food waste and create a sustainable future. <br>Enter your data today to track our collective impact.<br></h4>
               <div style="padding-top:3%"></div>
-              <a class="btn btn-primary btn-lg" href="{% url 'add' %}" role="button">Contribute now</a> &emsp;<a href = "#community-impact"><u>Learn more </u> </a>
+              <a class="btn btn-primary btn-lg" href="{% url 'add' %}" role="button">Get started</a> 
+              <a class="btn btn-link btn-lg" href="#community-impact" role="button">Learn more</a>
+               
             </div>
       </div>
     </div>
-    
+    <section id = "community-impact">
+    <div style="padding-bottom:0%"></div>
     <hr class="solid">
     
-    <section id = "community-impact">
+    
     <div class = "container" style="padding-top:0%">
         <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
             <div class="card-body">
-                <p class="card-text text-center " style="color: rgba(0,123,255,1)">COMMUNITY IMPACT</p>
+                <p class="card-text text-center " style="color: rgba(255, 128, 0)">COMMUNITY IMPACT</p>
                 <h1 class="card-title text-center" style="font-size:40px"> 
                     Help us track and reduce food waste
                 </h1>
                 <p class="card-text text-center pt-1">
                     wastelogr has helped reduce food in landfill and greenhouse gas emissions<br>
-                    through education and food waste tracking <br>
+                    through tracking food waste and education<br>
                 </p>
               </div>
         </div>
@@ -49,40 +55,44 @@
 
                 <div class = "col-md-3">
                     <div class="card mb-3 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
-                        
-                        <img src="/static/img/lblue_data_entry.png" style="width: 50px; height: 50px; margin:auto" class="card-img-top pt-1" alt="">
-                        <div class="card-body" id="card-body">
-                            <h1 class="card-title"> {% metric_contributions request %} </h1>
-                            <p class="card-text">Contributions to the <br>wastelogr dataset</p>
-                        </div>
+                        <img class = "card-img" src="/static/img/lblue_data_entry.png">
+                            <div class ="card-img-overlay">
+                            <div class="card-body" id="card-body">
+                                <h1 class="card-title"> {% metric_contributions request %} </h1>
+                                <p class="card-text">Contributions to the <br>wastelogr dataset</p>
+                            </div>
+                            </div>
                     </div>
                 </div>
 
                 <div class = "col-md-3">
                     <div class="card mb-3 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
-                        <div class="mt-auto">
-                            <img src="/static/img/lblue_landfill.png" style="width: 50px; height: 50px; margin: auto" class="card-img-top pt-1" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title">{% metric_items_saved request %} </h1>
-                            <p class="card-text">Food items saved <br>from landfill </p>
+                        <img class = "card-img" src="/static/img/lblue_landfill.png">
+                        <div class = "card-img-overlay">
+                            <div class="card-body">
+                                <h1 class="card-title">{% metric_items_saved request %} </h1>
+                                <p class="card-text">Food items saved <br>from landfill </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class = "col-md-3">
                     <div class="card mb-2 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
-                        <img src="/static/img/lblue_air-pollution.png" style="width: 50px; height: 50px; margin:auto" class="card-img-top pt-1" alt="">
-                        <div class="card-body">
-                            <h1 class="card-title">{% metric_red_emissions request %}</h1>
-                            <p class="card-text">CO<sub>2</sub> kilograms of emissions saved </p>
-                        </div>
+                        <img class = "card-img" src="/static/img/lblue_air-pollution.png">
+                        <div class = "card-img-overlay">
+                            <div class="card-body">
+                                <h1 class="card-title">{% metric_red_emissions request %}</h1>
+                                <p class="card-text">Kilograms of CO<sub>2</sub> emissions saved </p>
+                            </div>
+                        </div>    
                     </div>
                 </div>
 
             </div>
       </div>
     </div>
+    <div style="padding-bottom:0%"></div>
     </section>
 
 
@@ -99,20 +109,20 @@
 
     <section id ="our-work">
     <div class = "pt-1">
-        <div class = "container">
+        <div class = "container" style="padding:0%">
             <div class = "row">
                 <div class = "col-md-12">
-                    <p class="card-text text-center" style="color: rgba(0,123,255,1)"> OUR WORK</p>
+                    <p class="card-text text-center" style="color: rgba(255, 128, 0)"> OUR WORK</p>
                     <h1 class="card-title text-center" style="font-size:40px"> 
-                        If you can not measure it, you can not improve it<br>
+                        "If you cannot measure it, you cannot improve it"<br>
                     </h1>
                     <h4 class = "text-center">- Lord Kelvin</h4>             
 
                     <p class="card-text text-center pt-2">
-                        We believe that helping households reduce food waste will help save our planet. <br>
-                        Along with giving people the information they need to properly store and elongate <br>
-                        the life of their foods, we let them share their food waste decisions with the <br> 
-                        wastelogr community so we can track and reduce the amount of food we all waste. <br>
+                        At wastelog, we tackle food waste's data gaps by fostering a community-driven approach. <br>
+                        Our platform tracks community food waste, and identifies areas for improvement. <br>
+                        We also provide practical tips for food storage and upcycling, encouraging sustainable habits for a greener future. <br>
+                        Join us in building a community that values mindful consumption.
                     </p>
                     
                 </div>
@@ -125,28 +135,30 @@
             <div class = "row">
                 <div class = "col-md-12">
                     <div class="card-body text-center">
-                        <div style="padding-top:1%"></div>
-                            <a class="btn btn-primary btn-lg" href="{% url 'add' %}" role="button">Contribute today</a>
+                        <div style="padding-top:0%"></div>
+                            <a class="btn btn-primary btn-lg" href="{% url 'add' %}" role="button">Contribute your food waste data</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div style="padding-bottom:0%"></div>
 
     <hr class="solid">
 
 
-    <section id = "wwhy-we-care-1">
+    <section id = "why-we-care-1">
         <div class = "container" style="padding-top:0%">
             <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
                 <div class="card-body">
-                    <p class="card-text text-center" style="color: rgba(0,123,255,1);">WHY WE CARE</p>
+                    <p class="card-text text-center" style="color: rgb(255, 128, 0);">WHY WE CARE</p>
                     <h1 class="card-title text-center" style="font-size:40px"> 
-                        1.33 trillion kg's of food is thrown away each year<br>
-                        We are on a mission to change that
+                        Why our commitment to food waste matters<br>
+                        and why it should matter to you
                     </h1>
                     <p class="card-text text-center pt-2">
-                        That is approximately the weight of 7 million blue whales! <br>
+                        1.33 trillion kilograms of food are thrown away each year. <br>
+                        That's approximately the weight of 7 million blue whales! <br>
                     </p>
                 </div>
             </div>
@@ -159,14 +171,11 @@
                     <div class = "col-md-3">
                         <div class="card mb-3 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
                             
-                            <img src="/static/img/Agriculture.png" style="width: 150px; height: 150px; margin:auto" class="card-img-top pt-1" alt="">
+                            <img src="/static/img/garbage.png" style="width: 150px; height: 150px; margin:auto" class="card-img-top pt-1" alt="">
                             <div class="card-body" id="card-body">
-                                <h1 class="card-title">25%</h1>
+                                <h1 class="card-title">30%</h1>
                                 <p class="card-text">
-                                    Food waste means that <br> 
-                                    25% of water usage <br>
-                                    goes to food we <br>
-                                    never eat <br>
+                                    Households, at 30%, generate the most food waste by sector, at 30%. Your efforts matter.
                                     <br>
                                 </p>
                             </div>
@@ -181,9 +190,7 @@
                             <div class="card-body">
                                 <h1 class="card-title">10%</h1>
                                 <p class="card-text">
-                                Food waste accounts for 10% of all <br>
-                                greenhouse gas emissions.<br>
-                                Flying is only 3.8%<br>
+                                    Food waste constitutes 10% of greenhouse gas emissions — flying is only 3.8%!
                             </p>
                             </div>
                         </div>
@@ -193,11 +200,12 @@
                         <div class="card mb-2 text-center" style="background-color: rgba(245, 245, 245, 0.4); " >
                             <img src="/static/img/money_trash.png" style="width: 150px; height: 150px; margin:auto" class="card-img-top pt-1" alt="">
                             <div class="card-body">
-                                <h1 class="card-title">$36.6B</h1>
+                                <h1 class="card-title">$2,500</h1>
                                 <p class="card-text"> 
-                                    Food waste costs the Australian economy <br>
-                                    $36.6 billion each year.<br>
-                                    That is $2,500 per household<br>
+                                    That's how much money <br>you could 
+                                    save per year <br> by reducing your 
+                                    household food waste!
+                                   
                                 </p>
                             </div>
                         </div>
@@ -214,13 +222,15 @@
                         <div class="card-body text-center">
                             <div style="padding-top:1%"></div>
                                 <a class="btn btn-primary btn-lg" href="{% url 'food_tracker' %}" role="button">
-                                    Learn how to upcycle your food today
-                                </a>
+                                    Learn how
+                                </a> <br> <br> <br>
+                                <a href = "#top"> Back to top </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
     </section>
 

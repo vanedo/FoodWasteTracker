@@ -23,14 +23,16 @@
 
     {% extends "tracker/base.html" %}
     {% block content %}
+    {% load static %}
+    <link rel="stylesheet", href="{% static 'css/main.css' %}">
 
     <div class = "container" style="padding-top:1%">
         <div class = "row">
             <div class="col-md-12">
-                <div class = "card" style="padding-top: 5%; padding-bottom: 5%; padding-left: 5%; padding-right:5%" >
+                <div class = "card" style="background-color: rgba(245, 245, 245, 0.9); padding-top: 2%; padding-bottom: 5%; padding-left: 5%; padding-right:5%" >
             <form method="get">
                 <div class="form-group">
-                    <label for = "searchInput">Search our database:</label>
+                    <label for = "searchInput"><h4>Search our database:</h4></label>
                     <div class="input-group">
                         <input type="text" id="searchInput" class="form-control rounded" placeholder="Start typing food name here" aria-label="Search" aria-describedby="search-addon" />
                         <button type="button" class="btn btn-outline-primary">Go</button>

@@ -24,8 +24,8 @@
           <div class="card-body">
               <h1 class="card-title" style="font-size:55px" font-color: "blue" > Contribute </h1>
               <h4 class="card-text"> 
-                Tell us what you are doing with your food waste items and <br>
-                contribute to our food waste dataset
+                Tell us what you are doing with your food items and <br>
+                contribute to our dataset here
               </h4>
           </div>
       </div>
@@ -40,12 +40,10 @@
       class="container"
       style="padding-top: 1%; padding-bottom: 5%; width: 60%"
     >
-      <div class="card" style="background-color: rgba(245, 245, 245, 0.8)">
-        <div class="card-header text-center">
-          <h2 style="font-family: 'Jost'">Search for a food item</h2>
-        </div>
-        <div class="card-body">
-          <div class="container" style="padding-top: 20px">
+    <div class="card" style="background-color: rgba(245, 245, 245, 0.9); padding-top:2% ">
+      <h2 class="card-title" style="text-align: center;"> Log your food waste here </h2>
+        <div class="card-body border-0" style="background-color:rgba(245, 245, 245, 0.9); border:0px">
+          <div class="container" style="padding-top: 1%">
             <div class="row">
               <div class="col">
                 <div class="card h-100">
@@ -59,12 +57,13 @@
                           id="contribution_form"
                         >
                           {% csrf_token %} {{form.as_p}}
-                          <p style="text-align: left; font-size: medium">
-                            Not sure? Check our 
-                            <a href="{% url 'food_tracker' %}">
-                              food finder</a
-                            > for food storage tips.
-                          </p>
+                          <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            Not sure? Check our <a href="{% url 'food_tracker' %}" class="alert-link">food finder</a> for storage tips.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          
                           <input
                             type="submit"
                             value="Add my response"
@@ -74,12 +73,10 @@
                               border-radius: 5px;
                               border-width: 0px;
                               padding: 5x 15px;
-                              font-family: 'Jost';
                               font-size: large;
                             "
                           />
-                          &emsp;<a href="{% url 'history' %}">
-                            <u>See all responses </u>
+                          <a class="btn btn-link btn-medium" href ="{% url 'history' %}"> See all responses</a>
                           </a>
                         </form>
                       </div>
@@ -92,8 +89,17 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.alert').alert()
+      });
+     </script>
     {% endblock %}
     
- 
+
   </body>
 </html>

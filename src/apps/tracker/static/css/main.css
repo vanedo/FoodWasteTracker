@@ -29,36 +29,33 @@ hr.rounded {
   border-radius: 5px;
   width: 825px;
 }
+img.card-img {
+  height: 60%;
+  width: 60%;
+  transform:translate(35%);
 
-.div-background-pic-1 {
-  background-image: url('/static/img/lblue_data_entry.png');
-  background-size: cover;
-  background-position: center;
-  ;
-}
-.div-background-pic-2 {
-  background-image: url('/static/img/lblue_landfill.png');
-  background-size: cover;
-  background-position: center;
-}
-.div-background-pic-3 {
-  background-image: url('/static/img/lblue_air-pollution.png');
-  background-size: cover;
-  background-position: center;
 }
 
-.div-pic-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 90%;
-  background-color: rgba(245, 245, 245, 0.7); /* Adjust the alpha (last value) for transparency */
+div.card-img-overlay {
+  position: absolute; 
+  background: rgb(255, 254, 254, 0.8);
+
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1.card-title{
   font-family: 'Jost';
   font-weight: 500;
+}
+
+h2.card-title{
+  font-family: 'Jost';
+  font-weight: 500;
+  text-align: center;
+
 }
 h4.card-text{
   font-family: 'Jost';
@@ -75,21 +72,23 @@ div.first {
 }
 
 table.foodHistory {
-  font-size: 13px;
+  background-color: whitesmoke;
+  width: 80%;}
+  /*font-size: 13px;
   direction: rtl;
   position: relative;
   clear: both;
 
   zoom: 1;
-}
+}*/
 
 nav.navbar-scrolled{
   background-color: rgb(235, 235, 235, 0.5);
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
-
 html {
   scroll-behavior: smooth;
+  scroll-padding-top:10%;
 }
 

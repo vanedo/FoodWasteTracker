@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Food History</title>
+    <title>Community food waste impact</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <div class = "container" style="padding-top:5%">
         <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.0); border:0px " >
             <div class="card-body">
-                <h1 class="card-title" style="font-size:55px" font-color: "blue" > Community Impact </h1>
+                <h1 class="card-title" style="font-size:55px" font-color: "blue" > Community food waste impact </h1>
                 <h4 class="card-text">  Explore what the community is doing with their food <br>
                 </h4>
             </div>
@@ -46,8 +47,8 @@
                 <div class = "col-md-4">
                     <div class="card mb-4 text-center" style="background-color: rgba(245, 245, 245, 0.9); " >
                         <div class="card-body">
-                            <h1 class="card-title">{% metric_red_emissions request %} kgs</h1>
-                            <p class="card-text">of CO<sub>2</sub> emissions <br>saved (estimated)</p>
+                            <h1 class="card-title">{% metric_red_emissions request %}</h1>
+                            <p class="card-text">kilograms of CO<sub>2</sub> kilograms<br> emissions saved </p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
                     <div class="col-md-6">
                         <div class="card text-center" style="background-color: rgba(245, 245, 245, 0.9);">
                             <div class="card-body">
-                                <h1 class="card-title"> Top 5 upcycled foods </h1>
+                                <h2 class="card-title"> Top 5 upcycled foods </h2>
                                 <div>
                                     <canvas id="myChart1"></canvas>
                                 </div>    
@@ -92,7 +93,7 @@
                                                     title: {
                                                         display: false,
                                                         text: 'Top 5 upcycled foods',
-                                                        font: {family: 'Jost', size: 30},
+                                                        font: {family: 'Jost', size: 10},
                                                         padding:{top: 10, bottom: 15}}
                                                 },
                                                 scales: {
@@ -116,7 +117,7 @@
                         <div class="col-md-6" >
                             <div class="card text-center" style="background-color: rgba(245, 245, 245, 0.9);">
                                 <div class="card-body">
-                                    <h1 class="card-title"> Top 5 foods sent to landfill </h1>
+                                    <h2 class="card-title"> Top 5 foods sent to landfill </h2>
                                     <div>
                                         <canvas id="myChart2"></canvas>
                                     </div>    
@@ -145,7 +146,7 @@
                                                     title: {
                                                         display: false,
                                                         text: 'Top 5 foods sent to landfill',
-                                                        font: {family: 'Jost', size: 30},
+                                                        font: {family: 'Jost', size: 25},
                                                         padding:{top: 10, bottom: 15}}
                                                 },
                                             scales: {
@@ -176,23 +177,21 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card text-center" style="background-color: rgba(245, 245, 245, 0.9); ">
-                <h1 class="card-title"><font color = "#000000">What the community is doing with their food </h1></font>
-            
-                <table id = "foodHistory" class="display" style = "background-color: whitesmoke" style="width:100%">
-                    
-                    <thead>
-                        
-                        <tr>
-                            <th class="text-center">Food Name</th>
-                            <th class="text-center">Upcycling it</th>
-                            <th class="text-center">Throwing it away</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for key, value in food_counts.items %}
+                <div class="card" style="background-color: rgba(245, 245, 245, 0.9); padding-top:2% ">
+                    <h2 class="card-title"> See all community food actions here </h2>
+                <div class = "card border-0" style="background-color: rgba(245, 245, 245, 0.9); padding-top: 1%; padding-bottom: 5%; padding-left: 8%; padding-right:8%" >   
+                    <table id = "foodHistory" class="table table-striped table-bordered" style="width:100%;">
+                        <thead>
                             <tr>
-                                <td>{{ key }}</td>
+                                <th class = "text-left">Food Name</th>
+                                <th class="text-center">Upcycling it</th>
+                                <th class="text-center">Throwing it away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for key, value in food_counts.items %}
+                            <tr>
+                                <td class = "text-left">{{ key }}</td>
                                 <td class="text-center">{{ value.upcycled }}</td>
                                 <td class="text-center">{{ value.thrown_away }}</td>
                             </tr>
@@ -201,30 +200,29 @@
                                 <td colspan="3">No food history available.</td>
                             </tr>
                         {% endfor %}
-                    </tbody>
+                         </tbody>
                 
-                </table>
+                    </table>
+                </div>
             </div>
         </div>
-
         </div>
     </div>
 
     <div style = "padding-top:3%"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- jquery -->
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">-->
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>   
     <script>
         $(document).ready(function () {
             $('#foodHistory').DataTable();
