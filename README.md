@@ -2,6 +2,9 @@
 Food Waste Tracker - UN SDG Project \
 The food waste tracker is a website for the community to track food waste, find food storage information and upcycling tips. You can contribute your food waste data and join our mission to reduce food waste today!
 
+## Link
+View the website [here](https://wastelogr.pythonanywhere.com)
+
 ## Information
 * Language: Python 3.8
 * Framework: Django 4.2
